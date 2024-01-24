@@ -1,10 +1,12 @@
 # 可維護性
 
+## 建立原始碼管理平台
+
 為讓承辦人員可以收納管理程式碼及自動化部署流程，現行有 GitHub 及 GitLab 平台。因 GitHub 自建（self-hosted）仍須採購 GitHub enterprise 才能使用相應功能；而 GitLab 則提供 Community Edition (CE) 開放原始碼版本，雖有功能上限制，但足夠作為基礎自動化驗證及部署流程，因此以下為使用 GitLab 基礎建置。
 
 為了日後易於維護及升級便利，以下範例步驟使用 docker 來建立 GitLab 環境，以便讓承辦人員
 
-## Prerequisite
+### Prerequisite
 
 - 需[安裝 Docker Engine](https://docs.docker.com/engine/install/) 及 docker compose plugin，請先依據 Linux distribution 安裝對應版本。
 - 需有一個外部可存取的 DNS 域名給 GitLab 使用。
@@ -12,7 +14,7 @@
   - GitLab 主機
   - GitLab runner 主機
 
-## 使用 Docker Daemon 建立 GitLab
+### 使用 Docker Daemon 建立 GitLab
 
 1. 登入 GitLab 主機。
 2. 以下範例為建立 `/srv/gitlab` 目錄，也可以建立於任一 user 家目錄。此目錄將使用於 GitLab 設定檔、log 及資料。
@@ -92,7 +94,7 @@
 
     ![登入成功](./img/login-success.png)
 
-## 建立 GitLab runner 
+### 建立 GitLab runner 
 
 1. 登入 GitLab runner 主機
 2. 以下範例為建立 `/srv/gitlab-runner/` 目錄，也可以建立於任一 user 家目錄。此目錄將使用於 GitLab runner 設定檔。
