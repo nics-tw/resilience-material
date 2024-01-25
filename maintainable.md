@@ -6,7 +6,7 @@
 
 為了日後易於維護及升級便利，以下範例步驟使用 docker 來建立 GitLab 環境，以便讓承辦人員
 
-### Prerequisite
+### Prerequisite[^1]
 
 - 需[安裝 Docker Engine](https://docs.docker.com/engine/install/) 及 docker compose plugin，請先依據 Linux distribution 安裝對應版本。
 - 需有一個外部可存取的 DNS 域名給 GitLab 使用。
@@ -14,7 +14,7 @@
   - GitLab 主機
   - GitLab runner 主機
 
-### 使用 Docker Daemon 建立 GitLab
+### 使用 Docker 建立 GitLab 平台[^2]
 
 1. 登入 GitLab 主機。
 2. 以下範例為建立 `/srv/gitlab` 目錄，也可以建立於任一 user 家目錄。此目錄將使用於 GitLab 設定檔、log 及資料。
@@ -76,7 +76,7 @@
     maowang-web-1   gitlab/gitlab-ce:16.7.3-ce.0   "/assets/wrapper"   web       9 minutes ago   Up 9 minutes (healthy)   0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp, 0.0.0.0:2224->22/tcp, :::2224->22/tcp
     ```
 
-7. 使用 `docker exec` 命令取得預設 root user 密碼。初次使用 root 密碼後，24 小時候此檔案會被自動移除，請儲存此密碼或登入後修改 root user 密碼s。 
+7. 使用 `docker exec` 命令取得預設 root user 密碼。初次使用 root 密碼後，24 小時候此檔案會被自動移除，請儲存此密碼或登入後修改 root user 密碼s。
 
     ```bash
     $ sudo docker exec -it YOUR_GITLAB_CONTAINER_NAME  grep 'Password:' /etc/gitlab/initial_root_password
@@ -94,7 +94,7 @@
 
     ![登入成功](./img/login-success.png)
 
-### 建立 GitLab runner 
+### 使用 Docker 部署 GitLab runner[^3]
 
 1. 登入 GitLab runner 主機
 2. 以下範例為建立 `/srv/gitlab-runner/` 目錄，也可以建立於任一 user 家目錄。此目錄將使用於 GitLab runner 設定檔。
@@ -147,7 +147,7 @@
 
     ```bash
     $ sudo cat /srv/gitlab-runner/config/config.toml
-    concurrent = 1 # 同時併發可執行 job 數量，可依據 GitLab runner 主機效能提高 concurrent 數量 
+    concurrent = 1 # 同時併發可執行 job 數量，可依據 GitLab runner 主機效能提高 concurrent 數量
     check_interval = 0
     shutdown_timeout = 0
 
@@ -188,3 +188,8 @@
 9. 回到 Runner 頁面，檢視 Runner 狀態為 running。
 
     ![Runner 狀態 running](./img/gitlab-runner-status.png)
+
+
+[^1]: [Installation system requirements | GitLab](https://docs.gitlab.com/ee/install/requirements.html)
+[^2]: [Install GitLab using Docker | GitLab](https://docs.gitlab.com/ee/install/docker.html)
+[^3]: [Run GitLab Runner in a container | GitLab](https://docs.gitlab.com/runner/install/docker.html)
