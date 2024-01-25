@@ -2,7 +2,7 @@
 
 ## 網站隱私權保護
 
-網站隱私權保護政策中提到「**除非取得您的同意或其他法令之特別規定，本網站絕不會將您的個人資料揭露於第三人或使用於蒐集目的以外之其他用途。**」但實際上將使用者資料揭露給了第三方的服務，如下：
+若網站隱私權保護政策中提到「**除非取得您的同意或其他法令之特別規定，本網站絕不會將您的個人資料揭露於第三人或使用於蒐集目的以外之其他用途。**」但實際上將使用者資料揭露給了第三方的服務，如下：
 
 - 使用 Google Custom Search Engine（CSE），內部包含了 Google AdSense，讓所有使用者個人資料被迫被送到第三分私人公司。搜尋內容也會包含 Google 廣告並使他們獲益。可參考 [Google 自訂搜尋廣告政策](https://support.google.com/adsense/answer/7003954?hl=zh-Hant&sjid=6103718159839767491-AP)。建議尋找替代方案，或使用 [Google CSE 付費無廣告的服務](https://developers.google.com/custom-search/docs/paid_element?hl=zh-tw)。
 - 使用 YouTube video embed 網頁，內含廣告，同上。請參考 [YouTube 內嵌影片的廣告](https://support.google.com/youtube/answer/132596?hl=zh-Hant)。建議將廣告關掉或是將影片放到自己主機上使用 HTML `<video>` 嵌入。
