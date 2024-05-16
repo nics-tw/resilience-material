@@ -4,7 +4,7 @@
 
 為讓承辦人員可以收納管理程式碼及自動化部署流程，現行有 GitHub 及 GitLab 平台。因 GitHub 自建（self-hosted）仍須採購 GitHub enterprise 才能使用相應功能；而 GitLab 則提供 Community Edition (CE) 開放原始碼版本，雖有功能上限制，但足夠作為基礎自動化驗證及部署流程，因此以下為使用 GitLab 基礎建置。
 
-為了日後易於維護及升級便利，以下範例步驟使用 docker 來建立 GitLab 環境，以便讓承辦人員
+為了日後易於維護及升級便利，以下範例步驟使用 Docker 來建立 GitLab 環境作為示範，建議須依照機關環境評估以 [Official Linux package](https://about.gitlab.com/install/) 方式安裝部屬或 Docker 方式部屬。
 
 ### Prerequisite[^1]
 
@@ -76,7 +76,7 @@
     maowang-web-1   gitlab/gitlab-ce:16.7.3-ce.0   "/assets/wrapper"   web       9 minutes ago   Up 9 minutes (healthy)   0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp, 0.0.0.0:2224->22/tcp, :::2224->22/tcp
     ```
 
-7. 使用 `docker exec` 命令取得預設 root user 密碼。初次使用 root 密碼後，24 小時候此檔案會被自動移除，請儲存此密碼或登入後修改 root user 密碼s。
+7. 使用 `docker exec` 命令取得預設 root user 密碼。初次使用 root 密碼後，24 小時候此檔案會被自動移除，請儲存此密碼或登入後修改 root user 密碼。
 
     ```bash
     $ sudo docker exec -it YOUR_GITLAB_CONTAINER_NAME  grep 'Password:' /etc/gitlab/initial_root_password
