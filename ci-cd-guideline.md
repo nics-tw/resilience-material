@@ -1,6 +1,6 @@
 # CI/CD - 於 GitHub 上建立自動生成 SBOM 及漏洞掃描
 
-以下範例為在 GitHub 平台上，使用 GitHub 平台所提供的 CI/CD 工具 GitHub Action 訂立每次程式碼更新自動觸發自動化的生成 SBOM 文件及透過 OSV 工具自動化流程。
+使用 GitHub 平台所提供的 CI/CD 工具 GitHub Action 訂立每次程式碼更新自動觸發自動化的生成 SBOM 文件及透過 OSV 工具自動化流程。以下範例將以 [sbom2vans](https://github.com/nics-tw/sbom2vans) 專案為例。
 
 ## 名詞介紹
 
@@ -10,12 +10,12 @@ GitHub Actions 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 
 1. Workflow
     - workflow 是一系列定義的自動化步驟，由 YAML 格式文件所紀錄，通常存放在 `.github/workflows/` 目錄下。
-  - 每個 workflow 由 Event、Job 和 Step 所組成。
+    - 每個 workflow 由 Event、Job 和 Step 所組成。
 2. Event
     - Event 是指觸發 workflow 的事件。這些事件可以是推送程式碼、pull request、release 等。例如，當有人將程式碼推送到 main branch 時，可以觸發一個 workflow 來進行測試和部署。
 3. Job
     - Job 是 workflow 中的一個執行單位，包含一系列的 steps。每個 step 是一個可執行的 Shell 腳本，或是一個可執行的　Action。
-  - Job 可以在不同的 runner 上執行，這些 runner 由　GitHub 提供的或是 self-hosted runner
+    - Job 可以在不同的 runner 上執行，這些 runner 由　GitHub 提供的或是 self-hosted runner
 4. Action：
     - GitHub Actions 平台上的自定義應用程式，用於執行複雜但經常重複的任務。
     - GitHub Marketplace　提供了大量預設的 Action，也可以自行開發定義的　Actio　n來滿足特定需求。
