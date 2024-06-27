@@ -25,7 +25,7 @@ GitHub Actions 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 
 ### OSV（Open Source Vulnerability）
 
-一款由 Google 開源漏洞(Open Source Vulnerability，OSV)資料庫，透過 OSV 格式存儲漏洞資訊。OSV-Scanner 會基於 OSV 資料庫評估專案的依賴關係，顯示與專案相關的所有漏洞，開發人員可以快速查詢其軟體組件是否存在已知的安全問題。本示範將使用 [osv-scanner GitHub Action](https://google.github.io/osv-scanner/github-action/) 自動掃描專案是否具有漏洞。
+一款由 Google 開源漏洞（Open Source Vulnerability，OSV）資料庫，透過 OSV 格式存儲漏洞資訊。OSV-Scanner 會基於 OSV 資料庫評估專案的依賴關係，顯示與專案相關的所有漏洞，開發人員可以快速查詢其軟體組件是否存在已知的安全問題。本示範將使用 [osv-scanner GitHub Action](https://google.github.io/osv-scanner/github-action/) 自動掃描專案是否具有漏洞。
 
 ## 以 sbom2vans 專案為例
 
