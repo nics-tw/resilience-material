@@ -18,7 +18,7 @@ GitHub Actions 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
     - Job 可以在不同的 runner 上執行，這些 runner 由　GitHub 提供的或是 self-hosted runner
 4. Action：
     - GitHub Actions 平台上的自定義應用程式，用於執行複雜但經常重複的任務。
-    - GitHub Marketplace　提供了大量預設的 Action，也可以自行開發定義的　Actio　n來滿足特定需求。
+    - GitHub Marketplace　提供了大量預設的 Action，也可以自行開發定義的　Action 來滿足特定需求。
 5. Runner
     - Runner 是一個在工作流程觸發時運行你的工作流程的伺服器。每個 Runner 一次只能運行一個作業。GitHub 提供 Ubuntu Linux、Microsoft Windows 和 macOS  Runner 來運行你的工作流程
 
