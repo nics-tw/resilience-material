@@ -103,7 +103,7 @@
     $ sudo mkdir -p /srv/gitlab-runner/
     ```
 
-3. 於左側蘭選單 Admin Area -> CI/CD -> Runner 至 Runner 設定頁面，點選 New Instance runner。
+3. 於左側欄選單 Admin Area -> CI/CD -> Runner 至 Runner 設定頁面，點選 New Instance runner。
 
     ![設定 Runner 頁面](./img/runner-emtpy.png)
 
