@@ -9,7 +9,7 @@
 
 ### 可維護性
 - 廠商交付的原始碼與弱點掃描報告，機關需有獨立的驗證與佈署流程。
-- 建議機關建立自動化驗證與佈署流程，並使用工具來管理與掃描系統元件組成與可能弱點。 
+- 建議機關建立自動化驗證與佈署流程，並使用工具來管理與掃描系統元件組成與可能弱點。
 
 **[可維護性指引教材](./maintainable.md)**
 
@@ -17,3 +17,13 @@
 - 網站隱私權保護政策與網站行為不一致，建議機關放置 YouTube 影片與 Google 站內搜尋功能時，將廣告功能移除。
 
 **[易用性指引教材](./usability.md)**
+
+## 數位韌性領航員培訓課程教材
+
+### [2023 年](https://github.com/nics-tw/resilience-material/releases/tag/2023)
+
+- [數位韌性易用性-設計制度](https://github.com/nics-tw/resilience-material/releases/download/2023/usability_design-system.pdf)
+- [數位韌性易用性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/usability_principles-and-practices.pdf)
+- [數位韌性高可用性與可維護性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/ha-and-maintainability_principles-and-practices.pdf)
+- [數位韌性高可用性](https://github.com/nics-tw/resilience-material/releases/download/2023/high-availability.pdf)
+- [數位韌性可維護性](https://github.com/nics-tw/resilience-material/releases/download/2023/maintainability.pdf)
