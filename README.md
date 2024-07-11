@@ -22,8 +22,8 @@
 
 ### [2023 年](https://github.com/nics-tw/resilience-material/releases/tag/2023)
 
-- [數位韌性易用性-設計制度](https://github.com/nics-tw/resilience-material/releases/download/2023/usability_design-system.pdf)
-- [數位韌性易用性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/usability_principles-and-practices.pdf)
-- [數位韌性高可用性與可維護性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/ha-and-maintainability_principles-and-practices.pdf)
-- [數位韌性高可用性](https://github.com/nics-tw/resilience-material/releases/download/2023/high-availability.pdf)
-- [數位韌性可維護性](https://github.com/nics-tw/resilience-material/releases/download/2023/maintainability.pdf)
+- [數位韌性易用性-設計制度](https://github.com/nics-tw/resilience-material/releases/download/2023/usability_design-system.pdf)（SHA256: 16f2c30456b4b58e73b4bdc58a0d6b4f12e3eecdc9bfc70267edf891e00bbda4）
+- [數位韌性易用性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/usability_principles-and-practices.pdf)（SHA256: 17a97eb320c77c85853c6431bf5d60adc85b2bf508cb571e89b4f3935cd9fd69）
+- [數位韌性高可用性與可維護性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/ha-and-maintainability_principles-and-practices.pdf)（SHA256: 08c43247121351dc3c02a1ade6ef1fbc7d621d2c699b372fc93e6564117f684e）
+- [數位韌性高可用性](https://github.com/nics-tw/resilience-material/releases/download/2023/high-availability.pdf)（SHA256: 90164268c0ad982ad37e8c1101b4331cbf71d7c5ed408818fc87656fe1f19e64）
+- [數位韌性可維護性](https://github.com/nics-tw/resilience-material/releases/download/2023/maintainability.pdf)（SHA256: eb9af939835a87159a712154b8ee846d9a5a06efb9f68e7b3b797831f2cfb413）
