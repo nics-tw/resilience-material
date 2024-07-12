@@ -39,7 +39,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/nics-tw/resilience-material/tree/main/docs',
+            'https://github.com/nics-tw/resilience-material/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -50,7 +50,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: '數位韌性教材專區',
       logo: {
@@ -104,7 +104,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()}  <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.en" target="_blank">CC-BY-ND-4.0</a>. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
+      theme: prismThemes.okaidia,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
