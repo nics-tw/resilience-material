@@ -43,7 +43,7 @@ sbom2vans 專案為　golang 語言撰寫之 CLI 工具。於 [.github/workflows
 1. 使用 golang 選定 [golangci](https://github.com/golangci/golangci-lint) 為 linter 工具。
 2. golang 自身提供 [govulncheck](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck) 套件檢視是否具有已知漏洞問題。
 
-```
+```yaml
 jobs:
   # From https://github.com/golangci/golangci-lint-action
   golangci:
@@ -107,7 +107,7 @@ jobs:
 - on.pull_request 及 merge_group：依照一般開發流程通常會分為 main branch 及 dev branch，若在 dev branch 開發完後需要建立 pull request 才能進行 merge，因此也於這兩種場景增加卡關，確認無 CVE 漏洞後才能進行合併進 main branch
 
 
-```
+```yaml
 name: OSV-Scanner Scan
 
 on:
@@ -142,7 +142,7 @@ jobs:
 
 
 
-```
+```yaml
 jobs:
  name: Release
 
