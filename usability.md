@@ -14,7 +14,7 @@
 1. 於網站開啟[瀏覽器開發者工具](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)。
 2. 過濾篩 `adsense` 關鍵字，如 `cse.google.com/adsense/search/async-ads.js`。如過濾結果有相關 script，則代表使用的 CSE 包含了 Google AdSense，如以下截圖。
 
-![確認 CSE 使用 Google AdSense](./img/google-cse-script.png)
+![確認 CSE 使用 Google AdSense](./docs/common/img/google-cse-script.png)
 
 ### 申請非營利組織並關閉廣告功能[^1]
 
@@ -33,7 +33,7 @@
 
 1. 前往 YouTube 工作室。
 2. 選取左選單中的「內容」。
-3. 點按相關影片旁的營利圖示 ![營利圖示](./img/money.png)  。
+3. 點按相關影片旁的營利圖示 ![營利圖示](./docs/common/img/money.png)  。
 4. 在「營利」下拉式選單中點按「關閉」。
 5. 點按「儲存」。
 

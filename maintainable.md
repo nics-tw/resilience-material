@@ -91,11 +91,11 @@
 
 8. 預設 admin username 為 root，密碼為前一步驟輸出密碼。
 
-    ![登入介面](./img/login-page.png)
+    ![登入介面](./docs/common/img/login-page.png)
 
 9. 登入成功。
 
-    ![登入成功](./img/login-success.png)
+    ![登入成功](./docs/common/img/login-success.png)
 
 ### 使用 Docker 部署 GitLab runner[^3]
 
@@ -108,15 +108,15 @@
 
 3. 於左側欄選單 Admin Area -> CI/CD -> Runner 至 Runner 設定頁面，點選 New Instance runner。
 
-    ![設定 Runner 頁面](./img/runner-emtpy.png)
+    ![設定 Runner 頁面](./docs/common/img/runner-emtpy.png)
 
 4. 填寫 Tags，以下範例為 `shared`，勾選 Run untagged jobs 以讓此 runner 無須 tag 讓全部專案使用，並點選 Create Runner。
 
-    ![建立 Runner - 1](./img/create-runner-1.png)
+    ![建立 Runner - 1](./docs/common/img/create-runner-1.png)
 
 5. 建立 Runner 後，可以取得 Runner token。
 
-    ![建立 Runner - 2](./img/create-runner-2.png)
+    ![建立 Runner - 2](./docs/common/img/create-runner-2.png)
 
 6. 回到 GitLab runner 主機，使用 docker 註冊此主機為 GitLab runner。需填入以下資訊：
    - GitLab instance URL：GitLab 域名
@@ -190,7 +190,7 @@
 
 9. 回到 Runner 頁面，檢視 Runner 狀態為 running。
 
-    ![Runner 狀態 running](./img/gitlab-runner-status.png)
+    ![Runner 狀態 running](./docs/common/img/gitlab-runner-status.png)
 
 
 [^1]: [Installation system requirements | GitLab](https://docs.gitlab.com/ee/install/requirements.html)
