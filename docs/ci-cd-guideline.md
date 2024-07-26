@@ -103,7 +103,7 @@ jobs:
 參考 [OSV-Scanner GitHub Action](https://google.github.io/osv-scanner/github-action/) 說明，引用 google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@v1.7.1 定義 template。
 
 在觸發 Event 上特別多定義：
-- on.schedule 定期進行弱點掃描。倘若專案進入維護其後，須定期檢視是否有新的漏洞需要盡早修復。GitHub Action 提供 cronjob 語法，此範例為每週一 00:00 分觸發掃描。
+- on.schedule 定期進行弱點掃描。倘若專案進入維護期後，須定期檢視是否有新的漏洞需要盡早修復。GitHub Action 提供 cronjob 語法，此範例為每週一 00:00 分觸發掃描。
 - on.pull_request 及 merge_group：依照一般開發流程通常會分為 main branch 及 dev branch，若在 dev branch 開發完後需要建立 pull request 才能進行 merge，因此也於這兩種場景增加卡關，確認無 CVE 漏洞後才能進行合併進 main branch
 
 
