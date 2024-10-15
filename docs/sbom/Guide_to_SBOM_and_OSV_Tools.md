@@ -20,9 +20,7 @@ OSV (Open Source Vulnerability): 是一種公開的軟體漏洞資料庫。透�
 
 [4. 於 **Excel 匯入** OSV-Scanner 產生的 **markdown 格式報告**，整理後，立即進行元件修補或緩解措施](#報告檢視)
 
-[5. Change log 版本異動說明](#change-log)
-
-[6. 附錄：其他 SBOM 檔案產生工具](#附錄其他-sbom-檔案產生工具)
+[5. 附錄：其他 SBOM 檔案產生工具](#附錄其他-sbom-檔案產生工具)
 
 # Syft
 
