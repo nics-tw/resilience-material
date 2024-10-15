@@ -296,7 +296,7 @@ jq -r '
 本操作文件將使用 Windows 10 與 Ubuntu Desktop 22.04 LTS 進行以下測試  
 掃描 Github 開源專案 blaze 版本 2.1.2   
 網址：[https://github.com/blenderskool/blaze/tree/v2.1.2](https://github.com/blenderskool/blaze/tree/v2.1.2)  
-![](./img/imageA1)
+![](./img/imageA1.png)
 
 # Microsoft sbom-tool 開源工具說明
 
