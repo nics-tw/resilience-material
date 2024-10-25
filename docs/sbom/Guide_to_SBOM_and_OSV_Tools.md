@@ -63,8 +63,8 @@ $env:SYFT_FORMAT_PRETTY="true"; syft ./rumors-line-bot-master -o spdx-json=./out
 ```
 
 `註：`  
-`"./path/to/repo_dir": 為來源資料夾路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”./中文路徑/to/repo_dir”。`  
-`"./output_dir/syft.spdx.json": 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”C:/輸出/syft.spdx.json”。`
+`"./path/to/repo_dir": 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”./中文路徑/to/repo_dir”。`  
+`"./output_dir/syft.spdx.json": 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/syft.spdx.json”。`
 
 輸出 CycloneDX 格式，為了使工具辨識該檔案為 CycloneDX SBOM，副檔名最好為 \*.cdx.json，Syft 預設會最小化輸出檔案，加上 `SYFT_FORMAT_PRETTY=true` 會讓輸出的檔案比較易讀。
 
@@ -113,8 +113,8 @@ trivy repo --format spdx-json --output ./sbom/trivy.spdx.json ./path/to/repo
 ```
 
 `註：`  
-`"./path/to/repo": 為來源資料夾路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”./中文路徑/to/repo”。`  
-`"./sbom/trivy.spdx.json": 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”C:/輸出sbom/trivy.spdx.json”。`
+`"./path/to/repo": 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”./中文路徑/to/repo”。`  
+`"./sbom/trivy.spdx.json": 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出sbom/trivy.spdx.json”。`
 
 輸出 CycloneDX 格式，為了使工具辨識該檔案為 CycloneDX SBOM，副檔名最好為 \*.cdx.json。
 
@@ -167,8 +167,8 @@ osv-scanner --sbom=./path/to/sbom/file --format=table --output=report.txt
 ```
 
 `註：`  
-`./path/to/sbom/file: 為來源檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”./中文路徑/to/sbom/file”。`  
-`report.txt: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”C:/輸出/report.txt”。`
+`./path/to/sbom/file: 為來源檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”./中文路徑/to/sbom/file”。`  
+`report.txt: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/report.txt”。`
 
 輸出成 json 格式，資訊則會比較詳細。
 
@@ -184,8 +184,8 @@ osv-scanner --format=markdown --output=report.md -r ./path/to/sbom_dir
 ```
 
 `註：`  
-`./path/to/sbom_dir: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用“符號包含，如”./中文路徑/to/sbom_dir”。`  
-`report.md: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如”C:/輸出/report.md”。`
+`./path/to/sbom_dir: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”/中文路徑/to/sbom_dir”。`  
+`report.md: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/report.md”。`
 
 ## 離線模式
 
