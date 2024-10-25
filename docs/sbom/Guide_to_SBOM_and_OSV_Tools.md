@@ -12,17 +12,17 @@ OSV (Open Source Vulnerability): 是一種公開的軟體漏洞資料庫。透�
 
 # 本文件內容
 
-[1. 使用 **Syft** 掃描專案**產生 SBOM 檔案**](#syft)
+[1. 使用 **Syft** 掃描專案**產生 SBOM 檔案**](#1-使用-syft-掃描專案產生-sbom-檔案)
 
-[2. 使用 **Trivy** 掃描專案**產生 SBOM 檔案**](#trivy)
+[2. 使用 **Trivy** 掃描專案**產生 SBOM 檔案**](#2-使用-trivy-掃描專案產生-sbom-檔案)
 
-[3. 使用 **OSV-Scanner** 掃描所有 Syft 及 Trivy 產生的 SBOM 檔案，**輸出 markdown 格式報告**](#osv-scanner)
+[3. 使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#3-使用-osv-scanner-掃描-sbom-檔案)
 
-[4. 於 **Excel 匯入** OSV-Scanner 產生的 **markdown 格式報告**，整理後，立即進行元件修補或緩解措施](#報告檢視)
+[4. 於 **Excel 匯入** OSV-Scanner 產生的 **markdown 格式報告**，整理後，立即進行元件修補或緩解措施](#4-於-excel-匯入-osv-scanner-產生報告)
 
-[5. 附錄：其他 SBOM 檔案產生工具](#附錄其他-sbom-檔案產生工具)
+[5. 附錄：其他 SBOM 檔案產生工具](#5-附錄其他-sbom-檔案產生工具)
 
-# Syft
+# 1. 使用 Syft 掃描專案產生 SBOM 檔案 
 
 ## v1.8.0
 
@@ -63,8 +63,8 @@ $env:SYFT_FORMAT_PRETTY="true"; syft ./rumors-line-bot-master -o spdx-json=./out
 ```
 
 `註：`  
-`./path/to/repo_dir: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”./中文路徑/to/repo_dir”。`  
-`./output_dir/syft.spdx.json: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”C:/輸出/syft.spdx.json”。`
+`"./path/to/repo_dir": 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”./中文路徑/to/repo_dir”。`  
+`"./output_dir/syft.spdx.json": 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/syft.spdx.json”。`
 
 輸出 CycloneDX 格式，為了使工具辨識該檔案為 CycloneDX SBOM，副檔名最好為 \*.cdx.json，Syft 預設會最小化輸出檔案，加上 `SYFT_FORMAT_PRETTY=true` 會讓輸出的檔案比較易讀。
 
@@ -84,7 +84,7 @@ Windows PowerShell
 $env:SYFT_FORMAT_PRETTY="true"; syft ./path/to/repo_dir -o cyclonedx-json@1.5=./output_dir/syft.cdx.json
 ```
 
-# Trivy 
+# 2. 使用 Trivy 掃描專案產生 SBOM 檔案 
 
 ## v0.5.3
 
@@ -113,8 +113,8 @@ trivy repo --format spdx-json --output ./sbom/trivy.spdx.json ./path/to/repo
 ```
 
 `註：`  
-`./path/to/repo: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”./中文路徑/to/repo”。`  
-`./sbom/trivy.spdx.json: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”C:/輸出sbom/trivy.spdx.json”。`
+`"./path/to/repo": 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”./中文路徑/to/repo”。`  
+`"./sbom/trivy.spdx.json": 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出sbom/trivy.spdx.json”。`
 
 輸出 CycloneDX 格式，為了使工具辨識該檔案為 CycloneDX SBOM，副檔名最好為 \*.cdx.json。
 
@@ -146,14 +146,14 @@ $ trivy fs --scanners license --license-full .
 
 ```
 
-# OSV-Scanner 
+# 3. 使用 OSV-Scanner 掃描 SBOM 檔案 
 
 ## v1.8.1
 
 ## 安裝
 
 OSV-Scanner 安裝文件[https://google.github.io/osv-scanner/installation/\#installation](https://google.github.io/osv-scanner/installation/#installation)  
-下載可執行檔 [https://github.com/anchore/syft/releases](https://github.com/anchore/syft/releases)
+下載可執行檔 [https://github.com/google/osv-scanner/releases](https://github.com/google/osv-scanner/releases)
 
 ## 從 SBOM 檔案產生報告 
 
@@ -167,8 +167,8 @@ osv-scanner --sbom=./path/to/sbom/file --format=table --output=report.txt
 ```
 
 `註：`  
-`./path/to/sbom/file: 為來源檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”./中文路徑/to/sbom/file”。`  
-`report.txt: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如 ”C:/輸出/report.txt”。`
+`./path/to/sbom/file: 為來源檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”./中文路徑/to/sbom/file”。`  
+`report.txt: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/report.txt”。`
 
 輸出成 json 格式，資訊則會比較詳細。
 
@@ -184,8 +184,8 @@ osv-scanner --format=markdown --output=report.md -r ./path/to/sbom_dir
 ```
 
 `註：`  
-`./path/to/sbom_dir: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用“符號包含，如”./中文路徑/to/sbom_dir”。`  
-`report.md: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用“符號包含，如”C:/輸出/report.md”。`
+`./path/to/sbom_dir: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”/中文路徑/to/sbom_dir”。`  
+`report.md: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/report.md”。`
 
 ## 離線模式
 
@@ -207,7 +207,7 @@ osv-scanner --experimental-offline --experimental-download-offline-databases --s
 
 OSV-Scanner 內建[支援掃描](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/)一些程式語言，如果專案有使用 package manager，且沒有引用 jar 或 dll，可以考慮直接使用 OSV-Scanner 就好。（註：OSV-Scanner 不支援輸出 SBOM，有輸出 SBOM 檔案的需求，還是需要使用其他工具。）
 
-## 報告檢視
+# 4. 於 **Excel 匯入** OSV-Scanner 產生報告 
 
 1. 因為各個 SBOM 掃描工具支援的語言、能解析的二進位檔 (Binary) 以及元件管理工具有所不同，能掃描到的依賴元件亦不盡相同，建議將所有工具產生的 SBOM 檔放在同一個資料夾，讓 OSV-Scanner 一併掃描。   
      
@@ -283,7 +283,7 @@ jq -r '
    4. 升版建議資訊，輸出格式示意：  
       ![](./img/image10.png)
 
-# 附錄：其他 SBOM 檔案產生工具
+# 5. 附錄：其他 SBOM 檔案產生工具
 
 建議參考本文使用 Syft 與 Trivy 產出 SBOM 檔案，以下提供另外兩種替代 SBOM 工具操作說明：
 
@@ -375,7 +375,7 @@ Microsoft sbom-tool 開源專案，工具支援目前主流的 Package Managers�
 圖 7 manifest.spdx.json 查看元件關係
 
 步驟五、產出 OSV 報告  
-請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#osv-scanner)
+請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#3-使用-osv-scanner-掃描-sbom-檔案)
 
 * Ubuntu Desktop 22.04 LTS 環境操作步驟
 
@@ -450,7 +450,7 @@ Microsoft sbom-tool 開源專案，工具支援目前主流的 Package Managers�
 圖 22 manifest.spdx.json 查看元件關係
 
 步驟五、產出 OSV 報告  
-請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#osv-scanner)
+請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#3-使用-osv-scanner-掃描-sbom-檔案)
 
 # CycloneDX Generator 開源工具說明
 
@@ -539,4 +539,4 @@ CycloneDX Generator 開源工具，工具支援目前主流的 Package Managers�
 圖 35 sbom.json 查看元件關係
 
 步驟五、產出 OSV 報告  
-請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#osv-scanner)
+請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#3-使用-osv-scanner-掃描-sbom-檔案)
