@@ -29,13 +29,20 @@
 2. 將憑證使用以下 openssl 命令轉換為 pem 格式。
 
 ```
-openssl x509 -inform der -in 405DB92C677DA6AAD09F96A139842C42.cer -out hc-cert-2024.pem
+$ openssl x509 -inform der -in 405DB92C677DA6AAD09F96A139842C42.cer -out hc-cert-2024.pem
 ```
 
 3. GCP Certificate Manager 須使用已解密私鑰，使用以下 openssl 命令將加密私鑰解密並匯出。
 
+指令：
+
 ```
-openssl rsa -in ./hc.nics.nat.gov.tw_server.key -out ./hc.nics.nat.gov.tw_server-without-password.key
+$ openssl rsa -in ./hc.nics.nat.gov.tw_server.key -out ./hc.nics.nat.gov.tw_server-without-password.key
+```
+
+輸出結果：
+
+```
 Enter pass phrase for ./hc.nics.nat.gov.tw_server.key:
 writing RSA key
 ```
@@ -92,13 +99,20 @@ $ cat ./GTLSCA_All/*.crt >> hc-cert-2024-full.pem
 2. 將憑證使用以下 openssl 命令轉換為 pem 格式。
 
 ```
-openssl x509 -inform der -in 405DB92C677DA6AAD09F96A139842C42.cer -out hc-cert-2024.pem
+$ openssl x509 -inform der -in 405DB92C677DA6AAD09F96A139842C42.cer -out hc-cert-2024.pem
 ```
 
 3. 使用以下 openssl 命令將加密私鑰解密並匯出。
 
+指令：
+
 ```
-openssl rsa -in ./hc.nics.nat.gov.tw_server.key -out ./hc.nics.nat.gov.tw_server-without-password.key
+$ openssl rsa -in ./hc.nics.nat.gov.tw_server.key -out ./hc.nics.nat.gov.tw_server-without-password.key
+```
+
+輸出結果：
+
+```
 Enter pass phrase for ./hc.nics.nat.gov.tw_server.key:
 writing RSA key
 ```
@@ -124,27 +138,24 @@ writing RSA key
 
 8. AWS CloudFront 有諸多設定，以下擷圖主要以 TLS 憑證及 HTTP/2（或 HTTP/3）設定展示為主。
     - Origin 設定您的原站域名
-        - 在此為示範測試，僅作為驗證使用 hc.nics.nat.gov.tw。一般來說，建議設定原站域名
-
-![](./img/aws-05.png)
-
+        - 在此為示範測試，僅作為驗證使用 hc.nics.nat.gov.tw。一般來說，建議設定原站域名 ![](./img/aws-05.png)
     - 於 Settings 段落選擇
         - Custom SSL certificate 選擇步驟 4-6 建立憑證
-        - Alternate domain name（CNAME）：新增 CNAME，因此範例為 hc.nics.nat.gov.tw 網站，故新增 hc.nics.nat.gov.tw
-
-![](./img/aws-06.png)
-
-    - Supported HTTP versions：勾選啟用「HTTP/2」 及 「HTTP/3」
-
-![](./img/aws-07.png)
+        - Alternate domain name（CNAME）：新增 CNAME，因此範例為 hc.nics.nat.gov.tw 網站，故新增 hc.nics.nat.gov.tw ![](./img/aws-06.png)
+        - Supported HTTP versions：勾選啟用「HTTP/2」 及 「HTTP/3」![](./img/aws-07.png)
 
 ### 檢視步驟
 
 因 hc.nics.nat.gov.tw 建制於 GCP 上，並未將 CNAME 指向於 CloudFront 所產生的 domain，以下使用 openssl 命令檢視 CloudFront 關聯 TLS 憑證是否正確。
 
-```
+指令：
 
-openssl s_client -showcerts -connect divxxxxxxjm0.cloudfront.net:443 -servername hc.nics.nat.gov.tw </dev/null
+```
+$ openssl s_client -showcerts -connect divxxxxxxjm0.cloudfront.net:443 -servername hc.nics.nat.gov.tw </dev/null
+```
+輸出結果：
+
+```
 CONNECTED(00000003)
 depth=3 C = TW, O = "Chunghwa Telecom Co., Ltd.", OU = ePKI Root Certification Authority
 verify return:1
