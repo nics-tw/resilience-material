@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 type FeatureItem = {
   title: string;
@@ -10,7 +11,9 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '易用性',
+    title: (
+      <Link to="/material/common/usability">易用性</Link>
+    ),
     Svg: require('@site/static/img/undraw_experience_design.svg').default,
     description: (
       <>
@@ -19,7 +22,9 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '可維護性',
+    title: (
+      <Link to="/material/common/maintainable">可維護性</Link>
+    ),
     Svg: require('@site/static/img/undraw_engineering_team.svg').default,
     description: (
       <>
@@ -28,7 +33,9 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '高可用性',
+    title: (
+      <Link to="/material/common/high-availability">高可用性</Link>
+    ),
     Svg: require('@site/static/img/undraw_server_down.svg').default,
     description: (
       <>
