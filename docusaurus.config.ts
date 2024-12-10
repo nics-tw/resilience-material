@@ -81,10 +81,6 @@ const config: Config = {
               label: '數位韌性領航員培訓課程教材',
               to: '/material/training',
             },
-            {
-              label: '共通性建議教材',
-              to: '/material/category/共同性教材',
-            }
           ],
         },
         {
