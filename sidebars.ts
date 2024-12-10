@@ -3,20 +3,9 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   materialSidebar: [
     {
-      type: 'category',
-      label: '高可用性', // 按鈕名稱
-      collapsed: false, // 預設展開
-      link: {
-        type: 'doc',
-        id: 'common/high-availability', // 指向的文檔
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'cdn/cdn-gov-guideline', // CDN 文檔
-          label: '政府憑證如何使用於 CDN 之說明',
-        },
-      ],
+      type: 'doc',
+      id: 'common/usability',
+      label: '易用性',
     },
     {
       type: 'category', // 可維護性改為分類
@@ -40,9 +29,20 @@ const sidebars: SidebarsConfig = {
       ],
     },
     {
-      type: 'doc',
-      id: 'common/usability',
-      label: '易用性',
+      type: 'category',
+      label: '高可用性', // 按鈕名稱
+      collapsed: false, // 預設展開
+      link: {
+        type: 'doc',
+        id: 'common/high-availability', // 指向的文檔
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'cdn/cdn-gov-guideline', // CDN 文檔
+          label: '政府憑證如何使用於 CDN 之說明',
+        },
+      ],
     },
   ],
 };
