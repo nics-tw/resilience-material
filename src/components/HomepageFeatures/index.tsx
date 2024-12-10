@@ -46,10 +46,14 @@ const FeatureList: FeatureItem[] = [
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
+  const linkPath = (title as JSX.Element).props.to;
+  
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
+        <Link to={linkPath}>
         <Svg className={styles.featureSvg} role="img" />
+        </Link>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
