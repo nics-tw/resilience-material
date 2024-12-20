@@ -129,7 +129,7 @@ course)的影響，也強化「應採取作為」的迫切性。
   - A. 未完全符合可及性標準的情況，該情況對身心功能障礙者有何影響，其原因、後果、對策、計畫及替代方案為何？
   - B. 影響可及性的非技術性問題清單，其原因、後果、對策及計畫為何？
 5. 具有用以申訴的回饋機制，以及在公部門機關未能妥善處理申訴時，向行政監察官員投訴的機會。
-6. 表明機關「穩定管制」程度的狀態(參見[[可及性狀態]](#_heading=h.4d34og8))。
+6. 表明機關「穩定管制」程度的狀態(參見[[可及性狀態]](#可及性狀態))。
 7. 委員會成員或相關權責人員的簽署。
 
 此外，機關應發布其所有親和力宣告的總覽。公部門機關所有網站、內部資通系統、應用程式與數位資訊的可及性資訊，都必須讓監管機關或使用者能夠找到。
@@ -310,9 +310,9 @@ course)的影響，也強化「應採取作為」的迫切性。
 
 - [digitoegankelijk.nl/toegankelijkheidsverklaring](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring)
 
--   [digitoegankelijk.nl/onderwerpen/themas/organiseren-en-beheren](https://www.digitoegankelijk.nl/aan-de-slag/handleiding)
+- [digitoegankelijk.nl/onderwerpen/themas/organiseren-en-beheren](https://www.digitoegankelijk.nl/aan-de-slag/handleiding)
 
--   [[w3.org/WAI/roles/managers](https://www.w3.org/WAI/roles/managers/)
+- [w3.org/WAI/roles/managers](https://www.w3.org/WAI/roles/managers/)
 
 #### 法規及研考主管
 
@@ -350,7 +350,7 @@ course)的影響，也強化「應採取作為」的迫切性。
 
 - [digitoegankelijk.nl/toegankelijkheidsverklaring](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring)
 
-- [[=digitoegankelijk.nl/onderwerpen/themas/organiseren-en-beheren](https://www.digitoegankelijk.nl/aan-de-slag/handleiding)
+- [=digitoegankelijk.nl/onderwerpen/themas/organiseren-en-beheren](https://www.digitoegankelijk.nl/aan-de-slag/handleiding)
 
 - [w3.org/WAI/roles/managers](https://www.w3.org/WAI/roles/managers/)
 
