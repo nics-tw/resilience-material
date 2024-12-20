@@ -350,7 +350,7 @@ course)的影響，也強化「應採取作為」的迫切性。
 
 - [digitoegankelijk.nl/toegankelijkheidsverklaring](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring)
 
-- [=digitoegankelijk.nl/onderwerpen/themas/organiseren-en-beheren](https://www.digitoegankelijk.nl/aan-de-slag/handleiding)
+- [digitoegankelijk.nl/onderwerpen/themas/organiseren-en-beheren](https://www.digitoegankelijk.nl/aan-de-slag/handleiding)
 
 - [w3.org/WAI/roles/managers](https://www.w3.org/WAI/roles/managers/)
 
