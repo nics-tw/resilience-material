@@ -25,7 +25,7 @@
   - [資訊顧問](#資訊顧問)
   - [開發人員或測試人員](#開發人員或測試人員)
   - [人力資源顧問或培訓顧問](#人力資源顧問或培訓顧問)
-  - [齊心協力，保障數位可及性！](#齊心協力保障數位可及性)
+- [齊心協力，保障數位可及性！](#齊心協力保障數位可及性)
 
 ### 1 引言
 
@@ -798,7 +798,7 @@ ARIA，因而造成諸多障礙。若選擇使用現有的開發框架，您應�
 
 - [rijksoverheid.nl/onderwerpen/rechten-van-mensen-met-een-handicap](https://www.rijksoverheid.nl/onderwerpen/rechten-van-mensen-met-een-handicap)
 
-#### 齊心協力，保障數位可及性！
+### 齊心協力，保障數位可及性！
 
 透過各部門與不同角色的共同努力，管理數位可及性
 
