@@ -102,7 +102,7 @@ course)的影響，也強化「應採取作為」的迫切性。
 
 > [!提示]
 >
-> 更多資訊請參考 [digitoegankelijk.nl/toegankelijkheidsverklaring](digitoegankelijk.nl/toegankelijkheidsverklaring) 或使用 [toegankelijkheidsverklaring.nl](toegankelijkheidsverklaring.nl) 編製完整的親和力宣告
+> 更多資訊請參考 [digitoegankelijk.nl/toegankelijkheidsverklaring](https://digitoegankelijk.nl/toegankelijkheidsverklaring) 或使用 [toegankelijkheidsverklaring.nl](https://toegankelijkheidsverklaring.nl) 編製完整的親和力宣告
 
 #### 可及性狀態
 
