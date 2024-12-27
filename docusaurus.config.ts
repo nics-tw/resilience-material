@@ -90,10 +90,6 @@ const config: Config = {
               label: '政府網站設計原則',
               href: 'https://guide.nics.nat.gov.tw/'
             },
-            {
-              label: 'SBOM 銜接 VANS 規格工具',
-              href: 'https://github.com/nics-tw/sbom2vans',
-            },
           ],
         },
       ],
