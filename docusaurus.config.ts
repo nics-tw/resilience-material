@@ -7,23 +7,15 @@ const config: Config = {
   tagline: '系統在變動或極端的環境下，持續提供美好的服務，並能在故障時優雅復原',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://material.nics.nat.gov.tw',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'nics-tw', // Usually your GitHub org/user name.
-  projectName: 'resilience-material', // Usually your repo name.
+  organizationName: 'nics-tw',
+  projectName: 'resilience-material',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hant',
     locales: ['zh-Hant'],
@@ -36,21 +28,21 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'material',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/nics-tw/resilience-material/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-HY2XBCL1WK',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: '數位韌性教材專區',
       logo: {
@@ -62,7 +54,12 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'materialSidebar',
           position: 'left',
-          label: '教材',
+          label: '共通性建議',
+        },
+        {
+          label: '數位韌性教材', // 新增 Tab
+          to: '/material/training',
+          position: 'left',
         },
         {
           href: 'https://github.com/nics-tw/resilience-material',
@@ -75,20 +72,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: '教材',
-          items: [
-            {
-              label: '數位韌性領航員培訓課程教材',
-              to: '/material/training',
-            },
-          ],
-        },
-        {
           title: '相關連結',
           items: [
             {
               label: '政府網站設計原則',
-              href: 'https://guide.nics.nat.gov.tw/'
+              href: 'https://guide.nics.nat.gov.tw/',
             },
           ],
         },
