@@ -36,21 +36,21 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'material',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/nics-tw/resilience-material/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-HY2XBCL1WK',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: '數位韌性教材專區',
       logo: {
@@ -62,7 +62,12 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'materialSidebar',
           position: 'left',
-          label: '教材',
+          label: '共通性建議',
+        },
+        {
+          label: '數位韌性教材', // 新增 Tab
+          to: '/material/training',
+          position: 'left',
         },
         {
           href: 'https://github.com/nics-tw/resilience-material',
@@ -75,20 +80,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: '教材',
-          items: [
-            {
-              label: '數位韌性領航員培訓課程教材',
-              to: '/material/training',
-            },
-          ],
-        },
-        {
           title: '相關連結',
           items: [
             {
               label: '政府網站設計原則',
-              href: 'https://guide.nics.nat.gov.tw/'
+              href: 'https://guide.nics.nat.gov.tw/',
             },
           ],
         },
