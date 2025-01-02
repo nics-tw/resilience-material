@@ -7,15 +7,23 @@ const config: Config = {
   tagline: '系統在變動或極端的環境下，持續提供美好的服務，並能在故障時優雅復原',
   favicon: 'img/favicon.ico',
 
+  // Set the production url of your site here
   url: 'https://material.nics.nat.gov.tw',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  organizationName: 'nics-tw',
-  projectName: 'resilience-material',
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'nics-tw', // Usually your GitHub org/user name.
+  projectName: 'resilience-material', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hant',
     locales: ['zh-Hant'],
