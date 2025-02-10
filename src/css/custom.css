@@ -40,5 +40,5 @@
 }
 
 .footer a:hover {
-  color: #ffd700 !important; /* 滑鼠懸停時變成金黃色 */
+  color: #009999 !important; /* 滑鼠懸停時色系一致化(藍綠色) */
 }

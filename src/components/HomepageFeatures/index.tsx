@@ -47,22 +47,15 @@ function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       {/* 讓整個圖片可點擊 */}
-      <div 
-        className="text--center" 
-        onClick={() => window.location.href = link} 
-        style={{ cursor: 'pointer' }} // 滑鼠指標變成可點擊
-      >
-        <Svg className={styles.featureSvg} role="img" />
+      <div className="text--center">
+        <Link to={link}>
+          <Svg className={styles.featureSvg} role="img" aria-label={title} />
+        </Link>
       </div>
       
       <div className="text--center padding-horiz--md">
-        {/* 讓標題可點擊 */}
-        <Heading 
-          as="h2" 
-          onClick={() => window.location.href = link} 
-          style={{ cursor: 'pointer', color: 'inherit', textDecoration: 'none' }} // 保持標題樣式一致
-        >
-          {title}
+        <Heading as="h2">
+          <Link to={link}>{title}</Link>
         </Heading>
         <p>{description}</p>
       </div>
