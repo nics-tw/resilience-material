@@ -43,16 +43,18 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description, link}: FeatureItem) {
+function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
+      {/* 讓整個圖片可點擊 */}
       <div className="text--center">
         <Link to={link}>
-          <Svg className={styles.featureSvg} role="img" />
+          <Svg className={styles.featureSvg} role="img" aria-label={title} />
         </Link>
       </div>
+      
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">
+        <Heading as="h2">
           <Link to={link}>{title}</Link>
         </Heading>
         <p>{description}</p>
