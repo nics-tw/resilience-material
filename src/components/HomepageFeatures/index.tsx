@@ -43,17 +43,26 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description, link}: FeatureItem) {
+function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Link to={link}>
-          <Svg className={styles.featureSvg} role="img" />
-        </Link>
+      {/* 讓整個圖片可點擊 */}
+      <div 
+        className="text--center" 
+        onClick={() => window.location.href = link} 
+        style={{ cursor: 'pointer' }} // 滑鼠指標變成可點擊
+      >
+        <Svg className={styles.featureSvg} role="img" />
       </div>
+      
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">
-          <Link to={link}>{title}</Link>
+        {/* 讓標題可點擊 */}
+        <Heading 
+          as="h2" 
+          onClick={() => window.location.href = link} 
+          style={{ cursor: 'pointer', color: 'inherit', textDecoration: 'none' }} // 保持標題樣式一致
+        >
+          {title}
         </Heading>
         <p>{description}</p>
       </div>

@@ -32,3 +32,13 @@
 [class*="lastUpdated"] {
   display: none;
 }
+
+/* 針對 footer 內的超連結進行樣式調整 */
+.footer a {
+  color: #ffffff !important;  /* 設定白色文字 */
+  text-decoration: underline; /* 增加底線，提高可讀性 */
+}
+
+.footer a:hover {
+  color: #ffd700 !important; /* 滑鼠懸停時變成金黃色 */
+}
