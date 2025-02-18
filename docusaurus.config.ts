@@ -86,6 +86,23 @@ const config: Config = {
               label: '政府網站設計原則',
               href: 'https://guide.nics.nat.gov.tw/',
             },
+            {
+              label: '國家資通安全研究院 數位韌性',
+              href: 'https://www.nics.nat.gov.tw/core_business/digital_resilience/Digital_Resilience_Materials/',
+            },
+            {
+              label: 'YouTube 數位韌性',
+              href: 'https://www.youtube.com/@DigitalResilience',
+            },
+          ],
+        },
+        {
+          title: '聯繫我們',
+          items: [
+            {
+              label: '聯絡信箱',
+              href: 'mailto:RA-5@nics.nat.gov.tw', // 點擊會開啟 email
+            },
           ],
         },
       ],
