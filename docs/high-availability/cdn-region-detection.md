@@ -30,12 +30,12 @@
 - 以下藉將由線上網站工具分別從臺灣與中港澳執行 Traceroute 測試經過的路由節點。
 
 1. 藉由線上網站工具，從臺灣執行 Traceroute 測試
- - 1.1. Measurement Type：選擇 “Traceroute”
- - 1.2. IP Version：選擇 “IPv4”
- - 1.3. Country / Select Probe：選擇“TW”臺灣
- - 1.4. Select Probe：選擇“Probe 60763: Data Communication B (AS3462): New Taipei City, New Taipei City, TW”臺灣的測試點
- - 1.5. Target Address 欄位中輸入測試的網站網址 ( 例如 www.cloudflare.com )
- - 1.6. 點擊 “Submit”，開始 Traceroute 測試
+    - 1.1. Measurement Type：選擇 "Traceroute"
+    - 1.2. IP Version：選擇 "IPv4"
+    - 1.3. Country / Select Probe：選擇"TW"臺灣
+    - 1.4. Select Probe：選擇"Probe 60763: Data Communication B (AS3462): New Taipei City, New Taipei City, TW"臺灣的測試點
+    - 1.5. Target Address 欄位中輸入測試的網站網址 ( 例如 www.cloudflare.com )
+    - 1.6. 點擊 "Submit"，開始 Traceroute 測試
 
 ![](./img/traceroute-01.png)
 
@@ -53,13 +53,13 @@ h254.s98.ts.hinet.net (168.95.98.254) [AS3462] 中華電信節點
 ![](./img/traceroute-02.png)
 
 2. 藉由線上工具，從中港澳執行 Traceroute 測試
- - 2.1. Measurement Type：選擇 “Traceroute”
- - 2.2. IP Version：選擇 “IPv4”
- - 2.3. Country：選擇中港澳的測試點，範例選擇 “HK”香港
- - 2.4. Select Probe：選擇 “Probe 7030: Misaka Network&amp;comma (AS23961): None, None, HK”香港的測試節點
- - 2.5. Target Address 欄位中輸入測試的網站網址  
+    - 2.1. Measurement Type：選擇 “Traceroute”
+    - 2.2. IP Version：選擇 “IPv4”
+    - 2.3. Country：選擇中港澳的測試點，範例選擇 “HK”香港
+    - 2.4. Select Probe：選擇 “Probe 7030: Misaka Network&amp;comma (AS23961): None, None, HK”香港的測試節點
+    - 2.5. Target Address 欄位中輸入測試的網站網址  
 ( 例如 www.cloudflare.com )  
- - 2.6. 點擊 “Submit”，開始 Traceroute 測試
+    - 2.6. 點擊 “Submit”，開始 Traceroute 測試
 
 ![](./img/traceroute-03.png)
 
