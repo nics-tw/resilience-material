@@ -76,7 +76,7 @@ cloudflare-hkg.cdn77.com (45.134.215.9) GB CDN77-peerlinks
 
 ![](./img/traceroute-04.png)
 
-## 使用 Get 功能工具檢測 HTTP 回應標頭資訊由哪個區域機房回應，以 dotcom-tools 為例
+## 使用 Get 功能工具檢測 HTTP 回應標頭資訊由哪個區域機房回應，以 [dotcom-tools](https://www.dotcom-tools.com/) 為例
 
 - 由於 CDN 節點通常會選擇距離最近的機房，因此可以使用有 Get 功能的線上工具，透過 Get 線上工具所管理的中港澳主機進行 HTTP 請求回應要求。
 - 測試過程中，通過檢查 HTTP 回應（HTTP Header），驗證流量是否避開中港澳的節點，並選擇其他區域的節點（如新加坡或美國）來處理請求。
