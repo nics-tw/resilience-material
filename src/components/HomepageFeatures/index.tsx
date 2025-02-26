@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
         讓系統更貼近使用者，提供友善的使用者介面，讓使用者能夠上手提高無障礙界面。
       </>
     ),
-    link: '/material/accessbility',
+    link: '/material/category/易用性',
   },
   {
     title: '可維護性',
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
         提高程式碼的掌控權，建立自動化 CI/CD 流程，包含自動化產生 SBOM、程式碼檢查、程式碼覆蓋率等。
       </>
     ),
-    link: '/material/maintainable',
+    link: '/material/category/可維護性',
   },
   {
     title: '高可用性',
@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
         建制高可用性的系統，其 RTO/RPO 數值應符合自動化備份、DR site 恢復等，提供系統穩定性。
       </>
     ),
-    link: '/material/high-availability',
+    link: '/material/category/高可用性',
   },
 ];
 
