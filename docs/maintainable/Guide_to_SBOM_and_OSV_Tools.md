@@ -12,21 +12,23 @@ OSV (Open Source Vulnerability): 是一種公開的軟體漏洞資料庫。透�
 
 # 本文件內容
 
-[1. 使用 **Syft** 掃描專案**產生 SBOM 檔案**](#1-使用-syft-掃描專案產生-sbom-檔案)
+[1. 使用 Syft 掃描專案產生 SBOM 檔案](#1-使用-syft-掃描專案產生-sbom-檔案)
 
-[2. 使用 **Trivy** 掃描專案**產生 SBOM 檔案**](#2-使用-trivy-掃描專案產生-sbom-檔案)
+[2. 使用 Trivy 掃描專案產生 SBOM 檔案](#2-使用-trivy-掃描專案產生-sbom-檔案)
 
-[3. 使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#3-使用-osv-scanner-掃描-sbom-檔案)
+[3. 使用 OSV-Scanner 掃描 SBOM 檔案](#3-使用-osv-scanner-掃描-sbom-檔案)
 
-[4. 於 **Excel 匯入** OSV-Scanner 產生的 **markdown 格式報告**，整理後，立即進行元件修補或緩解措施](#4-於-excel-匯入-osv-scanner-產生報告)
+[4. 於 Excel 匯入 OSV-Scanner 產生報告](#4-於-excel-匯入-osv-scanner-產生報告)
 
 [5. 附錄：其他 SBOM 檔案產生工具](#5-附錄其他-sbom-檔案產生工具)
 
-# 1. 使用 Syft 掃描專案產生 SBOM 檔案 
+## 1. 使用 Syft 掃描專案產生 SBOM 檔案 
 
-## v1.8.0
+### 安裝
 
-## 安裝
+> 
+> 備註：本文件使用 Syft v1.8.0 做說明，其使用方式及產出結果，可能因您使用的版本不同而有些微差異
+>
 
 Windows 環境可以下載可執行檔 [https://github.com/anchore/syft/releases](https://github.com/anchore/syft/releases)  
 （移動至 Assets 段落，點選 Show all assets，找到 Windows 壓縮檔或執行檔下載）
@@ -37,7 +39,7 @@ Linux 環境或可執行
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo sh -s -- -b /usr/local/bin
 ```
 
-## 產生 SBOM 
+### 產生 SBOM 
 
 輸出格式  
 [https://github.com/anchore/syft/wiki/Output-Formats](https://github.com/anchore/syft/wiki/Output-Formats)
@@ -84,11 +86,13 @@ Windows PowerShell
 $env:SYFT_FORMAT_PRETTY="true"; syft ./path/to/repo_dir -o cyclonedx-json@1.5=./output_dir/syft.cdx.json
 ```
 
-# 2. 使用 Trivy 掃描專案產生 SBOM 檔案 
+## 2. 使用 Trivy 掃描專案產生 SBOM 檔案 
 
-## v0.5.3
+### 安裝
 
-## 安裝
+> 
+> 備註：本文件使用 Trivy v0.5.3 做說明，其使用方式及產出結果，可能因您使用的版本不同而有些微差異
+>
 
 Trivy 安裝文件 [https://aquasecurity.github.io/trivy/v0.53/getting-started/installation/](https://aquasecurity.github.io/trivy/v0.53/getting-started/installation/)
 
@@ -101,7 +105,7 @@ Linux 環境或可執行
 curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin v0.53.0
 ```
 
-## 產生 SBOM
+### 產生 SBOM
 
 輸出格式  
 [https://google.github.io/osv-scanner/output/\#output](https://google.github.io/osv-scanner/output/#output)
@@ -146,16 +150,18 @@ $ trivy fs --scanners license --license-full .
 
 ```
 
-# 3. 使用 OSV-Scanner 掃描 SBOM 檔案 
+## 3. 使用 OSV-Scanner 掃描 SBOM 檔案 
 
-## v1.8.1
+### 安裝
 
-## 安裝
+>
+> 備註：本文件使用 OSV-Scanner v1.8.1 做說明，其使用方式及產出結果，可能因您使用的版本不同而有些微差異
+>
 
 OSV-Scanner 安裝文件[https://google.github.io/osv-scanner/installation/\#installation](https://google.github.io/osv-scanner/installation/#installation)  
 下載可執行檔 [https://github.com/google/osv-scanner/releases](https://github.com/google/osv-scanner/releases)
 
-## 從 SBOM 檔案產生報告 
+### 從 SBOM 檔案產生報告 
 
 輸出格式  
 [https://google.github.io/osv-scanner/output/\#output](https://google.github.io/osv-scanner/output/#output)
@@ -187,7 +193,7 @@ osv-scanner --format=markdown --output=report.md -r ./path/to/sbom_dir
 `./path/to/sbom_dir: 為來源資料夾路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”/中文路徑/to/sbom_dir”。`  
 `report.md: 為輸出檔案路徑，若路徑來源包含中文或空白，建議用雙引號(" ")包裹路徑名稱，如 ”C:/輸出/report.md”。`
 
-## 離線模式
+### 離線模式
 
 [https://google.github.io/osv-scanner/experimental/offline-mode/](https://google.github.io/osv-scanner/experimental/offline-mode/)
 
@@ -207,7 +213,7 @@ osv-scanner --experimental-offline --experimental-download-offline-databases --s
 
 OSV-Scanner 內建[支援掃描](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/)一些程式語言，如果專案有使用 package manager，且沒有引用 jar 或 dll，可以考慮直接使用 OSV-Scanner 就好。（註：OSV-Scanner 不支援輸出 SBOM，有輸出 SBOM 檔案的需求，還是需要使用其他工具。）
 
-# 4. 於 **Excel 匯入** OSV-Scanner 產生報告 
+## 4. 於 Excel 匯入 OSV-Scanner 產生報告
 
 1. 因為各個 SBOM 掃描工具支援的語言、能解析的二進位檔 (Binary) 以及元件管理工具有所不同，能掃描到的依賴元件亦不盡相同，建議將所有工具產生的 SBOM 檔放在同一個資料夾，讓 OSV-Scanner 一併掃描。   
      
@@ -283,7 +289,7 @@ jq -r '
    4. 升版建議資訊，輸出格式示意：  
       ![](./img/image10.png)
 
-# 5. 附錄：其他 SBOM 檔案產生工具
+## 5. 附錄：其他 SBOM 檔案產生工具
 
 建議參考本文使用 Syft 與 Trivy 產出 SBOM 檔案，以下提供另外兩種替代 SBOM 工具操作說明：
 
@@ -298,7 +304,7 @@ jq -r '
 網址：[https://github.com/blenderskool/blaze/tree/v2.1.2](https://github.com/blenderskool/blaze/tree/v2.1.2)  
 ![](./img/imageA1.png)
 
-# Microsoft sbom-tool 開源工具說明
+### Microsoft sbom-tool 開源工具說明
 
 Microsoft sbom-tool 開源專案，工具支援目前主流的 Package Managers，依照 Package Managers 與語言關係對應整理如下表：
 
@@ -452,7 +458,7 @@ Microsoft sbom-tool 開源專案，工具支援目前主流的 Package Managers�
 步驟五、產出 OSV 報告  
 請參考[使用 **OSV-Scanner** 掃描 SBOM 檔案，**輸出 markdown 格式報告**](#3-使用-osv-scanner-掃描-sbom-檔案)
 
-# CycloneDX Generator 開源工具說明
+### CycloneDX Generator 開源工具說明
 
 CycloneDX Generator 開源工具，工具支援目前主流的 Package Managers，依照 Package Managers 與語言關係對應整理如下表：
 
