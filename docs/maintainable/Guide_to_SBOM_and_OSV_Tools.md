@@ -27,7 +27,7 @@ OSV (Open Source Vulnerability): 是一種公開的軟體漏洞資料庫。透�
 ### 安裝
 
 > 
-> 範例版本號：v1.8.0
+> 備註：本文件使用 Syft v1.8.0 做說明，其使用方式及產出結果，可能因您使用的版本不同而有些微差異
 >
 
 Windows 環境可以下載可執行檔 [https://github.com/anchore/syft/releases](https://github.com/anchore/syft/releases)  
@@ -91,7 +91,7 @@ $env:SYFT_FORMAT_PRETTY="true"; syft ./path/to/repo_dir -o cyclonedx-json@1.5=./
 ### 安裝
 
 > 
-> 範例版本號：v0.5.3
+> 備註：本文件使用 Trivy v0.5.3 做說明，其使用方式及產出結果，可能因您使用的版本不同而有些微差異
 >
 
 Trivy 安裝文件 [https://aquasecurity.github.io/trivy/v0.53/getting-started/installation/](https://aquasecurity.github.io/trivy/v0.53/getting-started/installation/)
@@ -153,6 +153,10 @@ $ trivy fs --scanners license --license-full .
 ## 3. 使用 OSV-Scanner 掃描 SBOM 檔案 
 
 ### 安裝
+
+>
+> 備註：本文件使用 OSV-Scanner v1.8.1 做說明，其使用方式及產出結果，可能因您使用的版本不同而有些微差異
+>
 
 OSV-Scanner 安裝文件[https://google.github.io/osv-scanner/installation/\#installation](https://google.github.io/osv-scanner/installation/#installation)  
 下載可執行檔 [https://github.com/google/osv-scanner/releases](https://github.com/google/osv-scanner/releases)
