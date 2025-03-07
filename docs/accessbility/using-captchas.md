@@ -1,4 +1,4 @@
-# 使用CAPTCHAs
+# 使用 CAPTCHAs
 
 [CAPTCHAs](https://en.wikipedia.org/wiki/CAPTCHA) 是用來測試和區分人類和機器人(例如：自動化軟體)的工具，藉由讓使用者執行特定任務來證明自己是人類 - 例如，送出表單前先辨識混淆過的文字並輸入結果。
 
