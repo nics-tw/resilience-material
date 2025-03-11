@@ -29,7 +29,6 @@ Cookie是網站發送到使用者電腦的小型資料檔，用於儲存有關�
 在 GOV.UK 設計系統中提供了以下相關資訊：
 
 - [如何建立 cookie 頁面](https://design-system.service.gov.uk/patterns/cookies-page/)，包括哪些Cookie需要徵得同意
-
 - [如何建立 Cookie 標題](https://design-system.service.gov.uk/components/cookie-banner)
 
 ## 應用 Cookie 的範圍

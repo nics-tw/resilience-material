@@ -134,9 +134,7 @@ IFIA 概述詐騙可能影響政策、專案或計劃的主要方式。
 利用您找到的資訊來：
 
 - 檢測詐騙，阻止詐騙份子存取您的服務
-
 - 在詐騙活動完成後識別詐騙活動
-
 - 追蹤詐騙份子，並採取適當的行動，如追回被詐騙索取的款項或法律訴訟。
 
 ### 保留詐騙活動記錄
@@ -152,7 +150,6 @@ IFIA 概述詐騙可能影響政策、專案或計劃的主要方式。
 您可能會發現以下指南有所幫助：
 
 - [國家網路安全中心關於安全開發和部署的指南](https://www.ncsc.gov.uk/collection/developers-collection)
-
 - [政府詐騙風險評估的專業標準和指南](https://www.gov.uk/government/publications/professional-standards-and-guidance-for-fraud-risk-assessment-in-government)
 
 ## 相關指引
@@ -160,5 +157,4 @@ IFIA 概述詐騙可能影響政策、專案或計劃的主要方式。
 您可能會發現以下指南有所幫助：
 
 - [資訊安全](https://www.gov.uk/service-manual/making-software/information-security.html)
-
 - [雲端安全](https://www.gov.uk/service-manual/operations/cloud-security.html)

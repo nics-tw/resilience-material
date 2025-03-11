@@ -31,7 +31,7 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括身心障礙者�
 - [運用蜜罐誘捕系統 (honey pots)](https://en.wikipedia.org/wiki/Honeypot_(computing))
 - [監控資料交換動態](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)
 
-您也可以和 [前端社群](https://www.gov.uk/service-manual/communities/technology-community-frontend-development) 一起討論關於CAPTCHAs的其他可能方案。
+您也可以和 [前端社群](https://www.gov.uk/service-manual/communities/technology-community-frontend-development) 一起討論關於 CAPTCHAs 的其他可能方案。
 
 ## 相關指南
 

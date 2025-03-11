@@ -12,7 +12,7 @@
 
 ## 目錄
 
- - [1. 查看GitHub上的討論列表](#1-查看-github-上的討論列表)
+ - [1. 查看 GitHub 上的討論列表](#1-查看-github-上的討論列表)
  - [2. 提出問題](#2-提出問題)
 
 ## 1. 查看 GitHub 上的討論列表
@@ -30,5 +30,3 @@
 在此階段，您只需提出您的想法和使用者需求的證據即可。您可以附上正在使用的元件或模版的截圖或連結，避免花時間進行具體設計或撰寫程式碼。
 
 設計系統社群每年[都會優先考慮要處理的元件和模式](https://design-system.service.gov.uk/community/upcoming-components-patterns/)。如果您的提案沒有被優先考慮，您也可以開始[開發元件或模式](https://design-system.service.gov.uk/community/develop-a-component-or-pattern/)或將其留給其他人進行。
-
-## 

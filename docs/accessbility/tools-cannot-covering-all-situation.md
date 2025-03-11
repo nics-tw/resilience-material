@@ -36,28 +36,19 @@
 
 ## 選擇用於測試的工具
 
-我們在進行審查時選擇了10種自動化測試工具。我們想要測試那些被開發人員和品質保證測試人員最常用的工具。我們也希望測試足夠多的工具，以獲得各種不同的結果。
+我們在進行審查時選擇了 10 種自動化測試工具。我們想要測試那些被開發人員和品質保證測試人員最常用的工具。我們也希望測試足夠多的工具，以獲得各種不同的結果。
 
 我們選擇了我們知道的所有免費工具。我們還通過跨政府的 [Accessibility Google Group](https://groups.google.com/a/digital.cabinet-office.gov.uk/forum/?hl=en-GB#!forum/accessibility-community) 尋求了建議。以下是我們測試的工具：
 
 - [Tenon](https://tenon.io/)
-
 - [Wave](http://wave.webaim.org/extension/)
-
 - [HTML Codesniffer](http://squizlabs.github.io/HTML_CodeSniffer/)
-
 - [aXe](https://www.deque.com/products/axe/)
-
 - [AChecker](http://achecker.ca/checker/index.php)
-
 - [Sort Site](https://www.powermapper.com/products/sortsite/)
-
 - [Google Accessibility Developer Tools](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en)
-
 - [The European Internet Inclusion Initiative’s page checker](http://checkers.eiii.eu/)
-
 - [Asqatasun](http://asqatasun.org/)
-
 - [Nu HTML Checker](https://validator.w3.org/nu/)（這是一個 HTML 驗證器——我們對它可能能檢測到哪些無障礙性問題感興趣）
 
 除了 Sort Site 有免費試用版本外，這些工具都是免費使用。如果您不想在您的瀏覽器中執行，Tenon 和 Wave 也有付費版本。
@@ -88,7 +79,7 @@
 
 ## 許多障礙都未被任何工具發現
 
-我們發現所建立的大部分障礙都未被我們測試的10種工具中的任何一種檢測到——實際上只有 29％ 被檢測到。
+我們發現所建立的大部分障礙都未被我們測試的 10 種工具中的任何一種檢測到——實際上只有 29％ 被檢測到。
 
 我們建立的 143 個障礙中，有 42 個被我們測試所有的工具都忽略了。被忽略的障礙包括長篇文字中使用斜體、帶有空白儲存格的表格和僅使用顏色標識的連結。
 

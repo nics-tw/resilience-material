@@ -206,11 +206,9 @@
 
 根據該法案制定的法定文書如下：
 
-- 與《平等法案》相關的所有[英國法定文書，](http://www.legislation.gov.uk/uksi?title=Equality%20Act%202010)可在legislation.gov.uk網站上查閱
-
-- 與《平等法案》相關的所有[威爾斯法定文書，](http://www.legislation.gov.uk/wsi?title=Equality%20Act%202010)可在legislation.gov.uk網站上查閱
-
-- 與《平等法案》相關的所有[蘇格蘭法定文書，](http://www.legislation.gov.uk/ssi?title=Equality%20Act%202010)可在legislation.gov.uk網站上查閱
+- 與《平等法案》相關的所有[英國法定文書，](http://www.legislation.gov.uk/uksi?title=Equality%20Act%202010)可在 legislation.gov.uk 網站上查閱
+- 與《平等法案》相關的所有[威爾斯法定文書，](http://www.legislation.gov.uk/wsi?title=Equality%20Act%202010)可在 legislation.gov.uk 網站上查閱
+- 與《平等法案》相關的所有[蘇格蘭法定文書，](http://www.legislation.gov.uk/ssi?title=Equality%20Act%202010)可在 legislation.gov.uk 網站上查閱
 
 ## 平等法案指南
 

@@ -61,7 +61,6 @@
 如果您符合以下條件，您的網站或行動應用程式將符合法規要求：
 
 - 符合 [WCAG 2.2 AA 無障礙標準](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag)——儘管[不符合無障礙標準可能有合理的法律原因](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps#exemptions)
-
 - 發布無障礙性聲明來說明網站或行動應用程式的無障礙性
 
 政府數位服務部門 （GDS） 正在研究如何評估 [WCAG 2.2 中的新成功標準](https://www.w3.org/TR/WCAG22/)，並將於 2024 年 10 月開始監控額外（extra）標準。在 2024 年 10 月前，英國政府將監控網站和應用程式是否達到 [WCAG 2.1 AA 級](https://www.w3.org/TR/WCAG21/)的無障礙性。
