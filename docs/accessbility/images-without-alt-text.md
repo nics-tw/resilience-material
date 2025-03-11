@@ -1,6 +1,4 @@
-# 沒有替代文字的圖片
-
-內容設計：圖片
+# 內容設計：圖片
 
 [https://www.gov.uk/guidance/content-design/images](https://www.gov.uk/guidance/content-design/images)
 

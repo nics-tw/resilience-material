@@ -1,6 +1,4 @@
-# GOV.UK 設計系統提議新的元件或模式
-
-提議新的元件（component）或模式（pattern）
+# 提議新的元件（component）或模式（pattern）
 
 [https://design-system.service.gov.uk/community/propose-a-component-or-pattern/](https://design-system.service.gov.uk/community/propose-a-component-or-pattern/)
 

@@ -1,6 +1,4 @@
-# 保護您的服務免受詐騙的指南
-
-保護您的服務免受詐騙
+# 保護您的服務免受詐騙
 
 [https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud
 )

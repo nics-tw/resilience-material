@@ -1,6 +1,4 @@
-# 監控交易動態
-
-監控您服務的狀態
+# 監控您服務的狀態
 
 [https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)
 

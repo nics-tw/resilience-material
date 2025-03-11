@@ -1,6 +1,4 @@
-# 公共領域的無障礙規範
-
-了解公部門機構的無障礙性要求
+# 了解公部門機構的無障礙性要求
 
 [https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
 

@@ -1,6 +1,4 @@
-# 無障礙工具無法捕捉到所有錯誤
-
-當我們在全球最不無障礙網頁上測試工具時我們發現了什麼
+# 當我們在全球最不無障礙網頁上測試工具時我們發現了什麼
 
 [https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)
 

@@ -1,6 +1,4 @@
-# 無障礙接受標準
-
-透過無障礙性驗收準則提升無障礙性
+# 透過無障礙性驗收準則提升無障礙性
 
 [https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/](https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/)
 

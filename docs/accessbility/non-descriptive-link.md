@@ -1,6 +1,4 @@
-# 非描述性的連結
-
-內容設計：連結
+# 內容設計：連結
 
 [https://www.gov.uk/guidance/content-design/links](https://www.gov.uk/guidance/content-design/links)
 

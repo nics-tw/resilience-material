@@ -1,6 +1,4 @@
-# 使用 cookies 和類似技術的工作指南
-
-使用 Cookie 和類似技術
+# 使用 Cookie 和類似技術
 
 [https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
 
