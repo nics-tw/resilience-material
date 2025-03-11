@@ -2,7 +2,7 @@
 
 [https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
 
-Cookie是網站發送到使用者電腦的小型資料檔，用於儲存有關使用者瀏覽網站的資料。
+Cookie 是網站發送到使用者電腦的小型資料檔，用於儲存有關使用者瀏覽網站的資料。
 
 本指南是介紹如何使用 Cookie，但當採用使用者設備中其他資訊儲存的技術時，您應該遵循相同的指南，例如 HTML5 local storage。
 
