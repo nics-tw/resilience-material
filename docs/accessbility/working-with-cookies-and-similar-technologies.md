@@ -33,7 +33,7 @@ Cookie是網站發送到使用者電腦的小型資料檔，用於儲存有關�
 
 ## 應用 Cookie 的範圍
 
-Cookie 必須僅適用於您的原始網域。例如，[www.servicename.service.gov.uk](www.servicename.service.gov.uk) 而非 .gov.uk。
+Cookie 必須僅適用於您的原始網域。例如，`www.servicename.service.gov.uk` 而非 `.gov.uk`。
 
 不要在僅托管靜態資源(如圖像或 JavaScript)的網域上使用 Cookie ——它只會降低使用者的回應時間，並且沒有任何好處。
 
