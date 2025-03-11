@@ -12,12 +12,12 @@
 
 ## 目錄
 
- - [1. 查看GitHub上的討論列表](#1-查看github上的討論列表)
+ - [1. 查看GitHub上的討論列表](#1-查看-github-上的討論列表)
  - [2. 提出問題](#2-提出問題)
 
-## 1. 查看GitHub上的討論列表
+## 1. 查看 GitHub 上的討論列表
 
-[檢查其他人是否已經在GitHub上的討論列表](https://github.com/orgs/alphagov/projects/43/views/2)中提出了您的想法或類似的想法。
+[檢查其他人是否已經在 GitHub 上的討論列表](https://github.com/orgs/alphagov/projects/43/views/2)中提出了您的想法或類似的想法。
 
 如果您的想法在列表中，請進入問題頁面並對問題發表評論。告訴大眾您需要該元件或模式，並分享任何您支持該提案的範例或證據。
 

@@ -18,14 +18,14 @@ CAPTCHAs 影響了安全、隱私、可用性和無障礙等議題。除非運�
 
 CAPTCHAs 會讓部分的人較難使用我們的服務，包括身心障礙者。第三方的 CAPTCHA 服務也會帶來額外風險，包括：
 
-- 資安問題 - 如果CAPTCHAs的提供方安全受損，我們的服務也會收到影響
-- 隱私疑慮 - 例如，第三方服務可設定cookies，收集分析資料並跨站追蹤使用者
-- 效能問題 - 如果我們依賴CAPTCHAs提供者，代表我們將受到第三方會遇到的效能問題或斷線影響
+- 資安問題 - 如果 CAPTCHAs 的提供方安全受損，我們的服務也會收到影響
+- 隱私疑慮 - 例如，第三方服務可設定 cookies，收集分析資料並跨站追蹤使用者
+- 效能問題 - 如果我們依賴 CAPTCHAs 提供者，代表我們將受到第三方會遇到的效能問題或斷線影響
 - 即使具備 CAPTCHA 機制，我們的服務仍然可能面臨風險。透過電腦影像技術的進步或使用 CAPTCHA 農場 CAPTCHA farms) 進行破解，使得仍有某些機器人得以存取我們的服務。
 
 ## CAPTCHAs 的替代方案
 
-許多CAPTCHAs所設計用來降低的風險，也可以透過其他方式來達到，包括：
+許多 CAPTCHAs 所設計用來降低的風險，也可以透過其他方式來達到，包括：
 
 - [控制造訪速率和連線數](https://en.wikipedia.org/wiki/Rate_limiting)
 - [運用蜜罐誘捕系統 (honey pots)](https://en.wikipedia.org/wiki/Honeypot_(computing))
@@ -38,7 +38,7 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括身心障礙者�
 您可能會發現以下指南也很有用：
 
 - [保護您的服務免受詐騙的指南](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud)
-- [使用cookies和類似技術的工作指南](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
+- [使用 cookies 和類似技術的工作指南](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
 
 ## 無障礙和輔助數位化 讓您的服務具有無障礙性：簡介
 

@@ -38,7 +38,7 @@ GOV.UK 中的圖片可分為三類：
 
 - 資訊性的
 - 裝飾性的
-- 圖表(charts)、示意圖(diagrams)、資訊圖表和科學方程式
+- 圖表 (charts)、示意圖 (diagrams)、資訊圖表和科學方程式
 
 ## 在 GOV.UK 上使用資訊性和裝飾性圖片
 
@@ -52,7 +52,7 @@ GOV.UK 中的圖片可分為三類：
 
 避免帶文字的圖片。將文字寫在正文中。
 
-資訊性的圖片可以幫助使用者以不同的方式理解書面文字。您必須將「替代文字(Alt text)」欄位留空，並在內容正文中撰寫說明。這意味著每個人都可以使用該描述。
+資訊性的圖片可以幫助使用者以不同的方式理解書面文字。您必須將「替代文字 (Alt text)」欄位留空，並在內容正文中撰寫說明。這意味著每個人都可以使用該描述。
 
 螢幕報讀軟體將忽略沒有替代文字的圖片。如果可以的話，描述圖片的內容，就好像頁面上沒有圖片一樣。例如，寫「部長發推文…」，而不是「部長發推文的圖片」。
 
@@ -72,19 +72,19 @@ GOV.UK 中的圖片可分為三類：
 
 ### 格式
 
-請查看[您可以在GOV.UK上使用Govspeak建立的表格和圖表的範例](https://www.gov.uk/government/publications/examples-of-visual-content-to-use-on-govuk/examples-of-visual-content-to-use-on-govuk)。
+請查看[您可以在 GOV.UK 上使用 Govspeak 建立的表格和圖表的範例](https://www.gov.uk/government/publications/examples-of-visual-content-to-use-on-govuk/examples-of-visual-content-to-use-on-govuk)。
 
-如果您無法[在Govspeak中建立圖表](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown)，您可能需要將其上傳為圖片。以 SVG（可縮放向量圖形）格式上傳圖片。SVG 允許使用者放大圖片而不損失任何品質。在圖片指南中了解[如何建立 SVG 檔案](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/images-and-videos)。
+如果您無法[在 Govspeak 中建立圖表](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown)，您可能需要將其上傳為圖片。以 SVG（可縮放向量圖形）格式上傳圖片。SVG 允許使用者放大圖片而不損失任何品質。在圖片指南中了解[如何建立 SVG 檔案](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/images-and-videos)。
 
 ### 顏色
 
 不要只使用顏色來傳達資訊。一些視覺障礙的使用者無法看到顏色差異。確保段落、線條、文字和背景之間的顏色對比度夠高。
 
-[在政府分析功能網站(Government Analysis Function)上](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)了解更多關於圖表中使用顏色的資訊。
+[在政府分析功能網站 (Government Analysis Function)上](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)了解更多關於圖表中使用顏色的資訊。
 
 ### 圖表(Charts)
 
-所有圖表都應該有兩個標題，一個頭條(headline)標題和一個統計標題。圖表的頭條標題應概括圖表的主要資訊，後面跟著描述所顯示資料的統計標題。
+所有圖表都應該有兩個標題，一個頭條 (headline) 標題和一個統計標題。圖表的頭條標題應概括圖表的主要資訊，後面跟著描述所顯示資料的統計標題。
 
 #### 範例
 

@@ -4,7 +4,7 @@
 
 [https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)
 
-當您進入公開beta測試階段時，您必須建立監控機制，以識別可能影響您服務的任何問題。
+當您進入公開 beta 測試階段時，您必須建立監控機制，以識別可能影響您服務的任何問題。
 
 使用適當的工具和流程進行監控可以幫助您：
 
@@ -42,7 +42,7 @@
 
 一旦您同意監控的內容，您的團隊應該：
 
-- 設定內部和外部的監控檢查(monitoring checks)
+- 設定內部和外部的監控檢查 (monitoring checks)
 - 撰寫監控檢查
 - 撰寫警報訊息
 
@@ -72,7 +72,7 @@
 
 ## 處理和記錄問題
 
-您應該使用報修單追蹤系統(ticketing system)來管理和追蹤錯誤，以便讓您將問題分配給團隊成員。
+您應該使用報修單追蹤系統 (ticketing system) 來管理和追蹤錯誤，以便讓您將問題分配給團隊成員。
 
 錯誤訊息總是包含有用的資訊——它們可以告訴您以下內容：
 
@@ -93,7 +93,7 @@
 
 除非有安全性問題，您應該將監控資訊和資料廣泛分享。
 
-例如，您可以與您部門的其他服務團隊分享效能報告，或使用類似[GOV.UK Notify](https://www.gov.uk/government/publications/govuk-notify/govuk-notify)所使用的作業狀態頁面的狀態儀表板，來告訴使用者問題資訊。
+例如，您可以與您部門的其他服務團隊分享效能報告，或使用類似 [GOV.UK Notify](https://www.gov.uk/government/publications/govuk-notify/govuk-notify) 所使用的作業狀態頁面的狀態儀表板，來告訴使用者問題資訊。
 
 ## 定期檢視您的監控流程
 

@@ -45,9 +45,7 @@
 
 無障礙性法規於 2018 年 9 月 23 日對公部門機構生效。法規規定，您必須透過使其「可感知性、可操作性、可理解性和強健性」來使其更具無障礙。您需要在您的網站上包含並更新無障礙聲明。
 
-無障礙性法規的全名是公部門機構（網站和行動應用程式）（第 2 號）2018 年無障礙性法規(the
-Public Sector Bodies (Websites and Mobile Applications) (No. 2)
-Accessibility Regulations 2018)。
+無障礙性法規的全名是公部門機構（網站和行動應用程式）（第 2 號）2018 年無障礙性法規(the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018)。
 
 無障礙性法規以《2010 年平等法案》（或北愛爾蘭《1995 年身心障礙歧視法案》）規定的對身心障礙者的現有義務為基礎。
 
@@ -216,9 +214,9 @@ Office，簡稱 CDDO ）認為公部門機構未發布無障礙聲明或無障�
 ## 執行
 
 英格蘭、蘇格蘭和威爾斯的平等與人權委員會 （Equality and Human Rights
-Commission，簡稱 EHRC），以及北愛爾蘭的北愛爾蘭平等委員會（Equality
+Commission，簡稱 EHRC ），以及北愛爾蘭的北愛爾蘭平等委員會（Equality
 Commission for Northern
-Ireland，簡稱 ECNI）將強制執行公部門網站和行動應用程式的無障礙性要求（使其具備可感知性、可操作性、可理解性和強健性）。
+Ireland，簡稱 ECNI ）將強制執行公部門網站和行動應用程式的無障礙性要求（使其具備可感知性、可操作性、可理解性和強健性）。
 
 不符合無障礙性要求、或未能對以無障礙性格式產生資訊的請求提供令人滿意回應的組織，將被視為未做出合理的調整。這意味著他們將違反 2010 年《平等法案》和 1995 年《身心障礙歧視法》。
 

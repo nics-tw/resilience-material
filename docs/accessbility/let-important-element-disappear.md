@@ -18,11 +18,11 @@
 
 ## 目錄
 
-   - [返回連結（back link）元件](#返回連結back-link元件)
-   - [麵包屑（breadcrumbs）元件](#麵包屑breadcrumbs元件)
-   - [單選按鈕（radio）元件](#單選按鈕radio元件)
-   - [標頭（header）元件](#標頭header元件)
-   - [面板（panel）元件](#面板panel元件)
+ - [返回連結（back link）元件](#返回連結back-link元件)
+ - [麵包屑（breadcrumbs）元件](#麵包屑breadcrumbs元件)
+ - [單選按鈕（radio）元件](#單選按鈕radio元件)
+ - [標頭（header）元件](#標頭header元件)
+ - [面板（panel）元件](#面板panel元件)
 
 ### 返回連結（back link）元件
 
@@ -91,7 +91,7 @@
 
 覆蓋顏色時的標題元件
 
-為了解決這個問題，我們使用了一個內聯 (inline) SVG，它利用 [currentColor](https://css-tricks.com/currentcolor/)作為它的「填滿」屬性。
+為了解決這個問題，我們使用了一個內聯 (inline) SVG，它利用 [currentColor](https://css-tricks.com/currentcolor/) 作為它的「填滿」屬性。
 
 ![](./img/header-03.jpg)
 

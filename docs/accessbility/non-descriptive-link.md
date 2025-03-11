@@ -123,9 +123,7 @@
 
 如果從英語頁面連結到非英語頁面，您也必須對此建立路標（signpost）。
 
-例如，「您可以在法國[<u>政府的 COVID-19
-頁面（法語）</u>](https://www.gouvernement.fr/)上找到有關法國當前爆發的
-COVID-19 的資訊和指南」。
+例如，「您可以在法國[政府的 COVID-19 頁面（法語）](https://www.gouvernement.fr/)上找到有關法國當前爆發的 COVID-19 的資訊和指南」。
 
 使用者希望連結頁面與原始頁面使用相同的語言。讓使用者為旅程中的語言變化做好準備是一個很好的做法。這對於無障礙性也很重要，以便螢幕報讀器可以正確發音來源頁面和目標頁面上的內容。
 
@@ -169,7 +167,7 @@ COVID-19 的資訊和指南」。
 
 ### 使用第三方服務為 GOV.UK 收集資料時
 
-檢查第三方服務提供者是否符合GDS的最佳實務：
+檢查第三方服務提供者是否符合 GDS 的最佳實務：
 
 - [cookie 政策](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
 - [隱私權政策](https://www.gov.uk/service-manual/design/collecting-personal-information-from-users)

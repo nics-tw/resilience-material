@@ -16,7 +16,7 @@
    - [提高無障礙性的認知](#提高無障礙性的認知)
    - [維持無障礙性](#維持無障礙性)
  - [無障礙性驗收準則的範例](#無障礙性驗收準則的範例)
-   - [GOV.UK 的無障礙性自動完成（autocomplete ）功能](#govuk-的無障礙性自動完成autocomplete-功能)
+   - [GOV.UK 的無障礙性自動完成（autocomplete）功能](#govuk-的無障礙性自動完成autocomplete功能)
    - [GOV.UK 上的翻譯元件](#govuk-上的翻譯元件)
    - [GOV.UK 上的標題元件](#govuk-上的標題元件)
  - [撰寫無障礙性驗收準則的指南](#撰寫無障礙性驗收準則的指南)
@@ -50,47 +50,31 @@
 
 ## 無障礙性驗收準則的範例
 
-### GOV.UK 的無障礙性自動完成（autocomplete ）功能
+### GOV.UK 的無障礙性自動完成（autocomplete）功能
 
 政府數位服務部（GDS）在 2017 年 1 月建立[無障礙性自動完成](https://github.com/alphagov/accessible-autocomplete)時首次使用[無障礙驗收準則](https://github.com/alphagov/accessible-autocomplete/blob/master/accessibility-criteria.md)。負責此項任務的團隊（Theodor Vararu、Léonie Watson 和 Ed Horsford）制定了自動完成的無障礙性準則——自動完成需要滿足的必要行為，以便輔助科技可以使用。自動完成欄位必須：
 
 - 可以使用鍵盤進行焦點（focusable）導覽。
-
 - 在鍵盤聚焦時提示。
-
 - 告知使用者這是可編輯欄位。
-
 - 告知使用者是否有預填的值。
-
 - 告知使用者可以使用自動完成功能。
-
 - 解釋如何使用自動完成。
-
 - 告知使用者內容已被展開。
-
 - 告知使用者是否有匹配項目。
-
 - （可選）告知使用者目前有多少匹配項目。
-
 - 在匹配數量變化時告知使用者。
-
 - 允許使用者使用觸摸或鍵盤導覽來瀏覽可用的匹配項目。
-
 - 告知使用者選擇了哪個匹配項目。
-
 - （可選）必須告知使用者目前選定的匹配項目是第幾個，例如，「2（共3個）」。
-
 - 告知使用者是否有預選的匹配項目。
-
 - 允許使用者確認所選的匹配項目。
-
 - 當匹配項目確認時告知使用者。
-
 - 當確認選擇的匹配項目時，必須把焦點移回至可編輯欄位。
 
 ### GOV.UK 上的翻譯元件
 
-當我們連結到[GOV.UK頁面的翻譯版本](https://www.gov.uk/government/case-studies/the-role-of-women-in-afghanistan.ur)時，我們確定以下標準：
+當我們連結到 [GOV.UK 頁面的翻譯版本](https://www.gov.uk/government/case-studies/the-role-of-women-in-afghanistan.ur)時，我們確定以下標準：
 
 「翻譯導航連結必須識別連結的語言，以確保螢幕報讀器正確發音。」
 

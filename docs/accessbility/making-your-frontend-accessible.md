@@ -24,9 +24,9 @@
 
 ## 利用 GOV.UK 設計系統
 
-儘可能利用 GOV.UK 的設計系統來建置您的服務。此設計系統提供了與其他GOV.UK服務一致且無障礙的風格、元件及模式。
+儘可能利用 GOV.UK 的設計系統來建置您的服務。此設計系統提供了與其他 GOV.UK 服務一致且無障礙的風格、元件及模式。
 
-利用 GOV.UK 設計系統的元件來打造您的服務，可以幫助服務變得更加無障礙且可依使用者環境自動調整。這是因為 GOV.UK 設計系統經常針對[常用的輔助科技和瀏覽器組合](https://design-system.service.gov.uk/community/propose-a-component-or-pattern/)進行測試，並且符合WCAG 2.2的AA等級。
+利用 GOV.UK 設計系統的元件來打造您的服務，可以幫助服務變得更加無障礙且可依使用者環境自動調整。這是因為 GOV.UK 設計系統經常針對[常用的輔助科技和瀏覽器組合](https://design-system.service.gov.uk/community/propose-a-component-or-pattern/)進行測試，並且符合 WCAG 2.2 的 AA 等級。
 
 若服務需求中的內容未涵蓋於 GOV.UK 設計系統，應確保您新增到服務中的任何元素都是無障礙的。您也可以為 GOV.UK 設計系統提議新的元件或模式。
 
@@ -106,8 +106,8 @@
 
 在使用 WAI-ARIA 時，請確保：
 
-- 利用 JavaScript 新增針對互動的 WAI-ARIA 屬性，例如 `aria-controls`，避免讓非 JavaScript 使用者感到困擾
-- 隨著頁面上 JavaScript 的變動，更新 WAI-ARIA 屬性，例如在使用者展開元素後設定 `aria-expanded` 為 `true`
+- 利用 JavaScript 新增針對互動的 `WAI-ARIA` 屬性，例如 `aria-controls`，避免讓非 JavaScript 使用者感到困擾
+- 隨著頁面上 JavaScript 的變動，更新 `WAI-ARIA` 屬性，例如在使用者展開元素後設定 `aria-expanded` 為 `true`
 
 ## 檢測服務的無障礙性
 
