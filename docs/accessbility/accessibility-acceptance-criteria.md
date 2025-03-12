@@ -30,7 +30,7 @@
 
 政府數位服務部（GDS）多年來一直使用驗收準則（例如，[這篇 2015 年的 Verify 部落格文章關於驗收準則](https://gdstechnology.blog.gov.uk/2015/03/04/creating-better-acceptance-criteria-for-user-stories/)，以及 [2014 年的 GOV.UK 樣式指南](http://webarchive.nationalarchives.gov.uk/20141214162055/https://www.gov.uk/guidance/content-design/user-needs#acceptance-criteria)），因此將無障礙相關的驗收準則正式化並加以和擴展似乎是合理的。
 
-請注意，僅有無障礙驗收準則本身並不足以使您的服務具有無障礙性——請閱讀更多[建立無障礙服務的指南](../accessbility/making-your-frontend-accessible.md)。
+請注意，僅有無障礙驗收準則本身並不足以使您的服務具有無障礙性——請閱讀更多[建立無障礙服務的指南](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)。
 
 ### 提高無障礙性的認知
 

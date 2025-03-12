@@ -113,6 +113,6 @@
 
 您可能還會發現這些指南很有用：
 
-- [讓您的服務具有無障礙性：簡介](../accessbility/making-your-frontend-accessible.md)
+- [讓您的服務具有無障礙性：簡介](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)
 - [使用、調整和建立模式](https://www.gov.uk/service-manual/design/using-adapting-and-creating-patterns)
 - [使用漸進增強](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)
