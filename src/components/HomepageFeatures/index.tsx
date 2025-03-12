@@ -41,6 +41,16 @@ const FeatureList: FeatureItem[] = [
     ),
     link: '/material/category/高可用性',
   },
+  {
+    title: '附錄',
+    Svg: require('@site/static/img/undraw_server_down.svg').default,
+    description: (
+      <>
+        這裡是附錄的內容，提供更多的資訊。
+      </>
+    ),
+    link: '/material/category/附錄',
+  },
 ];
 
 function Feature({ title, Svg, description, link }: FeatureItem) {
