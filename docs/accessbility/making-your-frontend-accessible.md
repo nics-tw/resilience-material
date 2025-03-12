@@ -6,7 +6,7 @@
 
 這也讓您的服務能夠：
 
-- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../accessbility//testing-for-accessibility.md)
+- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../accessbility/wcag-22-design-principles.md)
 - 符合[公共領域的無障礙規範](../appendix/accessibility-requirements-for-public-sector.md)
 - 不觸犯 [2010 年平等法](../appendix/equality-act-2010-guidance.md)
 
