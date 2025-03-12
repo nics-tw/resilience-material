@@ -6,9 +6,9 @@
 
 這也讓您的服務能夠：
 
-- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag#wcag-22-design-principles)
-- 符合[公共領域的無障礙規範](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
-- 不觸犯 [2010 年平等法](https://www.gov.uk/guidance/equality-act-2010-guidance)
+- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../accessbility//testing-for-accessibility.md)
+- 符合[公共領域的無障礙規範](../appendix/accessibility-requirements-for-public-sector.md)
+- 不觸犯 [2010 年平等法](../appendix/equality-act-2010-guidance.md)
 
 ## 目錄
 
@@ -26,7 +26,7 @@
 
 儘可能利用 GOV.UK 的設計系統來建置您的服務。此設計系統提供了與其他 GOV.UK 服務一致且無障礙的風格、元件及模式。
 
-利用 GOV.UK 設計系統的元件來打造您的服務，可以幫助服務變得更加無障礙且可依使用者環境自動調整。這是因為 GOV.UK 設計系統經常針對[常用的輔助科技和瀏覽器組合](https://design-system.service.gov.uk/community/propose-a-component-or-pattern/)進行測試，並且符合 WCAG 2.2 的 AA 等級。
+利用 GOV.UK 設計系統的元件來打造您的服務，可以幫助服務變得更加無障礙且可依使用者環境自動調整。這是因為 GOV.UK 設計系統經常針對[常用的輔助科技和瀏覽器組合](../appendix/propose-a-component-or-pattern.md)進行測試，並且符合 WCAG 2.2 的 AA 等級。
 
 若服務需求中的內容未涵蓋於 GOV.UK 設計系統，應確保您新增到服務中的任何元素都是無障礙的。您也可以為 GOV.UK 設計系統提議新的元件或模式。
 
@@ -120,7 +120,7 @@
 
 當編寫正式的程式時，您必須定期進行[無障礙測試](https://www.gov.uk/service-manual/technology/testing-for-accessibility)。一旦服務進入公開Beta版，每當您新增一個功能時，都要進行無障礙測試。
 
-雖然可以使用[自動無障礙測試工具](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility#automated-testing)來測試您的服務，但無障礙工具無法捕捉到所有錯誤，因此仍然必須執行手動測試。
+雖然可以使用[自動無障礙測試工具](../accessbility/testing-for-accessibility.md#自動化測試)來測試您的服務，但無障礙工具無法捕捉到所有錯誤，因此仍然必須執行手動測試。
 
 ### 使用無障礙標準
 

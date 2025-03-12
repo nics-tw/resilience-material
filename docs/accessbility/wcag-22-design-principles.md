@@ -23,7 +23,7 @@
 
 ## 符合政府無障礙要求
 
-做為符合[政府無障礙要求](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements)的一部分，服務必須達到 WCAG
+做為符合[政府無障礙要求](../accessbility//making-your-frontend-accessible.md#使用無障礙標準)的一部分，服務必須達到 WCAG
 2.2 AA等級。
 
 政府數位服務部（Government Digital Service, GDS）正在研究如何評估 [WCAG 2.2 中的新成功標準（Success Criteria）](https://www.w3.org/TR/WCAG22/)，並將於 2024 年 10 月開始監控額外標準。在 2024 年 10 月前，英國政府將監控網站和應用程式是否達到 [WCAG 2.1 AA 級](https://www.w3.org/TR/WCAG21/) 的無障礙性。
@@ -53,7 +53,7 @@ WCAG 2.2 設計原則由 13 條指引提供支持。其中每一項都細分為�
 
 從 Beta 階段開始，您需要定期進行[無障礙測試](https://www.gov.uk/service-manual/technology/testing-for-accessibility)，以檢查您的設計、程式碼和內容是否符合 WCAG AA 等級。為此，您必須符合所有A和AA等級的要求。
 
-您應該結合使用自動化工具和手動測試（包括[無障礙性測試](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)中列出的工具）來識別潛在問題。
+您應該結合使用自動化工具和手動測試（包括[無障礙性測試](../accessbility/testing-for-accessibility.md)中列出的工具）來識別潛在問題。
 
 您還需要在 Beta 評估之前[進行無障礙性稽核](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction/#getting-an-accessibility-audit)，以證明您的服務符合 AA 等級的要求。
 
