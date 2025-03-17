@@ -32,7 +32,7 @@
 
 即便使用了 GOV.UK 設計系統，在 HTML、Cascading Style Sheets (CSS) 和 JavaScript 程式碼中，仍可能不小心造成障礙。
 
-[使用漸進增強策略](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)，確保若上述 HTML 層級之上的 CSS 或 JavaScript 出現問題或被使用者關閉時，您的服務仍然可用。
+[使用漸進增強策略](./using-progressive-enhancement.md)，確保若上述 HTML 層級之上的 CSS 或 JavaScript 出現問題或被使用者關閉時，您的服務仍然可用。
 
 ## 建構無障礙服務
 
@@ -64,7 +64,7 @@
 
 ### 編寫無障礙 HTML
 
-您應當遵循[語意化 HTML 的原則](https://html.com/semantic-markup/)。運用正確的 HTML 元素及屬性標註內容，意味著正確的資訊將被提供給輔助科技。這也代表輔助科技的使用者可以依預期與內容或介面互動。
+您應當遵循[語意化 HTML 的原則](./semantic-markup.md)。運用正確的 HTML 元素及屬性標註內容，意味著正確的資訊將被提供給輔助科技。這也代表輔助科技的使用者可以依預期與內容或介面互動。
 
 在 HTML 中使用正確的元素能協助輔助科技使用者瀏覽網頁，包含讓他們能跳至相關區塊。例如，請確定使用 `header`、`main` 和 `footer` 元素來勾勒頁面架構。
 

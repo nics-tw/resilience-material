@@ -113,6 +113,6 @@
 
 - [讓您的服務具有無障礙性：簡介](./making-your-service-accessible-an-introduction.md)
 - [使用、調整和建立模式](https://www.gov.uk/service-manual/design/using-adapting-and-creating-patterns)
-- [使用漸進增強](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)
+- [使用漸進增強](./using-progressive-enhancement.md)
 
 [原始文章連結](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)

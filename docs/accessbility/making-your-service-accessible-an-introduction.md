@@ -1,6 +1,4 @@
-# 政府的無障礙要求
-
-無障礙和輔助數位化 讓您的服務具有無障礙性：簡介
+# 無障礙和輔助數位化 讓您的服務具有無障礙性：簡介
 
 您的服務必須可供所有需要的人使用，包括僅供公務員使用的服務。如果未使您的服務具有無障礙性，您可能會違法。
 
@@ -28,7 +26,7 @@
 為了滿足政府的無障礙要求，數位服務必須：
 
 - 至少符合 [Web 內容無障礙指南 (WCAG 2.1)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20)的 AA 級
-- 研究最常用的[輔助科技](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)- 包括螢幕放大鏡、螢幕報讀器和語音辨識工具
+- 研究最常用的[輔助科技](./testing-with-assistive-technologies.md)- 包括螢幕放大鏡、螢幕報讀器和語音辨識工具
 - 將身心障礙人士納入[使用者研究](https://www.gov.uk/service-manual/user-research)
 - 具備[無障礙性聲明](https://www.gov.uk/guidance/make-your-website-or-app-accessible-and-publish-an-accessibility-statement#decide-if-anything-is-a-disproportionate-burden-to-fix-right-now)，解釋服務的無障礙性——您需要在服務進入公開beta測試時發布此聲明
 
@@ -38,7 +36,7 @@
 
 該法規的全名為《2018 年公共部門機構（網站和行動應用程式）（第 2 號）無障礙法規》(the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018)。
 
-您可以透過閱讀[最新指南](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)來瞭解有關規定的更多資訊。
+您可以透過閱讀[最新指南](../appendix/accessibility-requirements-for-public-sector.md)來瞭解有關規定的更多資訊。
 
 ## 從一開始就考慮無障礙性
 
@@ -104,7 +102,7 @@
 
 您可以要求您的稽核員在 alpha 測試期間花幾天時間，審查您的設計和[原型](https://www.gov.uk/service-manual/design/making-prototypes)是否有潛在的無障礙性問題。
 
-您還可以透過[與身心障礙使用者進行研究會談](https://www.gov.uk/service-manual/user-research/running-research-sessions-with-people-with-disabilities)來改進您的設計。
+您還可以透過[與身心障礙使用者進行研究會談](./running-research-sessions-with-people-with-disabilities.md)來改進您的設計。
 
 ## 在 beta 階段的無障礙性措施
 
@@ -114,7 +112,7 @@
 
 檢查您的團隊可以使用哪些測試工具和軟體，以確認是否需要購買。
 
-[與身心障礙使用者一起進行研究會談](https://www.gov.uk/service-manual/user-research/running-research-sessions-with-people-with-disabilities)有助您檢查正在建立的內容具備無障礙性。
+[與身心障礙使用者一起進行研究會談](./running-research-sessions-with-people-with-disabilities.md)有助您檢查正在建立的內容具備無障礙性。
 
 當您開始公開 beta 測試時，您需要發布一份無障礙性聲明。
 

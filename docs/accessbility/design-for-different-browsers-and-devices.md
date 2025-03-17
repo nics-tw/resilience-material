@@ -19,7 +19,7 @@
 
 服務不必在每個瀏覽器中都看起來完美，但無論使用者使用哪種瀏覽器，都必須能夠瀏覽所需資訊，操作所需功能。
 
-使用[漸進增強](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)讓您的服務盡可能滿足大多數的使用者。
+使用[漸進增強](./using-progressive-enhancement.md)讓您的服務盡可能滿足大多數的使用者。
 
 ## 應該測試的瀏覽器（統計於 2022 年 6 月）
 
