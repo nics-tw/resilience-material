@@ -111,9 +111,9 @@
 
 ## 檢測服務的無障礙性
 
-您應該根據 WCAG 2.2 進行手動檢查，並使用[最常用的輔助科技與瀏覽器組合](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)進行測試。
+您應該根據 WCAG 2.2 進行手動檢查，並使用[最常用的輔助科技與瀏覽器組合](./testing-with-assistive-technologies.md)進行測試。
 
-您的[手動測試](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)應該包括一些常見的無障礙問題，例如檢測：
+您的[手動測試](./testing-with-assistive-technologies.md)應該包括一些常見的無障礙問題，例如檢測：
 
 - 服務是否可以用鍵盤操作
 - 使用者是否能調整介面，如在瀏覽器中放大字型或更改顏色
