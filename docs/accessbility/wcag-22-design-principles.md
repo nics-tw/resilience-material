@@ -55,7 +55,7 @@ WCAG 2.2 設計原則由 13 條指引提供支持。其中每一項都細分為�
 
 您應該結合使用自動化工具和手動測試（包括[無障礙性測試](../accessbility/testing-for-accessibility.md)中列出的工具）來識別潛在問題。
 
-您還需要在 Beta 評估之前[進行無障礙性稽核](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction/#getting-an-accessibility-audit)，以證明您的服務符合 AA 等級的要求。
+您還需要在 Beta 評估之前[進行無障礙性稽核](./making-your-service-accessible-an-introduction.md)，以證明您的服務符合 AA 等級的要求。
 
 ### 原則一：可感知性
 

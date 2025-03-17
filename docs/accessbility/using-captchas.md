@@ -42,4 +42,4 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括身心障礙者�
 
 ## 無障礙和輔助數位化 讓您的服務具有無障礙性：簡介
 
-[https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements)
+[https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements](./making-your-service-accessible-an-introduction.md)

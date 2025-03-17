@@ -1,6 +1,6 @@
 # 讓服務無障礙
 
-您必須確保開發的服務對所有需要的人是方便取用的。作為開發者，要設計並建立介面，避免[為身心障礙者及輔助科技使用者設下障礙](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)
+您必須確保開發的服務對所有需要的人是方便取用的。作為開發者，要設計並建立介面，避免[為身心障礙者及輔助科技使用者設下障礙](./making-your-service-accessible-an-introduction.md)
 
 以易於取得方法打造的服務有助於確保該服務能夠因應未來的變動，無論是技術的變動或使用者的無障礙性需求改變。
 
