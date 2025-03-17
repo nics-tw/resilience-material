@@ -1,7 +1,5 @@
 # 如何測試前端效能
 
-[原始資料連結](https://www.gov.uk/service-manual/technology/how-to-test-frontend-performance)
-
 效能不佳的網站可能會讓使用者感到沮喪，並耗盡他們的行動網路數據與電池壽命。您可以透過確保您的前端服務，盡可能快速且輕量來解決這個問題。
 
 這也意味著您的服務可以在多種裝置上正常運作。
@@ -64,3 +62,5 @@
 2.  最佳化您發現的任何瓶頸。
 3.  量化出最佳化前後的效能差異與使用者體驗。
 4.  重複此操作，直到您的前端達到所需的效能指標。
+
+[原始資料連結](https://www.gov.uk/service-manual/technology/how-to-test-frontend-performance)

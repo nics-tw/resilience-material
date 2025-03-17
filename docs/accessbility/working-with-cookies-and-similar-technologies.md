@@ -4,8 +4,6 @@ Cookie 是網站發送到使用者電腦的小型資料檔，用於儲存有關�
 
 本指南是介紹如何使用 Cookie，但當採用使用者設備中其他資訊儲存的技術時，您應該遵循相同的指南，例如 HTML5 local storage。
 
-[原始文章連結](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
-
 ## 目錄
 
  - [如何使用 Cookie](#如何使用-cookie)
@@ -40,3 +38,5 @@ Cookie 必須僅適用於您的原始網域。例如，`www.servicename.service.
 ## 相關指南
 
 您可能會發現有關[選擇數位分析工具](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)的指南很有用。
+
+[原始文章連結](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)

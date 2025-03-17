@@ -2,8 +2,6 @@
 
 本指南為《 2010 年平等法案》的資訊和指南，包括年齡歧視和公部門平等義務。
 
-[原始文章連結](https://www.gov.uk/guidance/equality-act-2010-guidance)
-
 ## 目錄
 
  - [概述](#概述)
@@ -213,3 +211,5 @@
 ## 平等法案指南
 
 我們製作了一系列[指南，概述了該法案對法律所做的關鍵修改](http://www.homeoffice.gov.uk/publications/equalities/equality-act-publications/equality-act-guidance/)。
+
+[原始文章連結](https://www.gov.uk/guidance/equality-act-2010-guidance)

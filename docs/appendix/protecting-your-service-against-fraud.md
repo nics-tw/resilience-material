@@ -1,7 +1,5 @@
 # 保護您的服務免受詐騙
 
-[原始文章連結](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud)
-
 當您設計和管理您的數位服務時，您必須：
 
 - 考慮您的服務如何成為詐騙份子的目標(從 Alpha 階段開始)，以及這可能會造成的影響
@@ -155,3 +153,5 @@ IFIA 概述詐騙可能影響政策、專案或計劃的主要方式。
 
 - [資訊安全](https://www.gov.uk/service-manual/making-software/information-security.html)
 - [雲端安全](https://www.gov.uk/service-manual/operations/cloud-security.html)
+
+[原始文章連結](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud)

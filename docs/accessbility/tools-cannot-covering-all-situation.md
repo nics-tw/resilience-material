@@ -4,8 +4,6 @@
 
 在這篇文章中，我們將討論我們的做法和發現。
 
-[原始文章連結](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)
-
 ## 目錄
 
  - [自動化工具的優點和缺點](#自動化工具的優點和缺點)
@@ -112,3 +110,5 @@
 為實現最有效的無障礙性測試，我們建議團隊將自動化工具測試與手動測試、無障礙性稽核和使用者測試結合使用。
 
 我們希望我們的研究結果頁面將有助於團隊選擇最符合他們需求的工具。同時，也鼓勵工具的建立者，能更好地記錄工具的功能和限制。
+
+[原始文章連結](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)

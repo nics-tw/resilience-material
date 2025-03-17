@@ -1,7 +1,5 @@
 # 內容設計：連結
 
-[原始文章連結](https://www.gov.uk/guidance/content-design/links)
-
 ## 目錄
 
  - [連結](#連結)
@@ -181,3 +179,5 @@
 - 定期測試安全性
 - 第三方提供者符合一般資料保護法規（General Data Protection Regulation）
 - 向使用者提供關於資料擁有者、使用者權利以及如有問題應該聯絡誰的明確訊息
+
+[原始文章連結](https://www.gov.uk/guidance/content-design/links)

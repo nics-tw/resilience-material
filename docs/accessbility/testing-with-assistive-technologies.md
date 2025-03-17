@@ -1,8 +1,4 @@
-# 無障礙性
-
-利用輔助科技進行測試
-
-[原始資料連結](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)
+# 利用輔助科技進行測試
 
 您必須讓服務與輔助科技可以搭配使用，這樣每個人可以透過他們所依賴的技術(例如螢幕報讀器或語音辨識軟體)來使用您的服務。
 
@@ -139,3 +135,5 @@
 ## 將輔助科技使用者納入您的使用者研究中
 
 您還應該將輔助科技的使用者納入您的使用者研究中。參與者不需要使用任何特定的軟體組合——任何設置都有助於了解您的服務與輔助科技一起運作的情況。
+
+[原始資料連結](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)

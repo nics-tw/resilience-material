@@ -2,8 +2,6 @@
 
 無障礙和輔助數位化 讓您的服務具有無障礙性：簡介
 
-[原始資訊連結](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements)
-
 您的服務必須可供所有需要的人使用，包括僅供公務員使用的服務。如果未使您的服務具有無障礙性，您可能會違法。
 
 在設計或建立任何東西之前，您需要考慮使用者如何存取和使用您的服務。
@@ -161,3 +159,5 @@
 您應該確保服務中的非數位部分也是無障礙性的。例如，您應該確定為失聰或有語言障礙的使用者提供聯絡資訊（透過簡訊、電子郵件或親自與英國手語翻譯或唇語閱讀人員聯繫）。
 
 如果您的服務會需要寄出信件，請確定您也提供了無障礙的替代方案（例如大字體、點字或音訊 CD）。
+
+[原始資訊連結](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements)
