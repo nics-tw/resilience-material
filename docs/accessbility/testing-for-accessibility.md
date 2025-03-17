@@ -12,7 +12,7 @@
 如果您努力符合[服務標準](https://www.gov.uk/service-manual/service-standard)，您還需要：
 
 - 確保該服務和最常見的[輔助科技](./testing-with-assistive-technologies.md)相容——例如螢幕報讀器或語音辨識軟體
-- 與身心障礙使用者和年長使用者一起[測試服務](https://www.gov.uk/service-manual/user-research/running-research-sessions-with-people-with-disabilities)
+- 與身心障礙使用者和年長使用者一起[測試服務](./running-research-sessions-with-people-with-disabilities.md)
 
 符合無障礙性要求的最佳方法是：
 
