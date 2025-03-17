@@ -56,7 +56,7 @@ Michael Fox 和 Miles Kemp 在他們的*《互動建築》*一書中將這種更
 
 為了讓我們設計的不僅僅是格式整齊的頁面列印輸出，CSS 規範為我們提供一系列[可接受的媒體類型](http://www.w3.org/TR/CSS21/media.html#media-types)，每種媒體類型都針對特定類別的網路就緒設備。但大多數瀏覽器和設備從未真正接受該規範的精神，導致許多媒體類型的[實現不完美](http://www.alistapart.com/articles/return-of-the-mobile-stylesheet)，或完全被忽略。
 
-值得慶幸的是，W3C 建立了[*media query*](http://www.w3.org/TR/css3-mediaqueries/)作為 CSS3 規範的一部分，改進媒體類型的承諾。media query不僅使我們能夠針對某些設備類別，而且能夠實際檢查渲染我們工作的設備的物理特性。例如，隨著最近行動 WebKit 的興起，media query 成為一種流行的使用者端技術，用於向iPhone、Android手機及其同類產品提供客製化的樣式表。為此，我們可以將查詢合併到 link 樣式表的 media 屬性中：
+值得慶幸的是，W3C 建立了[*media query*](http://www.w3.org/TR/css3-mediaqueries/)作為 CSS3 規範的一部分，改進媒體類型的承諾。media query不僅使我們能夠針對某些設備類別，而且能夠實際檢查渲染我們工作的設備的物理特性。例如，隨著最近行動 WebKit 的興起，media query 成為一種流行的使用者端技術，用於向 iPhone、Android 手機及其同類產品提供客製化的樣式表。為此，我們可以將查詢合併到 link 樣式表的 media 屬性中：
 
 ```css
 <link rel="stylesheet" type="text/css"
@@ -112,7 +112,7 @@ li#f-winter {
 }
 ```
 
-我已經省略許多排版屬性，將重點著重於佈局：每個.figure元素的大小大約是所在欄 (column) 的三分之一，每列 (row) 末尾的兩張圖片 (li#f-mycroft,li#f-winter) 的右側邊距為零。這種方法效果相當好，直到視窗明顯比我們原來的設計更小或更寬。透過 media query，我們可以應用特定解析度的定點修復，調整我們的設計以更好地回應顯示效果的變化。
+我已經省略許多排版屬性，將重點著重於佈局：每個 .figure 元素的大小大約是所在欄 (column) 的三分之一，每列 (row) 末尾的兩張圖片 (li#f-mycroft,li#f-winter) 的右側邊距為零。這種方法效果相當好，直到視窗明顯比我們原來的設計更小或更寬。透過 media query，我們可以應用特定解析度的定點修復，調整我們的設計以更好地回應顯示效果的變化。
 
 首先，一旦視窗低於某個解析度閾值（例如：600 px），我們就會對頁面進行線性化處理。因此，我們在樣式表的底部建立一個新 `@media` 區塊，如下所示：
 
@@ -183,7 +183,7 @@ li#f-winter {
 
 - [2007年的 jQuery 外掛程式](http://plugins.jquery.com/project/MediaQueries)提供了一定程度的 media query 支援，當附加到不同的 link 元素時僅實現 min-width 和 media-wide 屬性。
 
-- 最近，[css3-mediaqueries.js](http://code.google.com/p/css3-mediaqueries-js/) 也被發布，該函式庫承諾透過 `@media`區塊包含時「使 IE 5+、Firefox 1+ 和 Safari 2 透明地解析、測試和應用 CSS3 Media Queryies」。儘管很大程度上是 1.0 版本，但我個人發現它非常強大，我計劃持續關注它的發展。
+- 最近，[css3-mediaqueries.js](http://code.google.com/p/css3-mediaqueries-js/) 也被發布，該函式庫承諾透過 `@media` 區塊包含時「使 IE 5+、Firefox 1+ 和 Safari 2 透明地解析、測試和應用 CSS3 Media Queryies」。儘管很大程度上是 1.0 版本，但我個人發現它非常強大，我計劃持續關注它的發展。
 
 但如果您對使用 JavaScript 不感興趣，那也是完全可以理解的。[然而，這強化了在靈活的網格](http://www.alistapart.com/articles/fluidgrids/)之上建構佈局的理由，確定您的設計在瀏覽器不支援 media query 和設備中具有一定程度的靈活性。
 

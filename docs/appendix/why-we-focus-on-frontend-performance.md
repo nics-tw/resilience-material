@@ -62,7 +62,7 @@
 
 - 更新字體，以獲得更好的整體壓縮以減少資料使用
 
-- 應用現代壓縮方法(例如[Brotli](https://github.com/google/brotli))來減少頁面的大小
+- 應用現代壓縮方法(例如 [Brotli](https://github.com/google/brotli)) 來減少頁面的大小
 
 隨著調查的進展，我們計畫在部落格中發布我們的調查結果，並將隨著了解更多資訊而更新我們的[前端效能指南。](../accessbility/how-to-test-frontend-performance.md)在這個過程中，我們希望政府各地的開發人員能從已開始的工作中學習，並幫助我們確定下一步要研究的內容。
 
