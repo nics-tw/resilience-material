@@ -1,8 +1,6 @@
-# 原始碼 (source) 的順序與文件的大綱
+# 網頁結構教學
 
-網頁結構教學
-
-良好結構的內容可以實現更有效率的導覽與處理。使用HTML與WAI-ARIA改進網頁與應用程式中的導覽與定向。
+良好結構的內容可以實現更有效率的導覽與處理。使用 HTML 與 WAI-ARIA 改進網頁與應用程式中的導覽與定向。
 
 - [頁面區域](https://www.w3.org/WAI/tutorials/page-structure/regions/)：**使用 HTML5 與 WAI-ARIA 識別與標記網頁上的區域。
 
