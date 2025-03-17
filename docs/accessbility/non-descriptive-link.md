@@ -1,6 +1,6 @@
 # 內容設計：連結
 
-[https://www.gov.uk/guidance/content-design/links](https://www.gov.uk/guidance/content-design/links)
+[原始文章連結](https://www.gov.uk/guidance/content-design/links)
 
 ## 目錄
 

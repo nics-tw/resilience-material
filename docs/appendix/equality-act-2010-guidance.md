@@ -1,6 +1,6 @@
 # 2010年平等法指南
 
-[https://www.gov.uk/guidance/equality-act-2010-guidance](https://www.gov.uk/guidance/equality-act-2010-guidance)
+[原始文章連結](https://www.gov.uk/guidance/equality-act-2010-guidance)
 
 本旨難為《 2010 年平等法案》的資訊和指南，包括年齡歧視和公部門平等義務。
 

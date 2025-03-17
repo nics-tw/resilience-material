@@ -1,6 +1,6 @@
 # 內容設計：圖片
 
-[https://www.gov.uk/guidance/content-design/images](https://www.gov.uk/guidance/content-design/images)
+[原始文章連結](https://www.gov.uk/guidance/content-design/images)
 
 指導 GOV.UK 內容發布者關於如何使用圖片並使其無障礙化的指南。本章也包括 GOV.UK 的版權標準。
 

@@ -1,6 +1,6 @@
 # 監控您服務的狀態
 
-[https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)
+[原始文章連結](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)
 
 當您進入公開 beta 測試階段時，您必須建立監控機制，以識別可能影響您服務的任何問題。
 

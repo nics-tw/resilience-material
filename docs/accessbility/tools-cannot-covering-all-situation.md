@@ -1,6 +1,6 @@
 # 當我們在全球最不無障礙網頁上測試工具時我們發現了什麼
 
-[https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)
+[原始文章連結](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)
 
 最近，我們對自動化無障礙性測試工具進行了審查。我們建立了一個充滿障礙案例的網站，以便測試這些工具。這篇[部落格文章發布](https://alphagov.github.io/accessibility-tool-audit/)了我們的研究結果。
 

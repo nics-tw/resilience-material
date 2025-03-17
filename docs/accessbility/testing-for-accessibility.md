@@ -1,6 +1,6 @@
 # 無障礙性測試
 
-[https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)
+[原始文章連結](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)
 
 您需要確保您的服務至少達到[網站內容無障礙性指南 2.2（WCAG 2.2）AA等級。](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag)
 

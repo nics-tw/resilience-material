@@ -1,6 +1,6 @@
 # 了解公部門機構的無障礙性要求
 
-[https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
+[原始文章連結](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps)
 
 幫助您的團隊了解為什麼他們需要符合網站和行動應用程式的無障礙性法規。
 

@@ -1,6 +1,6 @@
 # 使用 Cookie 和類似技術
 
-[https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
+[原始文章連結](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
 
 Cookie 是網站發送到使用者電腦的小型資料檔，用於儲存有關使用者瀏覽網站的資料。
 

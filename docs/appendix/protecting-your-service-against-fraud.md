@@ -1,6 +1,6 @@
 # 保護您的服務免受詐騙
 
-[https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud)
+[原始文章連結](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud)
 
 當您設計和管理您的數位服務時，您必須：
 
