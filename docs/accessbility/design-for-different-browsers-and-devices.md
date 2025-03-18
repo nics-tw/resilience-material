@@ -83,3 +83,5 @@
 新的產品和平台可能不會出現在任何資料中，但如果它們可能大受歡迎，那麼提前測試是合情合理的。
 
 如果某個產品或系統的受歡迎程度正在下降，您也必須決定何時停止支援該產品或系統。
+
+[原始資料連結](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)
