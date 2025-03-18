@@ -14,8 +14,8 @@
 目錄
 
  - [符合政府無障礙要求](#符合政府無障礙要求)
- - [WCAG 2.2 設計原則](#wcag-22設計原則)
- - [採用WCAG 2.2 指南](#wcag-22設計原則)
+ - [WCAG 2.2 設計原則](#wcag-22-設計原則)
+ - [採用WCAG 2.2 指南](#採用wcag-22-指南)
     - [原則一：可感知性](#原則一可感知性)
     - [原則二：可操作性](#原則二可操作性)
     - [原則三：可理解性](#原則三可理解性)
@@ -23,8 +23,7 @@
 
 ## 符合政府無障礙要求
 
-做為符合[政府無障礙要求](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements)的一部分，服務必須達到 WCAG
-2.2 AA等級。
+做為符合[政府無障礙要求](./making-your-service-accessible-an-introduction.md)的一部分，服務必須達到 WCAG 2.2 AA 等級。
 
 政府數位服務部（Government Digital Service, GDS）正在研究如何評估 [WCAG 2.2 中的新成功標準（Success Criteria）](https://www.w3.org/TR/WCAG22/)，並將於 2024 年 10 月開始監控額外標準。在 2024 年 10 月前，英國政府將監控網站和應用程式是否達到 [WCAG 2.1 AA 級](https://www.w3.org/TR/WCAG21/) 的無障礙性。
 
@@ -47,7 +46,7 @@ WCAG 2.2 基於4個設計原則：
 
 這些原則適用於服務的各個方面（包括程式碼、內容和互動），這意味著團隊的所有成員都需要理解並思考它們。
 
-## 採用WCAG 2.2指南
+## 採用WCAG 2.2 指南
 
 WCAG 2.2 設計原則由 13 條指引提供支持。其中每一項都細分為服務所需符合的特定要求（或「成功標準（Success Criteria）」）。
 
@@ -55,11 +54,11 @@ WCAG 2.2 設計原則由 13 條指引提供支持。其中每一項都細分為�
 
 您應該結合使用自動化工具和手動測試（包括[無障礙性測試](../accessbility/testing-for-accessibility.md)中列出的工具）來識別潛在問題。
 
-您還需要在 Beta 評估之前[進行無障礙性稽核](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction/#getting-an-accessibility-audit)，以證明您的服務符合 AA 等級的要求。
+您還需要在 Beta 評估之前[進行無障礙性稽核](./making-your-service-accessible-an-introduction.md)，以證明您的服務符合 AA 等級的要求。
 
 ### 原則一：可感知性
 
-為了符合 [WCAG 2.2原則一：可感知性](https://www.w3.org/TR/WCAG22/#perceivable)，您需要確保使用者能夠透過他們可用的感官來識別和使用您的服務。
+為了符合 [WCAG 2.2 原則一：可感知性](https://www.w3.org/TR/WCAG22/#perceivable)，您需要確保使用者能夠透過他們可用的感官來識別和使用您的服務。
 
 這意味著您需要：
 
@@ -98,8 +97,7 @@ WCAG 2.2 設計原則由 13 條指引提供支持。其中每一項都細分為�
 
 ### 原則三：可理解性
 
-為了符合 [WCAG
-2.2 原則三：可理解性](https://www.w3.org/TR/WCAG22/#understandable)，您必須確保使用者能夠理解您的內容以及服務的運作方式。
+為了符合 [WCAG 2.2 原則三：可理解性](https://www.w3.org/TR/WCAG22/#understandable)，您必須確保使用者能夠理解您的內容以及服務的運作方式。
 
 這表示您需要執行以下操作：
 
@@ -112,8 +110,7 @@ WCAG 2.2 設計原則由 13 條指引提供支持。其中每一項都細分為�
 
 ### 原則四：強健性
 
-為了符合 [WCAG
-2.2 原則四：強健性](https://www.w3.org/TR/WCAG22/#robust)，您必須確保您的內容可以被各種使用者代理（包括輔助科技）可靠地解讀。
+為了符合 [WCAG 2.2 原則四：強健性](https://www.w3.org/TR/WCAG22/#robust)，您必須確保您的內容可以被各種使用者代理（包括輔助科技）可靠地解讀。
 
 這表示著您需要執行以下操作：
 

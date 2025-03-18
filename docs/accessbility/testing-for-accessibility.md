@@ -1,7 +1,5 @@
 # 無障礙性測試
 
-[https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)
-
 您需要確保您的服務至少達到[網站內容無障礙性指南 2.2（WCAG 2.2）AA等級。](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag)
 
 如果服務不符合 WCAG 2.2 AA 等級，您可能會違法。
@@ -11,8 +9,8 @@
 
 如果您努力符合[服務標準](https://www.gov.uk/service-manual/service-standard)，您還需要：
 
-- 確保該服務和最常見的[輔助科技](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)相容——例如螢幕報讀器或語音辨識軟體
-- 與身心障礙使用者和年長使用者一起[測試服務](https://www.gov.uk/service-manual/user-research/running-research-sessions-with-people-with-disabilities)
+- 確保該服務和最常見的[輔助科技](./testing-with-assistive-technologies.md)相容——例如螢幕報讀器或語音辨識軟體
+- 與身心障礙使用者和年長使用者一起[測試服務](./running-research-sessions-with-people-with-disabilities.md)
 
 符合無障礙性要求的最佳方法是：
 
@@ -80,7 +78,7 @@
 
 您的服務需要在人們用來存取您的服務的[最常見的瀏覽器和裝置](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)上運作。
 
-您還必須確保您的服務和[常見的輔助科技](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)相容。
+您還必須確保您的服務和[常見的輔助科技](./testing-with-assistive-technologies.md)相容。
 
 這意味著：
 
@@ -113,6 +111,8 @@
 
 您可能還會發現這些指南很有用：
 
-- [讓您的服務具有無障礙性：簡介](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)
+- [讓您的服務具有無障礙性：簡介](./making-your-service-accessible-an-introduction.md)
 - [使用、調整和建立模式](https://www.gov.uk/service-manual/design/using-adapting-and-creating-patterns)
-- [使用漸進增強](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)
+- [使用漸進增強](./using-progressive-enhancement.md)
+
+[原始文章連結](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)

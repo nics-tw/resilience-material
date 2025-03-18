@@ -1,7 +1,5 @@
 # 內容設計：圖片
 
-[https://www.gov.uk/guidance/content-design/images](https://www.gov.uk/guidance/content-design/images)
-
 指導 GOV.UK 內容發布者關於如何使用圖片並使其無障礙化的指南。本章也包括 GOV.UK 的版權標準。
 
 如果您在服務團隊工作，請閱讀[設計線上服務的圖片指南](https://design-system.service.gov.uk/styles/images/)。
@@ -194,3 +192,5 @@ derivatives, ND） 規則。
 如果您自行安排拍攝，請取得當事人的書面同意。
 
 考慮上下文脈絡：避免將可識別的人物與可能引起冒犯的事物相關連。
+
+[原始文章連結](https://www.gov.uk/guidance/content-design/images)

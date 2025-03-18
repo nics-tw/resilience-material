@@ -1,7 +1,5 @@
 # 監控您服務的狀態
 
-[https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)
-
 當您進入公開 beta 測試階段時，您必須建立監控機制，以識別可能影響您服務的任何問題。
 
 使用適當的工具和流程進行監控可以幫助您：
@@ -58,7 +56,7 @@
 
 監控檢查是一系列測試，您可以執行這些測試來評估您的系統或整體服務的狀態，並通知您是否存在問題。
 
-例如，您可能決定「如果在一小時內有1％的使用者在完成交換資料時遇到問題，則需要收到警報」。
+例如，您可能決定「如果在一小時內有 1 ％的使用者在完成交換資料時遇到問題，則需要收到警報」。
 
 您應該在撰寫程式碼的同時撰寫監控檢查，並將這些檢查視為您實際系統的測試。
 
@@ -104,3 +102,5 @@
 ## 相關指南
 
 您可能也會發現[運作時間和可用性指南](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)很有用。
+
+[原始文章連結](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)

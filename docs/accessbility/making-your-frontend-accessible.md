@@ -1,6 +1,6 @@
 # 讓服務無障礙
 
-您必須確保開發的服務對所有需要的人是方便取用的。作為開發者，要設計並建立介面，避免[為身心障礙者及輔助科技使用者設下障礙](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)
+您必須確保開發的服務對所有需要的人是方便取用的。作為開發者，要設計並建立介面，避免[為身心障礙者及輔助科技使用者設下障礙](./making-your-service-accessible-an-introduction.md)
 
 以易於取得方法打造的服務有助於確保該服務能夠因應未來的變動，無論是技術的變動或使用者的無障礙性需求改變。
 
@@ -32,7 +32,7 @@
 
 即便使用了 GOV.UK 設計系統，在 HTML、Cascading Style Sheets (CSS) 和 JavaScript 程式碼中，仍可能不小心造成障礙。
 
-[使用漸進增強策略](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)，確保若上述 HTML 層級之上的 CSS 或 JavaScript 出現問題或被使用者關閉時，您的服務仍然可用。
+[使用漸進增強策略](./using-progressive-enhancement.md)，確保若上述 HTML 層級之上的 CSS 或 JavaScript 出現問題或被使用者關閉時，您的服務仍然可用。
 
 ## 建構無障礙服務
 
@@ -64,7 +64,7 @@
 
 ### 編寫無障礙 HTML
 
-您應當遵循[語意化 HTML 的原則](https://html.com/semantic-markup/)。運用正確的 HTML 元素及屬性標註內容，意味著正確的資訊將被提供給輔助科技。這也代表輔助科技的使用者可以依預期與內容或介面互動。
+您應當遵循[語意化 HTML 的原則](./semantic-markup.md)。運用正確的 HTML 元素及屬性標註內容，意味著正確的資訊將被提供給輔助科技。這也代表輔助科技的使用者可以依預期與內容或介面互動。
 
 在 HTML 中使用正確的元素能協助輔助科技使用者瀏覽網頁，包含讓他們能跳至相關區塊。例如，請確定使用 `header`、`main` 和 `footer` 元素來勾勒頁面架構。
 
@@ -111,9 +111,9 @@
 
 ## 檢測服務的無障礙性
 
-您應該根據 WCAG 2.2 進行手動檢查，並使用[最常用的輔助科技與瀏覽器組合](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)進行測試。
+您應該根據 WCAG 2.2 進行手動檢查，並使用[最常用的輔助科技與瀏覽器組合](./testing-with-assistive-technologies.md)進行測試。
 
-您的[手動測試](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies)應該包括一些常見的無障礙問題，例如檢測：
+您的[手動測試](./testing-with-assistive-technologies.md)應該包括一些常見的無障礙問題，例如檢測：
 
 - 服務是否可以用鍵盤操作
 - 使用者是否能調整介面，如在瀏覽器中放大字型或更改顏色
@@ -135,3 +135,5 @@
 - 討論如何建構無障礙服務並符合無障礙要求
 - 跨政府分享想法
 - 尋求從事類似服務或面臨類似挑戰的團隊之支援
+
+[原始資料連結](https://www.gov.uk/service-manual/technology/accessibility-for-developers-an-introduction)

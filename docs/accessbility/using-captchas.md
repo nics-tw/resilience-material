@@ -16,7 +16,7 @@ CAPTCHAs 影響了安全、隱私、可用性和無障礙等議題。除非運�
 
 ## 為什麼 CAPTCHAs 造成問題
 
-CAPTCHAs 會讓部分的人較難使用我們的服務，包括身心障礙者。第三方的 CAPTCHA 服務也會帶來額外風險，包括：
+CAPTCHAs 會讓部分的人較難使用我們的服務，包括[身心障礙者](./making-your-service-accessible-an-introduction.md#從一開始就考慮無障礙性)。第三方的 CAPTCHA 服務也會帶來額外風險，包括：
 
 - 資安問題 - 如果 CAPTCHAs 的提供方安全受損，我們的服務也會收到影響
 - 隱私疑慮 - 例如，第三方服務可設定 cookies，收集分析資料並跨站追蹤使用者
@@ -40,6 +40,4 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括身心障礙者�
 - [保護您的服務免受詐騙的指南](../appendix/protecting-your-service-against-fraud.md)
 - [使用 cookies 和類似技術的工作指南](../accessbility/working-with-cookies-and-similar-technologies.md)
 
-## 無障礙和輔助數位化 讓您的服務具有無障礙性：簡介
-
-[https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements)
+[原始資料連結](https://www.gov.uk/service-manual/technology/using-captchas)

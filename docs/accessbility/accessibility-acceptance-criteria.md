@@ -1,7 +1,5 @@
 # 透過無障礙性驗收準則提升無障礙性
 
-[https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/](https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/)
-
 在政府數位服務（Government Digital Service）部門，[我們建立的一切必須具無障礙性](https://gds.blog.gov.uk/2017/10/23/were-making-accessibility-clearer-and-easier/)。這是我們的設計原則之一，「這是[為了每個人](https://www.gov.uk/guidance/government-design-principles#this-is-for-everyone)」：
 
 「無障礙設計是好的設計。我們所建立的一切應盡可能具有包容性、易讀和可閱讀。 …… 最需要我們服務的人通常也是最難使用這些服務的人。讓我們從一開始就考慮到這些人。」
@@ -30,7 +28,7 @@
 
 政府數位服務部（GDS）多年來一直使用驗收準則（例如，[這篇 2015 年的 Verify 部落格文章關於驗收準則](https://gdstechnology.blog.gov.uk/2015/03/04/creating-better-acceptance-criteria-for-user-stories/)，以及 [2014 年的 GOV.UK 樣式指南](http://webarchive.nationalarchives.gov.uk/20141214162055/https://www.gov.uk/guidance/content-design/user-needs#acceptance-criteria)），因此將無障礙相關的驗收準則正式化並加以和擴展似乎是合理的。
 
-請注意，僅有無障礙驗收準則本身並不足以使您的服務具有無障礙性——請閱讀更多[建立無障礙服務的指南](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction)。
+請注意，僅有無障礙驗收準則本身並不足以使您的服務具有無障礙性——請閱讀更多[建立無障礙服務的指南](./making-your-service-accessible-an-introduction.md)。
 
 ### 提高無障礙性的認知
 
@@ -121,3 +119,5 @@
 ## 下一步是什麼？
 
 為 GOV.UK 上的使用者介面撰寫無障礙性驗收標準是一項新的做法，我們將繼續完善並建立相應的流程。我們將在我們的元件指南和開發者文件中包含無障礙性驗收標準（可以查看[內容列表元件](https://government-frontend.herokuapp.com/component-guide/contents-list)以瞭解範例）。
+
+[原始文章連結](https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/)
