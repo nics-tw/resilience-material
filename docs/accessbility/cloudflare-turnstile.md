@@ -2,6 +2,23 @@
 
 Cloudflare Turnstile 提供了一個使用者友善的解決方案，用來替代傳統 CAPTCHA 圖形驗證因難以辨識而造成的使用者通過率偏低問題。本文件將說明 Turnstile 的運作原理以及如何將其套用在網站上。
 
+## 目錄
+
+- [防護機制](#防護機制)
+  - [工作原理](#工作原理)
+  - [防護優勢](#防護優勢)
+  - [使用情境](#使用情境)
+- [注意事項與限制](#注意事項與限制)
+  - [免費版本限制](#免費版本限制)
+- [實作指南](#實作指南)
+  - [前端實作](#前端實作)
+    - [HTML](#前端實作)
+    - [JavaScript](#JavaScript)
+    - [參數說明](#參數說明)
+  - [後端驗證](#後端驗證)
+    - [Node.js 實作](#Node.js-實作)
+    - [.NET C# 實作](#.NET-C#-實作)
+
 ## 防護機制
 
 ### 工作原理
@@ -55,7 +72,7 @@ Turnstile 使用多層次的防護機制來識別和阻擋機器人：
 
 參考：https://developers.cloudflare.com/turnstile/
 
-### 1. 前端實作
+### 前端實作
 
 在 Turnstile 中，有兩種主要的前端實作方式：
 
@@ -129,7 +146,7 @@ JavaScript 使用 `sitekey` 作為參數名稱，HTML 使用 `data-sitekey` 作�
 
 其他可以使用的參數請參考：https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations
 
-### 2. 後端驗證
+### 後端驗證
 
 #### Node.js 實作
 
