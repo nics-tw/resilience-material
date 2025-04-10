@@ -12,12 +12,12 @@ Cloudflare Turnstile 提供了一個使用者友善的解決方案，用來替�
   - [免費版本限制](#免費版本限制)
 - [實作指南](#實作指南)
   - [前端實作](#前端實作)
-    - [HTML](#前端實作)
-    - [JavaScript](#JavaScript)
+    - [HTML](#html)
+    - [JavaScript](#javascript)
     - [參數說明](#參數說明)
   - [後端驗證](#後端驗證)
-    - [Node.js 實作](#Node.js-實作)
-    - [.NET C# 實作](#.NET-C#-實作)
+    - [Node.js 實作](#nodejs-實作)
+    - [.NET C# 實作](#net-c-實作)
 
 ## 防護機制
 
