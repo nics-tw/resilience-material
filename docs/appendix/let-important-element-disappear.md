@@ -14,14 +14,6 @@
 
 下面挑選了一些範例來展示已做出的一些改進。
 
-## 目錄
-
- - [返回連結（back link）元件](#返回連結back-link元件)
- - [麵包屑（breadcrumbs）元件](#麵包屑breadcrumbs元件)
- - [單選按鈕（radio）元件](#單選按鈕radio元件)
- - [標頭（header）元件](#標頭header元件)
- - [面板（panel）元件](#面板panel元件)
-
 ### 返回連結（back link）元件
 
 [返回連結元件](https://design-system.service.gov.uk/components/back-link)有一個三角形箭頭圖標，使用 [CSS 三角形方法](https://css-tricks.com/snippets/css/css-triangle/)實作。

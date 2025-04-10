@@ -4,13 +4,6 @@ Cookie 是網站發送到使用者電腦的小型資料檔，用於儲存有關�
 
 本指南是介紹如何使用 Cookie，但當採用使用者設備中其他資訊儲存的技術時，您應該遵循相同的指南，例如 HTML5 local storage。
 
-## 目錄
-
- - [如何使用 Cookie](#如何使用-cookie)
- - [如何建立 Cookie 頁面](#如何建立-cookie-頁面)
- - [應用 Cookie 的範圍](#應用-cookie-的範圍)
- - [相關指南](#相關指南)
-
 ## 如何使用 Cookie
 
 儘量減少 Cookie 的使用，並對您使用的 Cookie 透明化。您必須：

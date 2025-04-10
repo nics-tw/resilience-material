@@ -10,18 +10,6 @@
 - 符合[公共領域的無障礙規範](../appendix/accessibility-requirements-for-public-sector.md)
 - 不觸犯 [2010 年平等法](../appendix/equality-act-2010-guidance.md)
 
-## 目錄
-
- - [利用 GOV.UK 設計系統](#利用-govuk-設計系統)
- - [建構無障礙服務](#建構無障礙服務)
-   - [編寫無障礙 HTML](#編寫無障礙-html)
-   - [撰寫無障礙 CSS](#撰寫無障礙-css)
-   - [編寫無障礙 JavaScript](#編寫無障礙-javascript)
- - [檢測服務的無障礙性](#檢測服務的無障礙性)
-   - [使用無障礙標準](#使用無障礙標準)
- - [尋求幫助](#尋求幫助)
-
-
 ## 利用 GOV.UK 設計系統
 
 儘可能利用 GOV.UK 的設計系統來建置您的服務。此設計系統提供了與其他 GOV.UK 服務一致且無障礙的風格、元件及模式。
