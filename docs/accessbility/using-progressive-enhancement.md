@@ -11,17 +11,6 @@
 - 透過鼓勵最佳實作方式來提高無障礙性，例如：編寫語意標記
 - 讓設備或網路條件不佳的使用者也能使用您的服務
 
-## 目錄
-
- - [從 HTML 開始](#從-html-開始)
- - [使用互動性元素 (interactive elements)](#使用互動性元素-interactive-elements)
- - [增添更多層次元素](#增添更多層次元素)
- - [創造更複雜的服務](#創造更複雜的服務)
-   - [使用 JavaScript 框架](#使用-javascript-框架)
-   - [使用 JavaScript 伺服器端渲染 (server-side rendering, SSR)](#使用-javascript-伺服器端渲染-server-side-rendering-ssr)
- - [測試您的服務](#測試您的服務)
- - [不要假設使用者關閉 CSS 或 JavaScript](#不要假設使用者關閉-css-或-javascript)
-
 ## 從 HTML 開始
 
 大部分政府網站的服務應該僅使用 HTML 即可運作，這些包含以下類型服務：
