@@ -4,7 +4,7 @@
 
 ## 以 petsard 專案為例
 
-(petsard)\[https://github.com/nics-tw/petsard) GitHub Action 相關檔案結構如下：
+[petsard](https://github.com/nics-tw/petsard) GitHub Action 相關檔案結構如下：
 
 ```txt
 .github/
