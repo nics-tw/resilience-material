@@ -14,9 +14,9 @@
 └── dependabot.yml
 ```
 
-### SBOM Generatation
+### SBOM Generation
 
-該 GitHub Action 會掃描專案中的元件組成並生成 SBOM ，更新元件依賴圖(dependency gragh)，附加 `dependency.sbom.json` 於 Release 。
+該 GitHub Action 會掃描專案中的元件組成並生成 SBOM ，更新元件依賴圖(dependency graph)，附加 `dependency.sbom.json` 於 Release 。
 
 ```yml
 name: Generate SBOM
@@ -71,7 +71,7 @@ jobs:
 name: Scan Vulnerabilities
 on:
   push:
-  pull_request:ㄕ
+  pull_request:
     types: ["ready_for_review", "edited", "reopened", "unlocked"]
   schedule:
     - cron: "0 21 * * 0"
@@ -131,7 +131,7 @@ jobs:
 
 ### dependabot Version Update
 
-該項不是 Github Action ，但與 SBOM Generatation 相關，故特以收錄。
+該項不是 Github Action ，但與 SBOM Generation 相關，故特以收錄。
 該項可以設定更新特定語言的自動更新，但與 dependabot Security Update 無關。
 
 ```yml
