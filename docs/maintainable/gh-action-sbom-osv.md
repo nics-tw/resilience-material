@@ -151,7 +151,7 @@ updates:
       time: "07:00"
       timezone: Asia/Taipei
     reviewers:
-      - "XXX"
+      - "CharlesChiuGit"
     target-branch: "dev"
     commit-message:
       prefix: "chore(ci.deps)"
@@ -173,7 +173,7 @@ updates:
       time: "07:00"
       timezone: Asia/Taipei
     reviewers:
-      - "XXX"
+      - "CharlesChiuGit"
     target-branch: "dev"
     commit-message:
       prefix: "chore(doc.deps)"
@@ -198,7 +198,7 @@ updates:
       time: "07:00"
       timezone: Asia/Taipei
     reviewers:
-      - "XXX"
+      - "matheme-justyn"
     target-branch: "dev"
     commit-message:
       prefix: "chore(pip.deps)"
