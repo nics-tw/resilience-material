@@ -135,7 +135,7 @@ jobs:
 ### dependabot Version Update
 
 該項不是 Github Action ，但與 SBOM Generation 相關，故特以收錄，如有設定 `dependabot` ，建議可以作為輔助設定。
-該項可以設定更新特定語言的自動更新，但與 dependabot Security Update 無關。
+該項可以設定更新特定語言（本文件以 github-actions、golang 的 `gomod`、python 的 `pip` 為例）的自動更新，但與 dependabot Security Update 無關。
 
 ```yml
 # Please see the documentation for all configuration options:
