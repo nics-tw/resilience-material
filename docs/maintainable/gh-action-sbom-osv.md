@@ -66,6 +66,7 @@ jobs:
 
 該 GitHub Action 會掃描專案使用的元件中是否有 CVE 風險的漏洞元件，並提出可以更新的無風險版本，以提升專案安全性。
 若有掃描出可修正的弱點時，則會阻攔 Pull Request 被合併。
+同時也會在每週一 05：00AM(UTC+8) 定期掃描一次。
 
 ````yml
 name: Scan Vulnerabilities
