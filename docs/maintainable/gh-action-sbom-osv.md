@@ -1,8 +1,25 @@
 # GitHub Action for Generating SBOM and scanning Open Source Vulnerability
 
 NOTE: 如有需要，可以參照有關 [GitHub Action 的名詞介紹](./ci-cd-guideline.md)。
+
 使用 GitHub Action 自動生成 SBOM 並附加於 Release，並於 Pull Request 自動掃描 Open Source Vulnerability (OSV)。
+
 以下的 GitHub Action 主要依賴於 [trivy](https://trivy.dev/latest/) 與 [trivy-action](https://github.com/aquasecurity/trivy-action)，`trivy-action` 目前可用於掃描 repo 與 container image ，請自行參照文件更改為貴專案需要的形式。
+
+- trivy 支援生成 SBOM 與 掃描漏洞的語言，限制條件請見[此](https://trivy.dev/latest/docs/coverage/language/)，列表最後更新於2025/04/06：
+  - Ruby
+  - Python
+  - PHP
+  - Node.js
+  - .NET
+  - Java
+  - Go
+  - Rust
+  - C/C++
+  - Elixir
+  - Dart
+  - Swift
+  - Julia
 
 ## 以 petsard 專案為例
 
