@@ -182,7 +182,7 @@ jobs:
   - maven
   - npm, pnpm, yarn
   - nuget
-  - pip, pip-compile, pipenv, peotry
+  - pip, pip-compile, pipenv, poetry
   - pub
   - swift
   - terraform
