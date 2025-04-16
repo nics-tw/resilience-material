@@ -94,10 +94,16 @@ jobs:
 若有掃描出可修正的弱點時，則會阻攔 Pull Request 被合併。
 同時也會在每週一 05：00AM(UTC+8) 定期掃描一次。
 
-觸發條件：- 上傳 commit 時掃描 - 發布 Pull Request，可自行設定條件，目前設定為："ready_for_review", "edited", "reopened", "unlocked" - 定時掃描："0 21 \* \* 0" 為 UTC，台灣時間(UTC+8)為每週一 05:00AM
-觸發動作：- 掃描專案風險元件 - 匯總成表格，記錄於該次 Action 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。- 當觸發條件為 Pull Request 且有掃描到風險元件時，將阻擋該次 Pull Request 直到風險元件已被移除或是更新到無風險的版本。
+1. 觸發條件：
+   - 上傳 commit 時掃描
+   - 發布 Pull Request，可自行設定條件，目前設定為："ready_for_review", "edited", "reopened", "unlocked"
+   - 定時掃描："0 21 \* \* 0" 為 UTC，台灣時間(UTC+8)為每週一 05:00AM
+2. 觸發動作：
+   - 掃描專案風險元件
+   - 匯總成表格，記錄於該次 Action 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。
+   - 當觸發條件為 Pull Request 且有掃描到風險元件時，將阻擋該次 Pull Request 直到風險元件已被移除或是更新到無風險的版本。
 
-```yml
+````yml
 name: Scan Vulnerabilities
 on:
   push:
