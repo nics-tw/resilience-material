@@ -18,7 +18,14 @@ NOTE: 如有需要，可以參照有關 [GitHub Action 的名詞介紹](./ci-cd-
 
 ### SBOM Generation
 
-該 GitHub Action 會掃描專案中的元件組成並生成 SBOM ，更新元件依賴圖(dependency graph)，附加 `dependency.sbom.json` 於 Release 。
+生成 SBOM 檔案
+
+1. 觸發條件：
+   - 發布 release 時
+1. 觸發動作：
+   - 掃描專案程式碼並生成 `dependency.sbom.json`，並更新元件依賴圖（dependency graph）
+   - 上傳 `dependency.sbom.json` 至 GitHub Artifact（位於該次Action內），可設定文件保留天數 `retention-days`，預設為90天
+   - 上傳 `dependency.sbom.json` 至該次 release 附件
 
 ```yml
 name: Generate SBOM
@@ -69,6 +76,9 @@ jobs:
 該 GitHub Action 會掃描專案使用的元件中是否有 CVE 風險的漏洞元件，並提出可以更新的無風險版本，以提升專案安全性。
 若有掃描出可修正的弱點時，則會阻攔 Pull Request 被合併。
 同時也會在每週一 05：00AM(UTC+8) 定期掃描一次。
+
+觸發條件：- 上傳 commit 時掃描 - 發布 Pull Request，可自行設定條件，目前設定為："ready_for_review", "edited", "reopened", "unlocked" - 定時掃描："0 21 \* \* 0" 為 UTC，台灣時間(UTC+8)為每週一 05:00AM
+觸發動作：- 掃描專案風險元件 - 匯總成表格，記錄於該次 Action 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。- 當觸發條件為 Pull Request 且有掃描到風險元件時，將阻擋該次 Pull Request 直到風險元件已被移除或是更新到無風險的版本。
 
 ````yml
 name: Scan Vulnerabilities
@@ -132,10 +142,40 @@ jobs:
           exit-code: 1
 ````
 
-### dependabot Version Update
+### Dependabot version update
 
-該項不是 Github Action ，但與 SBOM Generation 相關，故特以收錄，如有設定 `dependabot` ，建議可以作為輔助設定。
-該項可以設定更新特定語言（本文件以 github-actions、golang 的 `gomod`、python 的 `pip` 為例）的自動更新，但與 dependabot Security Update 無關。
+在元件依賴圖（dependency graph）更新後自動觸發，嚴格上來說不算 GitHub Action，但會因為 SBOM Generation 更新元件依賴圖後被連帶觸發，故特此一並介紹。
+
+- Supported `package-ecosystem`，限制條件請見[此](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem-)，列表最後更新於2025/04/06：
+  - bun
+  - bundler
+  - cargo
+  - composer
+  - devcontainers
+  - docker
+  - docker-compose
+  - dotnet-sdk
+  - helm
+  - mix
+  - elm
+  - gitsubmodule
+  - github-action
+  - gomod
+  - gradle
+  - maven
+  - npm, pnpm, yarn
+  - nuget
+  - pip, pip-compile, pipenv, peotry
+  - pub
+  - swift
+  - terraform
+  - uv
+- `directory`：元件記錄檔所在的資料夾，以下例的 gomod 區塊來說，可被更新的檔案位於 `doc_site` 資料夾內，故需設定為 `/doc_site`
+- `schedule`：定期掃描之設定
+- `reviewers`：Dependabot 檢查出可更新元件，發布 Pull Request 時的審核者，下例就分別設定為"CharlesChiuGit" 與 "matheme-justyn"
+- `target-branch`：Dependabot 應掃描的開發分枝，下例設定為 dev，可依專案實際情況自行調整
+- `labels`：Dependabot 發布 Pull Request 時帶上的標籤，可依專案實際情況自行調整
+- 尚有許多選項可供客製化，詳請見[該文件](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference)，可依專案實際情況自行調整
 
 ```yml
 # Please see the documentation for all configuration options:
