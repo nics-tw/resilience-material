@@ -1,4 +1,4 @@
-# GitHub Action for Generating SBOM and scanning Open Source Vulnerability
+# CI/CD - 於 GitHub 上建立自動生成 SBOM 及漏洞掃描之範例解析
 
 NOTE: 如有需要，可以參照有關 [GitHub Action 的名詞介紹](./ci-cd-guideline.md)。
 
