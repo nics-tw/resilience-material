@@ -1,8 +1,8 @@
-# 提升高可用性：K6 負載測試
+# 提升高可用性：k6 負載測試
 
 k6 是一款負載測試工具，它能幫助開發人員模擬真實的使用者行為，並測試系統在這些行為下的表現。使用 k6 撰寫測試可以讓您在程式部署到正式環境前，找出潛在問題，例如回應時間過長或系統故障等。
 
-它使用 JavaScript 或 TypeScript 撰寫腳本，除了開發人員容易上手外，也方便整合到現有的程式碼庫與專案中，K6 的測試涵蓋多種面向，可以是檢查效能、可靠性或可擴展性。根據不同的目標，您的腳本需要做不同的設定，例如模擬大量使用者或長時間執行測試。
+它使用 JavaScript 或 TypeScript 撰寫腳本，除了開發人員容易上手外，也方便整合到現有的程式碼庫與專案中。k6 的測試涵蓋多種面向，可以是檢查效能、可靠性或可擴展性。根據不同的目標，您的腳本需要做不同的設定，例如模擬大量使用者或長時間執行測試。
 
 ## 負載測試的種類
 
@@ -20,7 +20,7 @@ k6 是一款負載測試工具，它能幫助開發人員模擬真實的使用�
 ![](https://grafana.com/media/docs/k6-oss/chart-load-test-types-overview.png?w=900)
 > 圖片來源：k6 [load-test-types](https://grafana.com/load-testing/types-of-load-testing/)
 
-## K6 負載測試
+## k6 負載測試
 
 我們先看一個簡單的範例：
 
@@ -41,7 +41,7 @@ export default function () {
 }
 ```
 
-K6 會執行預設函數(default function)的程式碼：對 https://quickpizza.grafana.com 發出 get 請求。根據 `options` 的設定，重複執行預設函數 10 次，執行結果如下：
+k6 會執行預設函數(default function)的程式碼：對 https://quickpizza.grafana.com 發出 get 請求。根據 `options` 的設定，重複執行預設函數 10 次，執行結果如下：
 
 ``` console
 $ k6 run ./test/load-test.js
@@ -91,7 +91,7 @@ scenarios: 設定 1 個(預設)情境, 最多 1 為虛擬使用者在同一時�
 `http_req_duration` 平均回應時間為 218.27 毫秒，95% 的回應在 221.79 毫秒以下
 `http_req_failed` 執行 10 次，0 次失敗
 `http_reqs` 總共發送出 10 個 http 請求，大約每秒發出 0.79 個請求
-`iteration_duration` 平均執行一次時間的為 1.26 秒，95% 的測試在 1.45 毫秒內完成
+`iteration_duration` 平均執行一次時間約為 1.26 秒，95% 的測試在 1.45 秒內完成
 `iterations` 執行 10 次，大約每秒完成 0.79 次測試
 `vus` 目前的執行的虛擬使用者為 1 位
 `vus_max` 最多允許 1 位虛擬使用者在同一時間執行
@@ -99,18 +99,18 @@ scenarios: 設定 1 個(預設)情境, 最多 1 為虛擬使用者在同一時�
 `data_sent` 總共送出約 1 Kb 的資料，每秒送出 82 B
 ```
 
-其他指標說明，可以查看[K6 內建指標](https://grafana.com/docs/k6/latest/using-k6/metrics/reference/)
+其他指標說明，可以查看[k6 內建指標](https://grafana.com/docs/k6/latest/using-k6/metrics/reference/)
 
 ### 視覺化分析結果
 
-K6 測試結果可以另外存到 DB(如 PostgreSQL, InfluxDB)，再匯入到 Grafana 根據時間區段呈現、排序 API 回應時間或過濾出有問題的回應等，做成視覺化分析，您也可以直接使用 [k6 cloud](https://grafana.com/products/cloud/k6/)，不過因為篇幅關係，本文不對這部分多著墨。
+k6 測試結果可以另外存到資料庫（如 PostgreSQL、InfluxDB），然後匯入到 Grafana 進行視覺化分析。在 Grafana 中，您可以根據時間區段檢視資料、排序 API 回應時間或過濾出有問題的回應等。您也可以直接使用 [k6 cloud](https://grafana.com/products/cloud/k6/)，不過因為篇幅關係，本文不對這部分多著墨。
 
 ![](https://grafana.com/media/products/k6-cloud/run-cloud-tests.png?w=450)
 > 圖片來源：k6 cloud
 
 ## 參數設定
 
-可以設定平均回應時間的閥值，如 95% 的回應須在 500 毫秒以下，大於 500 毫秒就會失敗。
+可以設定平均回應時間的閾值，如 95% 的回應須在 500 毫秒以下，大於 500 毫秒就會失敗。
 
 ``` javascript
 export const options = {
@@ -134,7 +134,7 @@ export const options = {
 
 ## 整合進 CI
 
-K6 可以很輕易地整合進 CI，以 GitLab 為例，將前面展示的範例存到 `./test/load-test.js`，然後在 `.gitlab-ci.yml` 設定如下，即可在每次 commit 時執行負載測試。
+k6 可以很輕易地整合進 CI，以 GitLab 為例，將前面展示的範例存到 `./test/load-test.js`，然後在 `.gitlab-ci.yml` 設定如下，即可在每次 commit 時執行負載測試。
 
 ``` yaml
 stages:
@@ -166,7 +166,7 @@ k6-test:
 ## 負載測試的幾點注意事項
 
 - 簡單的測試比沒有測試好，可以先從關鍵使用路徑開始撰寫測試
-- 關於閥值的訂定，可以參考 [Jakob Nielsen](https://www.nngroup.com/articles/website-response-times/) 的研究：將回應時間分成三階段 0.1 秒、1 秒以及 10 秒，或是參考[PageSpeed Insights](https://developers.google.com/speed/docs/insights/v5/about?hl=zh-tw)的標準
+- 關於閾值的訂定，可以參考 [Jakob Nielsen](https://www.nngroup.com/articles/website-response-times/) 的研究：將回應時間分成三階段 0.1 秒、1 秒以及 10 秒，或是參考[PageSpeed Insights](https://developers.google.com/speed/docs/insights/v5/about?hl=zh-tw)的標準
 - 負載測試應該在預生產環境(pre-production)進行，因為
   - 它可能會造成系統中斷
   - 每次執行負載測試可能都需要自動繞過一些防機器人的驗證，您應該要特別寫一些判斷（如：在測試環境且執行負載測試時，關閉機器人驗證），而不是關閉驗證直接在生產環境中測試。
