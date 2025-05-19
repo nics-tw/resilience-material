@@ -116,7 +116,7 @@ k6 測試結果可以另外存到資料庫（如 PostgreSQL、InfluxDB），然�
 export const options = {
   iterations: 10,
   thresholds: {
-    http_req_duration: ['p(95)<500'], // 95 percent of response times must be below 500ms
+    http_req_duration: ['p(95)<500'], // 95% 的回應時間必須低於 500 毫秒
   },
 };
 ```
