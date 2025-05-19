@@ -138,10 +138,17 @@ k6 可以很輕易地整合進 CI，以 GitLab 為例，將前面展示的範例
 
 ``` yaml
 stages:
+  - build-and-deploy-test
   - k6-test
 
 image:
   name: ubuntu:latest
+
+build-and-deploy-test:
+  stage: build-and-deploy-test
+  script:
+    - echo "build and deploy to test environment..."
+    # ... 其他的建置部署設定
 
 k6-test:
   image:
@@ -149,10 +156,12 @@ k6-test:
     entrypoint: [""]
   stage: k6-test
   script: 
-    - k6 run ./test/load-test.js
+    - k6 run ./test/load-test.js # 和範例一模一樣的執行指令
   interruptible: true  # 如果有 push 新的 commit，這個 job 可以被自動取消
 
 ```
+
+在實際操作中，我們通常會先將測試目標部署到 CI 的測試環境，再進行負載測試。因此在上面的設定中，我們先執行 `build-and-deploy-test` 階段來模擬測試環境的部署，然後再執行 `k6-test` 階段進行負載測試。
 
 資料夾結構如下：
 
