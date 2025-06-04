@@ -178,7 +178,7 @@ cat osv-trivy.json | jqp
 
 NOTE: 若為空值，代表該漏洞尚未被評估級數，建議取所有漏洞的最大值。
 
-![pkg0-serverity](./img/pkg0-serverity.png)
+![pkg0-severity](./img/pkg0-severity.png)
 
 #### 列出第零項元件的漏洞評級
 
