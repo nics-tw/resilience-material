@@ -201,6 +201,6 @@ NOTE: 建議採用所有正式版本中最大值，盡量不要選擇有帶 alph
 
 - [syft document](https://github.com/anchore/syft/wiki)
 - [trivy document](https://trivy.dev/latest/docs/)
-- [osv-scanner dociment](https://google.github.io/osv-scanner/)
+- [osv-scanner document](https://google.github.io/osv-scanner/)
 - [parlay repository](https://github.com/snyk/parlay)
 - [jqp repository](https://github.com/noahgorstein/jqp#configuration)
