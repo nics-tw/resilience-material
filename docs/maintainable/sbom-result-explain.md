@@ -10,15 +10,16 @@
 
 ## 流程簡介
 
-1. 由 syft 與 trivy 分別生成 SBOM（如 syft.spdx.json 與 trivy.spdx.json）
-2. 由 parlay 增添 syft.spdx.json 與 trivy.spdx.json 部分資料欄位（如 syft-parlay.spdx.json 與 trivy-parlay.spdx.json）
-3. 由 osv-scanner 分析 syft-parlay.spdx.json 與 trivy-parlay.spdx.json 之漏洞元件，生成分析結果 （如 osv-syft.json）
-
-or
+### 通用步驟
 
 1. 由 syft 與 trivy 分別生成 SBOM（如 syft.spdx.json 與 trivy.spdx.json）
 2. 由 parlay 增添 syft.spdx.json 與 trivy.spdx.json 部分資料欄位（如 syft-parlay.spdx.json 與 trivy-parlay.spdx.json）
-3. 由 trivy 分析 syft-parlay.spdx.json 與 trivy-parlay.spdx.json 之漏洞元件，生成分析結果 （如 trivy-report.txt）
+
+### 分析步驟
+
+- 使用 osv-scanner 分析 syft-parlay.spdx.json 與 trivy-parlay.spdx.json 之漏洞元件，生成分析結果 （如 osv-syft.json）
+  or
+- 使用 trivy 分析 syft-parlay.spdx.json 與 trivy-parlay.spdx.json 之漏洞元件，生成分析結果 （如 trivy-report.txt）
 
 ## 範例說明
 
@@ -94,8 +95,6 @@ osv-scanner 結果：
 ......以下省略
 ```
 
-
-
 漏洞元件掃描（ trivy 做法）
 
 ```bash
@@ -153,7 +152,7 @@ osv-syft.json 與 osv-trivy.json 則需要額外處理方能較好的理解結�
 
 ### 運行 jqp
 
-NOTE: 按下  `Ctrl+c`  可以離開 jqp 操作畫面。
+NOTE: 按下 `Ctrl+c` 可以離開 jqp 操作畫面。
 
 ```bash
 cat osv-syft.json | jqp
