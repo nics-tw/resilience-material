@@ -7,7 +7,7 @@
 - `syft`: Anchore Co. 開發的工具，主要用於生成 Software Bill of Materials (SBOM)。
 - `trivy`: Aqua Co. 開發的工具，主要用於漏洞元件掃描，生成格式為表格，適合直接判讀，也可用於生成 SBOM。
 - `osv-scanner`: Google 開發的工具，主要用於漏洞元件掃描，生成格式為 JSON，適合後續串接其他服務。
-- `parlay`: Snyk Co. 開發的工具，用於為既有 SBOM 添增部分資料欄位，如`supplier`, `homepage`, `description`, `licenseConcluded`等。
+- `parlay`: Snyk Co. 開發的工具，用於為既有 SBOM 新增部分資料欄位，如`supplier`, `homepage`, `description`, `licenseConcluded`等。
 - `jqp`: 用於分析 JSON 資料的命令列工具。
 
 ## 流程簡介
@@ -15,7 +15,7 @@
 ### 通用步驟
 
 1. 由 syft 與 trivy 分別生成 SBOM（如 syft.spdx.json 與 trivy.spdx.json）
-2. 由 parlay 增添 syft.spdx.json 與 trivy.spdx.json 部分資料欄位（如 syft-parlay.spdx.json 與 trivy-parlay.spdx.json）
+2. 由 parlay 新增 syft.spdx.json 與 trivy.spdx.json 部分資料欄位（如 syft-parlay.spdx.json 與 trivy-parlay.spdx.json）
 
 ### 分析步驟
 
