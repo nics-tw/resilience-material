@@ -1,6 +1,6 @@
 # CI/CD - 於 GitHub 上建立自動生成 SBOM 及漏洞掃描
 
-使用 GitHub 平台所提供的 CI/CD 工具 GitHub Actions 訂立每次程式碼更新自動觸發自動化的生成 SBOM 文件及透過 OSV 工具自動化流程。以下範例將以 [petsard](https://github.com/nics-tw/petsard) 專案為例。
+使用 GitHub 平台所提供的 CI/CD 工具 GitHub Actions 設定每次程式碼更新自動觸發自動化的生成 SBOM 文件及透過 OSV 工具自動化流程。以下範例將以 [petsard](https://github.com/nics-tw/petsard) 專案為例。
 
 ## 名詞介紹
 
@@ -134,7 +134,7 @@ jobs:
 
 ### Vulnerability Scanning
 
-該 GitHub Actions 會掃描專案使用的元件中是否有 CVE 風險的漏洞元件，並提出可以更新的無風險版本，以提升專案安全性。
+該 GitHub Actions 工作流程會掃描專案使用的元件中是否有 CVE 風險的漏洞元件，並提出可以更新的無風險版本，以提升專案安全性。
 若有掃描出可修正的弱點時，則會阻攔 Pull Request 被合併。
 同時也會在每週一 05：00AM(UTC+8) 定期掃描一次。
 
