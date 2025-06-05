@@ -20,7 +20,9 @@
 ### 分析步驟
 
 - 使用 osv-scanner 分析 syft-parlay.spdx.json 與 trivy-parlay.spdx.json 之漏洞元件，生成分析結果 （如 osv-syft.json）
-  or
+
+或者
+
 - 使用 trivy 分析 syft-parlay.spdx.json 與 trivy-parlay.spdx.json 之漏洞元件，生成分析結果 （如 trivy-report.txt）
 
 ## 範例說明
