@@ -42,7 +42,7 @@
 
 ```bash
 git clone git@github.com:moda-gov-tw/code-gov-tw.git
-git branch demo-commit-branch fcbd92b
+git branch demo-commit-branch 3f32377
 git switch 3f32377
 ```
 
