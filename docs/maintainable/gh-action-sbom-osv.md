@@ -147,7 +147,7 @@ jobs:
    - 匯總成表格，記錄於該次 Action 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。
    - 當觸發條件為 Pull Request 且有掃描到風險元件時，將阻擋該次 Pull Request 直到風險元件已被移除或是更新到無風險的版本。
 
-````yaml
+```yaml
 name: Scan Vulnerabilities
 on:
   push:
