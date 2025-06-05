@@ -43,7 +43,7 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 最後更新於 2025/06/05
 
 | [osv-scanner](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/) | [trivy](https://trivy.dev/latest/docs/coverage/language/) | [syft](https://github.com/anchore/syft?tab=readme-ov-file#supported-ecosystems) |
-| :------------------------------------------------------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| :---: | :---: | :---: |
 |                                          .NET                                          |                           .NET                            |                                      .NET                                       |
 |                                         C/C++                                          |                           C/C++                           |                                      C/C++                                      |
 |                                          Dart                                          |                           Dart                            |                                      Dart                                       |
