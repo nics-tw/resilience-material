@@ -1,12 +1,12 @@
 # CI/CD - 於 GitHub 上建立自動生成 SBOM 及漏洞掃描
 
-使用 GitHub 平台所提供的 CI/CD 工具 GitHub Action 訂立每次程式碼更新自動觸發自動化的生成 SBOM 文件及透過 OSV 工具自動化流程。以下範例將以 [petsard](https://github.com/nics-tw/petsard) 專案為例。
+使用 GitHub 平台所提供的 CI/CD 工具 GitHub Actions 訂立每次程式碼更新自動觸發自動化的生成 SBOM 文件及透過 OSV 工具自動化流程。以下範例將以 [petsard](https://github.com/nics-tw/petsard) 專案為例。
 
 ## 名詞介紹
 
-### GitHub Action
+### GitHub Actions
 
-GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）服務。此工具允許使用者於 git repository 中客製化的 workflow ，以便在特定事件發生時自動執行任務。以下簡介 GitHub Action 功能介紹：
+GitHub Actions 是 GitHub 提供的一項持續整合和持續交付（CI/CD）服務。此工具允許使用者於 git repository 中客製化的 workflow ，以便在特定事件發生時自動執行任務。以下簡介 GitHub Actions 功能介紹：
 
 1. Workflow
    - workflow 是一系列定義的自動化步驟，由 YAML 格式文件所紀錄，通常存放在 `.github/workflows/` 目錄下。
@@ -14,15 +14,15 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 2. Event
    - Event 是指觸發 workflow 的事件。這些事件可以是推送程式碼、pull request、release 等。例如，當有人將程式碼推送到 main branch 時，可以觸發一個 workflow 來進行測試和部署。
 3. Job
-   - Job 是 workflow 中的一個執行單位，包含一系列的 steps。每個 step 是一個可執行的 Shell 腳本，或是一個可執行的 Action。
+   - Job 是 workflow 中的一個執行單位，包含一系列的 steps。每個 step 是一個可執行的 Shell 腳本，或是一個可執行的 Actions。
    - Job 可以在不同的 runner 上執行，這些 runner 由 GitHub 提供的或是 self-hosted runner
-4. Action：
+4. Actions：
    - GitHub Actions 平台上的自定義應用程式，用於執行複雜但經常重複的任務。
-   - GitHub Marketplace 提供了大量預設的 Action，也可以自行開發定義的 Action 來滿足特定需求。
+   - GitHub Marketplace 提供了大量預設的 Actions，也可以自行開發定義的 Actions 來滿足特定需求。
 5. Runner
    - Runner 是一個在工作流程觸發時運行你的工作流程的伺服器。每個 Runner 一次只能運行一個作業。GitHub 提供 Ubuntu Linux、Microsoft Windows 和 macOS Runner 來運行你的工作流程
 
-## 相關 GitHub Action 介紹
+## 相關 GitHub Actions 介紹
 
 ### [osv-scanner-action](https://google.github.io/osv-scanner/github-action)
 
@@ -43,7 +43,7 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 最後更新於 2025/06/05
 
 | [osv-scanner](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/) | [trivy](https://trivy.dev/latest/docs/coverage/language/) | [syft](https://github.com/anchore/syft?tab=readme-ov-file#supported-ecosystems) |
-| :---: | :---: | :---: |
+| :------------------------------------------------------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 |                                          .NET                                          |                           .NET                            |                                      .NET                                       |
 |                                         C/C++                                          |                           C/C++                           |                                      C/C++                                      |
 |                                          Dart                                          |                           Dart                            |                                      Dart                                       |
@@ -57,17 +57,17 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 |                                          Rust                                          |                           Rust                            |                                      Rust                                       |
 |                                        Haskell                                         |                           Julia                           |                                     Haskell                                     |
 |                                           R                                            |                           Swift                           |                                      Swift                                      |
-|                                         N/A                                            |                           N/A                             |                                Bitnami packages                                 |
-|                                         N/A                                            |                           N/A                             |                                     Erlang                                      |
-|                                         N/A                                            |                           N/A                             |                                 Jenkins Plugins                                 |
-|                                         N/A                                            |                           N/A                             |                                       Nix                                       |
-|                                         N/A                                            |                           N/A                             |                                   Objective-C                                   |
-|                                         N/A                                            |                           N/A                             |                                WordPress plugins                                |
-|                                         N/A                                            |                           N/A                             |                               Terraform providers                               |
+|                                          N/A                                           |                            N/A                            |                                Bitnami packages                                 |
+|                                          N/A                                           |                            N/A                            |                                     Erlang                                      |
+|                                          N/A                                           |                            N/A                            |                                 Jenkins Plugins                                 |
+|                                          N/A                                           |                            N/A                            |                                       Nix                                       |
+|                                          N/A                                           |                            N/A                            |                                   Objective-C                                   |
+|                                          N/A                                           |                            N/A                            |                                WordPress plugins                                |
+|                                          N/A                                           |                            N/A                            |                               Terraform providers                               |
 
 ## 以 petsard 專案為例
 
-[petsard](https://github.com/nics-tw/petsard) GitHub Action 相關檔案結構如下：
+[petsard](https://github.com/nics-tw/petsard) GitHub Actions 相關檔案結構如下：
 
 ```txt
 .github/
@@ -85,7 +85,7 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
    - 發布 release 時
 1. 觸發動作：
    - 掃描專案程式碼並生成 `dependency.sbom.json`，並更新元件依賴圖（dependency graph）
-   - 上傳 `dependency.sbom.json` 至 GitHub Artifact（位於該次Action內），可設定文件保留天數 `retention-days`，預設為90天
+   - 上傳 `dependency.sbom.json` 至 GitHub Artifact（位於該次 Actions 內），可設定文件保留天數 `retention-days`，預設為90天
    - 上傳 `dependency.sbom.json` 至該次 release 附件
 
 ```yaml
@@ -134,7 +134,7 @@ jobs:
 
 ### Vulnerability Scanning
 
-該 GitHub Action 會掃描專案使用的元件中是否有 CVE 風險的漏洞元件，並提出可以更新的無風險版本，以提升專案安全性。
+該 GitHub Actions 會掃描專案使用的元件中是否有 CVE 風險的漏洞元件，並提出可以更新的無風險版本，以提升專案安全性。
 若有掃描出可修正的弱點時，則會阻攔 Pull Request 被合併。
 同時也會在每週一 05：00AM(UTC+8) 定期掃描一次。
 
@@ -144,10 +144,10 @@ jobs:
    - 定時掃描："0 21 \* \* 0" 為 UTC，台灣時間(UTC+8)為每週一 05:00AM
 2. 觸發動作：
    - 掃描專案風險元件
-   - 匯總成表格，記錄於該次 Action 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。
+   - 匯總成表格，記錄於該次 Actions 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。
    - 當觸發條件為 Pull Request 且有掃描到風險元件時，將阻擋該次 Pull Request 直到風險元件已被移除或是更新到無風險的版本。
 
-```yaml
+````yaml
 name: Scan Vulnerabilities
 on:
   push:
@@ -211,7 +211,7 @@ jobs:
 
 ### Dependabot version update
 
-在元件依賴圖（dependency graph）更新後自動觸發，嚴格上來說不算 GitHub Action，但會因為 SBOM Generation 更新元件依賴圖後被連帶觸發，故特此一並介紹。
+在元件依賴圖（dependency graph）更新後自動觸發，嚴格上來說不算 GitHub Actions，但會因為 SBOM Generation 更新元件依賴圖後被連帶觸發，故特此一並介紹。
 
 - Supported `package-ecosystem`，限制條件請見[此](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem-)，列表最後更新於2025/04/06：
   - bun
