@@ -57,13 +57,13 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 |                                          Rust                                          |                           Rust                            |                                      Rust                                       |
 |                                        Haskell                                         |                           Julia                           |                                     Haskell                                     |
 |                                           R                                            |                           Swift                           |                                      Swift                                      |
-|                                                                                        |                                                           |                                Bitnami packages                                 |
-|                                                                                        |                                                           |                                     Erlang                                      |
-|                                                                                        |                                                           |                                 Jenkins Plugins                                 |
-|                                                                                        |                                                           |                                       Nix                                       |
-|                                                                                        |                                                           |                                   Objective-C                                   |
-|                                                                                        |                                                           |                                Wordpress plugins                                |
-|                                                                                        |                                                           |                               Terraform providers                               |
+|                                         N/A                                            |                           N/A                             |                                Bitnami packages                                 |
+|                                         N/A                                            |                           N/A                             |                                     Erlang                                      |
+|                                         N/A                                            |                           N/A                             |                                 Jenkins Plugins                                 |
+|                                         N/A                                            |                           N/A                             |                                       Nix                                       |
+|                                         N/A                                            |                           N/A                             |                                   Objective-C                                   |
+|                                         N/A                                            |                           N/A                             |                                Wordpress plugins                                |
+|                                         N/A                                            |                           N/A                             |                               Terraform providers                               |
 
 ## 以 petsard 專案為例
 
