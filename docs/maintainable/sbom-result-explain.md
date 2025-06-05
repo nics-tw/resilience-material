@@ -162,19 +162,19 @@ or
 cat osv-trivy.json | jqp
 ```
 
-#### 列出受影響的元件
+#### 列出受影響的元件 (Vulnerability Package)
 
 在 jqp 中輸入 `.results[].packages[].package` 並按下 `Enter` 鍵：
 
 ![list-vuln-pkgs](./img/list-vuln-pkgs.png)
 
-#### 列出第零項元件的漏洞代號
+#### 列出第零項元件的漏洞代號 (CVE)
 
 輸入 `.results[].packages[0].groups[].ids[]` ，注意 "0" 需在 packages 後的 [] 輸入：
 
 ![pkg0-cve-code](./img/pkg0-cve-code.png)
 
-#### 列出第零項元件的漏洞分數
+#### 列出第零項元件的漏洞分數 (Severity)
 
 輸入 `.results[].packages[0].groups[].max_severity`：
 
@@ -182,17 +182,17 @@ NOTE: 若為空值，代表該漏洞尚未被評估級數，建議取所有漏�
 
 ![pkg0-severity](./img/pkg0-severity.png)
 
-#### 列出第零項元件的漏洞評級
+#### 列出第零項元件的漏洞評級 (CVSS)
 
 輸入 `.results[].packages[0].vulnerabilities[].database_specific.severity`：
 
 ![pkg0-cvss](./img/pkg0-cvss.png)
 
-#### 列出可修復第三項元件漏洞的版本
+#### 列出可修復第三項元件漏洞的版本 (Fixed Version)
 
 輸入 `.results[].packages[3].vulnerabilities[].affected[].ranges[].events[] | select(.fixed) | .fixed`：
 
-NOTE: 建議採用所有正式版本中最大值，盡量不要選擇有帶 alpha, beta, rc 等測試版後綴的版本，除非沒有其他版本可以選擇。
+NOTE: 建議採用所有正式版本中最大值，盡量不要選擇有帶 alpha, beta, rc 等測試版後綴的版本，除非沒有其他版本可以選擇。亦可視情況採用滿足所有 CVSS 評級為 HIGH 與 CRITICAL 漏洞補丁的最小版本
 
 ![pkg3-fixed-ver](./img/pkg3-fixed-ver.png)
 
