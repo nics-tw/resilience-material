@@ -56,7 +56,7 @@ trivy fs . --format=spdx-json --output=./sbom/trivy.spdx.json
 
 增補欄位
 
-NOTE: 由於 parlay 是逐一取得每個元件的相關資料，運行時間會與元件數量呈正比，以 code-gov-tw 為例，耗時 17 分鐘左右才增補完成。
+注意：由於 parlay 是逐一取得每個元件的相關資料，運行時間會與元件數量呈正比，以 code-gov-tw 為例，耗時 17 分鐘左右才增補完成。
 
 ```bash
 cd sbom
@@ -154,7 +154,7 @@ osv-syft.json 與 osv-trivy.json 則需要額外處理方能較好的理解結�
 
 ### 運行 jqp
 
-NOTE: 按下 `Ctrl+c` 可以離開 jqp 操作畫面。
+注意：按下 `Ctrl+c` 可以離開 jqp 操作畫面。
 
 ```bash
 cat osv-syft.json | jqp
@@ -178,7 +178,7 @@ cat osv-trivy.json | jqp
 
 輸入 `.results[].packages[0].groups[].max_severity`：
 
-NOTE: 若為空值，代表該漏洞尚未被評估級數，建議取所有漏洞的最大值。
+注意：若為空值，代表該漏洞尚未被評估級數，建議取所有漏洞的最大值。
 
 ![pkg0-severity](./img/pkg0-severity.png)
 
@@ -192,7 +192,7 @@ NOTE: 若為空值，代表該漏洞尚未被評估級數，建議取所有漏�
 
 輸入 `.results[].packages[3].vulnerabilities[].affected[].ranges[].events[] | select(.fixed) | .fixed`：
 
-NOTE: 建議採用所有正式版本中最大值，盡量不要選擇有帶 alpha, beta, rc 等測試版後綴的版本，除非沒有其他版本可以選擇。亦可視情況採用滿足所有 CVSS 評級為 HIGH 與 CRITICAL 漏洞補丁的最小版本
+注意：建議採用所有正式版本中最大值，盡量不要選擇有帶 alpha, beta, rc 等測試版後綴的版本，除非沒有其他版本可以選擇。亦可視情況採用滿足所有 CVSS 評級為 HIGH 與 CRITICAL 漏洞補丁的最小版本
 
 ![pkg3-fixed-ver](./img/pkg3-fixed-ver.png)
 
