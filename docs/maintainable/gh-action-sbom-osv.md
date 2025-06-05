@@ -9,18 +9,18 @@
 GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）服務。此工具允許使用者於 git repository 中客製化的 workflow ，以便在特定事件發生時自動執行任務。以下簡介 GitHub Action 功能介紹：
 
 1. Workflow
-    - workflow 是一系列定義的自動化步驟，由 YAML 格式文件所紀錄，通常存放在 `.github/workflows/` 目錄下。
-    - 每個 workflow 由 Event、Job 和 Step 所組成。
+   - workflow 是一系列定義的自動化步驟，由 YAML 格式文件所紀錄，通常存放在 `.github/workflows/` 目錄下。
+   - 每個 workflow 由 Event、Job 和 Step 所組成。
 2. Event
-    - Event 是指觸發 workflow 的事件。這些事件可以是推送程式碼、pull request、release 等。例如，當有人將程式碼推送到 main branch 時，可以觸發一個 workflow 來進行測試和部署。
+   - Event 是指觸發 workflow 的事件。這些事件可以是推送程式碼、pull request、release 等。例如，當有人將程式碼推送到 main branch 時，可以觸發一個 workflow 來進行測試和部署。
 3. Job
-    - Job 是 workflow 中的一個執行單位，包含一系列的 steps。每個 step 是一個可執行的 Shell 腳本，或是一個可執行的 Action。
-    - Job 可以在不同的 runner 上執行，這些 runner 由 GitHub 提供的或是 self-hosted runner
+   - Job 是 workflow 中的一個執行單位，包含一系列的 steps。每個 step 是一個可執行的 Shell 腳本，或是一個可執行的 Action。
+   - Job 可以在不同的 runner 上執行，這些 runner 由 GitHub 提供的或是 self-hosted runner
 4. Action：
-    - GitHub Actions 平台上的自定義應用程式，用於執行複雜但經常重複的任務。
-    - GitHub Marketplace 提供了大量預設的 Action，也可以自行開發定義的 Action 來滿足特定需求。
+   - GitHub Actions 平台上的自定義應用程式，用於執行複雜但經常重複的任務。
+   - GitHub Marketplace 提供了大量預設的 Action，也可以自行開發定義的 Action 來滿足特定需求。
 5. Runner
-    - Runner 是一個在工作流程觸發時運行你的工作流程的伺服器。每個 Runner 一次只能運行一個作業。GitHub 提供 Ubuntu Linux、Microsoft Windows 和 macOS  Runner 來運行你的工作流程
+   - Runner 是一個在工作流程觸發時運行你的工作流程的伺服器。每個 Runner 一次只能運行一個作業。GitHub 提供 Ubuntu Linux、Microsoft Windows 和 macOS Runner 來運行你的工作流程
 
 ## 相關 GitHub Action 介紹
 
@@ -30,7 +30,7 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 
 ### [trivy-action](https://github.com/aquasecurity/trivy-action)
 
-`trivy-action` 是由會將專案元件與由 Aqua Co. 維護的開源漏洞資料庫進行查詢比對，效果與 osv-scanner-action 相似。也可用於生成 專案或 container image 的 SBOM 檔案。
+`trivy-action` 是由 Aqua Co. 開發的工具，效果與 osv-scanner-action 相似。也可用於生成專案或 container image 的 SBOM 檔案。優勢在於可同時生成 SBOM 與 漏洞元件掃描。
 
 ### [syft-action](https://github.com/anchore/sbom-action)
 
@@ -43,27 +43,27 @@ GitHub Action 是 GitHub 提供的一項持續整合和持續交付（CI/CD）�
 最後更新於 2025/06/05
 
 | [osv-scanner](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/) | [trivy](https://trivy.dev/latest/docs/coverage/language/) | [syft](https://github.com/anchore/syft?tab=readme-ov-file#supported-ecosystems) |
-| :----------------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------------: |
-|                             .NET                             |                           .NET                            |                             .NET                             |
-|                            C/C++                             |                           C/C++                           |                            C/C++                             |
-|                             Dart                             |                           Dart                            |                             Dart                             |
-|                            Elixir                            |                          Elixir                           |                            Elixir                            |
-|                              Go                              |                            Go                             |                              Go                              |
-|                             Java                             |                           Java                            |                             Java                             |
-|                          Javascript                          |                        Javascript                         |                          Javascript                          |
-|                             PHP                              |                            PHP                            |                             PHP                              |
-|                            Python                            |                          Python                           |                            Python                            |
-|                             Ruby                             |                           Ruby                            |                             Ruby                             |
-|                             Rust                             |                           Rust                            |                             Rust                             |
-|                           Haskell                            |                           Julia                           |                           Haskell                            |
-|                              R                               |                           Swift                           |                            Swift                             |
-|                                                              |                                                           |                       Bitnami packages                       |
-|                                                              |                                                           |                            Erlang                            |
-|                                                              |                                                           |                       Jenkins Plugins                        |
-|                                                              |                                                           |                             Nix                              |
-|                                                              |                                                           |                         Objective-C                          |
-|                                                              |                                                           |                      Wordpress plugins                       |
-|                                                              |                                                           |                     Terraform providers                      |
+| :------------------------------------------------------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+|                                          .NET                                          |                           .NET                            |                                      .NET                                       |
+|                                         C/C++                                          |                           C/C++                           |                                      C/C++                                      |
+|                                          Dart                                          |                           Dart                            |                                      Dart                                       |
+|                                         Elixir                                         |                          Elixir                           |                                     Elixir                                      |
+|                                           Go                                           |                            Go                             |                                       Go                                        |
+|                                          Java                                          |                           Java                            |                                      Java                                       |
+|                                       Javascript                                       |                        Javascript                         |                                   Javascript                                    |
+|                                          PHP                                           |                            PHP                            |                                       PHP                                       |
+|                                         Python                                         |                          Python                           |                                     Python                                      |
+|                                          Ruby                                          |                           Ruby                            |                                      Ruby                                       |
+|                                          Rust                                          |                           Rust                            |                                      Rust                                       |
+|                                        Haskell                                         |                           Julia                           |                                     Haskell                                     |
+|                                           R                                            |                           Swift                           |                                      Swift                                      |
+|                                                                                        |                                                           |                                Bitnami packages                                 |
+|                                                                                        |                                                           |                                     Erlang                                      |
+|                                                                                        |                                                           |                                 Jenkins Plugins                                 |
+|                                                                                        |                                                           |                                       Nix                                       |
+|                                                                                        |                                                           |                                   Objective-C                                   |
+|                                                                                        |                                                           |                                Wordpress plugins                                |
+|                                                                                        |                                                           |                               Terraform providers                               |
 
 ## 以 petsard 專案為例
 
@@ -147,7 +147,7 @@ jobs:
    - 匯總成表格，記錄於該次 Action 的 `Scan vulnerabilities summary`，範例請見[此](https://github.com/nics-tw/petsard/actions/runs/14486961328/attempts/1#summary-40634415425)。
    - 當觸發條件為 Pull Request 且有掃描到風險元件時，將阻擋該次 Pull Request 直到風險元件已被移除或是更新到無風險的版本。
 
-```yaml
+````yaml
 name: Scan Vulnerabilities
 on:
   push:
@@ -207,7 +207,7 @@ jobs:
           list-all-pkgs: false
           skip-setup-trivy: true
           exit-code: 1
-```
+````
 
 ### Dependabot version update
 
@@ -322,6 +322,3 @@ updates:
       - "python"
       - "dependencies"
 ```
-
-
-
