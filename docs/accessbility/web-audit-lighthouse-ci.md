@@ -2,7 +2,7 @@
 
 Lighthouse CI 是由 Google 官方推出的工具，幫助開發者能在 **CI/CD 流程中自動化執行 Lighthouse 分析**，追蹤網站效能是否因程式碼變更而退化，並及早發現問題。
 
-此工具主要解決了 Lighthouse 手動執行繁瑣且無法追蹤歷史數據變化的問題。
+此工具主要解決了 Lighthouse 手動執行繁瑣且無法追蹤歷史資料變化的問題。
 
 ## 範例
 
@@ -88,7 +88,7 @@ module.exports = {
 ### 為什麼要用 Lighthouse CI server？
 
 - **集中管理報告**：所有 Lighthouse 分析結果會集中存放，方便團隊檢視和回溯。
-- **效能趨勢追蹤**：透過歷史報告，比對每次掃描的分數與詳細數據，掌握效能是否退化。
+- **效能趨勢追蹤**：透過歷史報告，比對每次掃描的分數與詳細資料，掌握效能是否退化。
 - **支援多分支**：能同時管理多個分支的效能報告，符合團隊需求。
 - **CI 整合**：搭配 CI/CD 流程，自動上傳與更新報告。
 
@@ -114,7 +114,7 @@ Admin Token：用於專案管理（修改、刪除），請妥善保管，避免
 module.exports = {
   ci: {
     upload: {
-      target: "lhci", // 由先前的 temporary-public-storage 調整成自行創建的 LHCI Server
+      target: "lhci", // 由先前的 temporary-public-storage 調整成自行建立的 LHCI Server
       serverBaseUrl: process.env.LHCI_SERVER_URL,
       token: process.env.LHCI_TOKEN,
     },
