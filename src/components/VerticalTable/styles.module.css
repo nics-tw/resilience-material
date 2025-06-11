@@ -1,0 +1,9 @@
+.verticalTableHeader {
+  background-color: #e5f5f5;
+  min-width: 100px;
+  width: 10%;
+}
+
+[data-theme="dark"] .verticalTableHeader {
+  background-color: #0f2f2f;
+}
