@@ -12,7 +12,9 @@ export default function VerticalTable({
         <tbody>
           {Object.entries(data).map(([key, value]) => (
             <tr key={key}>
-              <th className={styles.verticalTableHeader}>{key}</th>
+              <th scope="row" className={styles.verticalTableHeader}>
+                {key}
+              </th>
               <td>{value}</td>
             </tr>
           ))}

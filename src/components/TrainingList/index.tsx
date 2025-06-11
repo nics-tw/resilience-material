@@ -21,14 +21,18 @@ export default function TrainingList({ year }: TrainingListProps) {
   }
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <VerticalTable
-          key={item.link || idx}
+          key={item.sha256}
           data={{
-            課程影片: <a href={item.link}>{item.name}</a>,
+            教材: (
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                {item.name}
+              </a>
+            ),
             SHA256: item.sha256,
             ...(item.youtube
-              ? { 教學影片: <YoutubeEmbed videoId={item.youtube} /> }
+              ? { 課程影片: <YoutubeEmbed videoId={item.youtube} /> }
               : {}),
           }}
         />
