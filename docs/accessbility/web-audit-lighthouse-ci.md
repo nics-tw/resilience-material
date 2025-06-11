@@ -4,13 +4,13 @@ Lighthouse CI 是由 Google 官方推出的工具，幫助開發者能在 **CI/C
 
 此工具主要解決了 Lighthouse 手動執行繁瑣且無法追蹤歷史資料變化的問題。
 
-## 範例
+## 使用範例
 
-以下範例示範如何在 GitLab CI 中設定，於 Merge Request 事件觸發時自動執行 Lighthouse CI 掃描，並將報告上傳至 Google 官方提供的暫存儲存區。
+以下範例示範如何在 GitLab CI 中設定，於 Merge Request 事件觸發時自動執行 Lighthouse CI 掃描，並將報告上傳至 Google 官方提供的暫存儲存空間。
 
 ```yaml
 # .gitlab-ci.yml
-image: cypress/browsers:node-22.16.0-chrome-136.0.7103.113-1-ff-138.0.4-edge-136.0.3240.76-1
+image: cypress/browsers:latest
 
 stages:
   - test
@@ -36,13 +36,23 @@ module.exports = {
       settings: { chromeFlags: "--no-sandbox" },
     },
     upload: {
-      target: "temporary-public-storage", // 官方暫存報告儲存區
+      target: "temporary-public-storage", // 官方暫存報告儲存空間
     },
   },
 };
 ```
 
-## 設定通過指標
+## 上傳報告的儲存目標設定（upload.target）
+
+`upload.target` 用於決定 Lighthouse CI 報告的儲存方式，目前支援以下三種模式：
+
+| target 值                | 優勢                                                                                           | 限制 / 注意事項                                                                                                    |
+| ------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| temporary-public-storage | 最快速、零成本的設定方式<br />- 報告會上傳至 GCP，持連結即可查看<br />- 報告會於數日後自動刪除 | - 報告是公開的，任何持有連結皆可存取<br />- 無法儲存歷史紀錄或進行差異比較<br />- 不適合有隱私或長期追蹤需求的場景 |
+| lhci                     | - 可永久儲存報告並控管存取權限<br />- 支援歷史比較、趨勢圖與 PR 狀態檢查等功能                 | - 需自行部署 Lighthouse CI Server（含資料庫）<br />- 需設定 build token、server URL 等資訊                         |
+| filesystem               | - 報告會以 JSON/HTML 格式儲存在本地或 CI artifact，適合進行離線分析或整合至自定義流程          | - 無法線上分享，亦無 Web UI 支援<br />- 不支援 GitHub 狀態檢查與差異比對功能                                       |
+
+## 設定效能通過門檻（assertions）
 
 預設情況下，Lighthouse CI 不會因分數下降而使 CI 流程失敗。若希望自動檢查分數是否達到標準，則可透過設定 assert 區塊，明確定義通過門檻。
 
