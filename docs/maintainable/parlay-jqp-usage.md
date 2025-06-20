@@ -1,6 +1,6 @@
-# SBOM 漏洞掃描流程示範
+# SBOM 增補欄位與使用 jqp 結果判讀
 
-本篇包含了在本地端執行 SBOM 漏洞掃描的流程，包含掃描／資料增補／分析漏洞／結果判讀。
+本篇以 code-goc-tw 開源專案為例，示範包含掃描／使用 parlay 增補欄位／分析漏洞／使用 jqp 判讀結果。
 
 ## 工具介紹
 
@@ -30,7 +30,7 @@
 ### 操作環境
 
 - 作業系統: macOS Sequoia 15.5
-- 示範專案: [moda-gov-tw/code-gov.tw](https://github.com/moda-gov-tw/code-gov-tw/tree/3f323772a32896b171b17841b569bc05f7cf4035)，commit: 3f32377
+- 示範專案: [moda-gov-tw/code-gov-tw](https://github.com/moda-gov-tw/code-gov-tw/tree/3f323772a32896b171b17841b569bc05f7cf4035)，commit: 3f32377
 
 - `syft` version: 1.26.1
 - `trivy` version: 0.63.0
