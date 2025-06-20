@@ -1,4 +1,4 @@
-# SBOM 增補欄位與使用 jqp 結果判讀
+# SBOM 增補欄位(parlay)與結果判讀(jqp)
 
 本篇以 code-goc-tw 開源專案為例，示範包含掃描／使用 parlay 增補欄位／分析漏洞／使用 jqp 判讀結果。
 
