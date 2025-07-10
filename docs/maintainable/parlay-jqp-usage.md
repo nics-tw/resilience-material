@@ -29,7 +29,7 @@
 
 ### 操作環境
 
-- 作業系統: *nix-based system
+- 作業系統: *nix-based 系統 (如 Linux, macOS)。工具也支援 Windows，但指令可能需針對 Windows 環境稍作調整。
 - 示範專案: [moda-gov-tw/code-gov-tw](https://github.com/moda-gov-tw/code-gov-tw/tree/3f323772a32896b171b17841b569bc05f7cf4035)，commit: 3f32377
 
 - `syft` version: 1.26.1
