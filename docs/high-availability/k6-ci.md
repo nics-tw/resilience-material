@@ -264,8 +264,8 @@ export const options = {
 K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run test/load-test-drc.js
 ```
 
-- K6_WEB_DASHBOARD=true 表示會啟用一個 dashboard server
-- K6_WEB_DASHBOARD_EXPORT=html-report.html 表示會把最後的 dashboard 結果儲存成 html 檔
+- `K6_WEB_DASHBOARD=true`: 表示會啟用一個 dashboard server
+- `K6_WEB_DASHBOARD_EXPORT=html-report.html`: 表示會把最後的 dashboard 結果儲存成 html 檔
 
 #### 關鍵效能指標解讀
 
