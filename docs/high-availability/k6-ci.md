@@ -103,9 +103,38 @@ scenarios: 設定 1 個(預設)情境, 最多 1 為虛擬使用者在同一時�
 
 ### 視覺化分析結果
 
-k6 測試結果可以另外存到資料庫（如 PostgreSQL、InfluxDB），然後匯入到 Grafana 進行視覺化分析。在 Grafana 中，您可以根據時間區段檢視資料、排序 API 回應時間或過濾出有問題的回應等。您也可以直接使用 [k6 cloud](https://grafana.com/products/cloud/k6/)，不過因為篇幅關係，本文不對這部分多著墨。
+#### k6 web dashboard
 
-![](https://grafana.com/media/products/k6-cloud/run-cloud-tests.png?w=450)
+除了在終端機顯示即時統計資料外，k6 也提供了 [web dashboard](https://grafana.com/docs/k6/latest/results-output/web-dashboard/) 功能，可以將這些效能指標視覺化成圖表，讓您更直觀地監控測試過程中的系統表現。
+
+Web dashboard 的主要功能包括：
+
+- **即時監控**：測試執行期間可以即時查看效能指標變化
+- **視覺化圖表**：將數據以圖表形式呈現，便於理解趨勢
+- **匯出報告**：可以將最終結果匯出成 HTML 報告檔案
+
+#### k6 web dashboard 功能限制
+
+k6 web dashboard 在分析的深度方面有些不足的地方：
+
+- **分析功能相對簡單**：主要呈現整體統計資料，無法深入分析特定時間點或個別 API 端點的表現
+- **無法比較歷史資料**：無法將本次測試結果與之前的測試進行比較
+- **缺乏趨勢分析**：難以識別系統效能隨時間變化的長期趨勢
+
+#### 進階分析
+
+如果需要詳細分析每一支 API 的失敗次數、回應時間分布，或進行更深入的效能分析，建議將 k6 測試結果存到資料庫（如 PostgreSQL、InfluxDB），然後匯入到 Grafana 進行視覺化分析。在 Grafana 中，您可以：
+
+- **API 層級分析**：查看每一支 API 的詳細效能指標
+- **時間區段分析**：根據特定時間區段檢視詳細資料
+- **效能排序**：依據 API 回應時間進行排序，快速找出效能瓶頸
+- **錯誤篩選**：篩選出有問題的回應，分析失敗原因
+- **歷史比較**：將不同測試階段的結果進行比較
+- **趨勢監控**：建立長期的效能趨勢圖表
+
+您也可以直接使用 [k6 cloud](https://grafana.com/products/cloud/k6/)。因篇幅關係，本文不對進階分析部分多著墨。
+
+![k6 cloud dashboard](https://grafana.com/media/products/k6-cloud/run-cloud-tests.png?w=450)
 > 圖片來源：k6 cloud
 
 ## 參數設定
@@ -131,6 +160,139 @@ export const options = {
 ```
 
 > 更多參數設定，可以參考[如何使用 options](https://grafana.com/docs/k6/latest/using-k6/k6-options/how-to/)
+
+## 情境測試
+
+這一小節將介紹如何模擬測試系統一段期間內的使用狀況。
+
+### 整體流程概述
+
+情境測試的完整流程包含以下三個主要階段：
+
+1. **錄製使用者行為**：使用瀏覽器開發者工具的[網路(Network)面板](https://developer.chrome.com/docs/devtools/network/overview?hl=zh-tw)錄製真實的使用者操作流程，並將 HAR 檔案轉換為 k6 測試腳本
+2. **設定負載情境**：透過 k6 的 [Scenarios](https://grafana.com/docs/k6/latest/using-k6/scenarios/) 功能設定不同的負載模式，模擬真實世界中使用者數量的變化
+3. **執行測試與分析結果**：執行負載測試並使用 k6 web dashboard 即時監控效能指標，分析系統在不同虛擬使用者數量下的請求速率與回應時間
+
+透過這套流程，可以系統性地評估應用程式在各種負載條件下的效能表現，及早發現潛在的效能瓶頸。
+
+### 錄製使用者行為
+
+使用瀏覽器的開發者工具，錄製一段已登入使用者的操作，把它轉成 k6 測試腳本：
+
+1. 開啟瀏覽器開發人員工具 (F12)
+2. 切換到 Network 面板
+3. 瀏覽網站(模擬使用者操作一段流程)
+4. 回到 Network 面板點擊下載按鈕 "Export HAR (with sensitive data)..."
+    > Chrome 130 版後 HAR 匯出內容會[預設排除敏感資訊](https://developer.chrome.com/blog/new-in-devtools-130?hl=zh-tw#har)，最新使用方式可參考：[Chrome DevTools Network Reference](https://developer.chrome.com/docs/devtools/network/reference?hl=zh-tw#save-as-har)
+5. 將 har [轉換](https://grafana.com/docs/k6/latest/using-k6/test-authoring/create-tests-from-recordings/using-the-har-converter/)成 k6 測試程式碼
+
+轉換後的程式碼，建議把 http headers 的 authorization 替換成變數，每次執行測試之前重新取得 authToken，就不會因為 authToken 過期而無法重複執行測試，如下範例：
+
+``` javascript
+let authToken = 'eyJhbGciOiJIU...HQ'
+export default function main() {
+  let response
+  group('drc daily usages test', function () {
+    response = http.get('https://drc.api/system/menu', {
+      headers: {
+        accept: 'application/json, text/plain, */*',
+        'accept-encoding': 'gzip, deflate, br, zstd',
+        'accept-language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+        authorization:
+          `Bearer ${authToken}`,
+        'cache-control': 'no-cache',
+      },
+    })
+
+    sleep(1.5)
+
+    response = http.get('https://drc.api/surveys/menu', {
+      // ...
+    })
+
+    response = http.get('https://drc.api/departments/menu', {
+      // ...
+    })
+
+    response = http.get('https://drc.api/cruise-projects/menu', {
+      // ...
+    })
+    sleep(1)
+  })
+}
+```
+
+> sleep 函數是用來模擬使用者實際操作時對 API 的請求速率。在真實情況下，使用者不會連續不斷地發送請求，而是會有滑鼠移動、點擊延遲、閱讀內容的時間等。透過適當的 sleep 設定，可以讓測試更接近真實的使用情境。
+
+### 設定負載情境
+
+使用 [ramping-vus](https://grafana.com/docs/k6/latest/using-k6/scenarios/executors/ramping-vus/) 執行器模擬真實的使用情境，透過設定不同的 stages 來逐步增加或減少負載，每個階段代表一個時間區間和目標使用者數量。
+> 建議在執行長時間測試之前，先將每個階段的時間縮短為 10-30 秒來驗證腳本正確性，以及確認伺服器回傳結果，不然可能會執行完好幾個小時的測試後，才發現程式寫錯或參數設定錯誤。
+
+``` javascript
+export const options = {
+  scenarios: {
+    daily_usages: {
+      executor: 'ramping-vus',
+      startVUs: 0,
+      stages: [
+        { duration: '1m', target: 10 },   // 1分鐘內增加到10個使用者
+        { duration: '4m', target: 10 },   // 維持10個使用者4分鐘
+        { duration: '1m', target: 20 },   // 1分鐘內增加到20個使用者
+        { duration: '4m', target: 20 },   // 維持20個使用者4分鐘
+        { duration: '1m', target: 40 },   // 1分鐘內增加到40個使用者
+        { duration: '4m', target: 40 },   // 維持40個使用者4分鐘
+        { duration: '1m', target: 60 },   // 1分鐘內增加到60個使用者
+        { duration: '4m', target: 60 },   // 維持60個使用者4分鐘
+        { duration: '1m', target: 80 },   // 1分鐘內增加到80個使用者
+        { duration: '4m', target: 80 },   // 維持80個使用者4分鐘
+        { duration: '1m', target: 100 },  // 1分鐘內增加到100個使用者
+        { duration: '4m', target: 100 },  // 維持100個使用者4分鐘
+        { duration: '10s', target: 0 },   // 10秒內降到0個使用者
+      ],
+      gracefulRampDown: '10s',
+    },
+  },
+}
+```
+
+### 測試結果分析
+
+使用 k6 web dashboard 簡單分析結果，執行指令如下：
+
+```shell
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run test/load-test-drc.js
+```
+
+- K6_WEB_DASHBOARD=true 表示會啟用一個 dashboard server
+- K6_WEB_DASHBOARD_EXPORT=html-report.html 表示會把最後的 dashboard 結果儲存成 html 檔
+
+#### 關鍵效能指標解讀
+
+從測試結果可以觀察到以下重要指標：
+
+- **HTTP Request Rate (29.7/s)**：系統每秒處理的 HTTP 請求數量，這個數值會受到 sleep 設定和 Virtual Users (VUs) 數量的雙重影響
+- **HTTP Request Duration (3s)**：平均 HTTP 請求回應時間為 3 秒，當 VUs 達到 100 時，使用者最長等待時間會到 8 秒，顯示高負載下系統回應時間明顯增加
+- **HTTP Request Failed (0/s)**：無失敗請求，表示系統在測試負載下運作穩定
+- **Transfer Rate**：資料傳輸速率，包含接收 (69 kB/s) 和發送 (2.35 kB/s) 的資料量
+
+#### 效能趨勢分析
+
+透過圖表可以觀察到：
+
+1. **HTTP Performance Overview**：請求速率、持續時間和失敗率的時間變化趨勢
+2. **VUs 變化曲線**：虛擬使用者數量的增減模式，對應 ramping-vus 中的設定階段
+3. **Request Duration 分布**：不同百分位數 (p50, p95, p99) 的回應時間分布，有助於了解效能的一致性
+
+#### 效能瓶頸識別
+
+當系統承受較高負載時，應特別關注：
+
+- 回應時間是否超出可接受範圍 (如 >5秒)
+- 是否出現請求失敗的情況
+- 資源使用率是否達到上限
+
+![測試結果統計圖表](./img/k6-ci-01.png)
 
 ## 整合進 CI
 
