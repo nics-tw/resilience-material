@@ -41,7 +41,7 @@ export default function () {
 }
 ```
 
-k6 會執行預設函數(default function)的程式碼：對 https://quickpizza.grafana.com 發出 get 請求。根據 `options` 的設定，重複執行預設函數 10 次，執行結果如下：
+假設上述程式碼檔名為`./test/load-test.js`，透過執行 `k6 run ./test/load-test.js` 來進行測試，k6 會執行預設函數(default function)的程式碼：對 https://quickpizza.grafana.com 發出 get 請求。根據 `options` 的設定，重複執行預設函數 10 次，結果如下：
 
 ``` console
 $ k6 run ./test/load-test.js
@@ -258,14 +258,14 @@ export const options = {
 
 ### 測試結果分析
 
-使用 k6 web dashboard 簡單分析結果，執行指令如下：
+使用 k6 web dashboard 簡單分析結果，假設測試檔名為`./test/load-test-drc.js`，執行指令如下：
 
 ```shell
 K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run test/load-test-drc.js
 ```
 
 - `K6_WEB_DASHBOARD=true`: 表示會啟用一個 dashboard server
-- `K6_WEB_DASHBOARD_EXPORT=html-report.html`: 表示會把最後的 dashboard 結果儲存成 html 檔
+- `K6_WEB_DASHBOARD_EXPORT=html-report.html`: 表示會把最後的 dashboard 結果儲存至 html-report.html
 
 #### 關鍵效能指標解讀
 
