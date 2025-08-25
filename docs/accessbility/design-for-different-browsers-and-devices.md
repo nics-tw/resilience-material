@@ -47,7 +47,7 @@
 
 ## 使用輔助科技進行測試
 
-您還需要確定服務與輔助科技相容。
+您還需要[確定服務與輔助科技相容](./testing-with-assistive-technologies.md)。
 
 ## 為受眾而設計
 

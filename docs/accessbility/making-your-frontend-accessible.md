@@ -14,9 +14,9 @@
 
 儘可能利用 GOV.UK 的設計系統來建置您的服務。此設計系統提供了與其他 GOV.UK 服務一致且無障礙的風格、元件及模式。
 
-利用 GOV.UK 設計系統的元件來打造您的服務，可以幫助服務變得更加無障礙且可依使用者環境自動調整。這是因為 GOV.UK 設計系統經常針對[常用的輔助科技和瀏覽器組合](../appendix/propose-a-component-or-pattern.md)進行測試，並且符合 WCAG 2.2 的 AA 等級。
+利用 GOV.UK 設計系統的元件來打造您的服務，可以幫助服務變得更加無障礙且可依使用者環境自動調整。這是因為 GOV.UK 設計系統經常針對[常用的輔助科技和瀏覽器組合](./testing-with-assistive-technologies.md)進行測試，並且符合 WCAG 2.2 的 AA 等級。
 
-若服務需求中的內容未涵蓋於 GOV.UK 設計系統，應確保您新增到服務中的任何元素都是無障礙的。您也可以為 GOV.UK 設計系統提議新的元件或模式。
+若服務需求中的內容未涵蓋於 GOV.UK 設計系統，應確保您新增到服務中的任何元素都是無障礙的。您也可以[為 GOV.UK 設計系統提議新的元件或模式](../appendix/propose-a-component-or-pattern.md)。
 
 即便使用了 GOV.UK 設計系統，在 HTML、Cascading Style Sheets (CSS) 和 JavaScript 程式碼中，仍可能不小心造成障礙。
 
@@ -41,32 +41,32 @@
 
 也可能有與內容相關的問題，例如：
 
-- 非描述性的連結
-- 沒有替代文字的圖片
+- [非描述性的連結](./non-descriptive-link.md)
+- [沒有替代文字的圖片](./images-without-alt-text.md)
 - 靠視覺導向的描述，比如「點擊左側的按鈕」
 - 服務上非唯一的頁面標題
 
 請與內容設計師或技術寫作人員合作，修正這些問題。
 
-部分使用者可能需要延長時間限制，例如在系統自動登出前的時間限制。請確保使用者在需要時能延長這些時間限制。
+部分使用者可能需要[延長時間限制](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html)，例如在系統自動登出前的時間限制。請確保使用者在需要時能延長這些時間限制。
 
 ### 編寫無障礙 HTML
 
 您應當遵循[語意化 HTML 的原則](./semantic-markup.md)。運用正確的 HTML 元素及屬性標註內容，意味著正確的資訊將被提供給輔助科技。這也代表輔助科技的使用者可以依預期與內容或介面互動。
 
-在 HTML 中使用正確的元素能協助輔助科技使用者瀏覽網頁，包含讓他們能跳至相關區塊。例如，請確定使用 `header`、`main` 和 `footer` 元素來勾勒頁面架構。
+在 HTML 中使用正確的元素能協助輔助科技使用者瀏覽網頁，包含讓他們能跳至相關區塊。例如，請確定使用 `header`、`main` 和 `footer` 元素來勾勒[頁面架構](./page-structure.md)。
 
 利用適當的 HTML 元素可以讓輔助科技更易於理解及操作介面。例如，按鈕應該總是使用 `button`，而不是 `div`。
 
-請永遠確保頁面內容是按照邏輯順序排列，並且不依靠 CSS 或 JavaScript 在頁面載入後重新安排內容。如此一來，螢幕報讀軟體可以按照正確的順序閱讀內容。
+請永遠確保頁面內容是按照邏輯順序排列，並且不依靠 CSS 或 JavaScript 在頁面載入後重新安排內容。如此一來，[螢幕報讀軟體可以按照正確的順序閱讀內容](https://alistapart.com/article/semantics-to-screen-readers/)。
 
-在內容中使用標題元素。標題元素會告知螢幕報讀軟體頁面內容的組織方式，並給予使用者內容的概觀。避免跳躍使用標題元素，例如從 `h1` 直接跳到 `h3`，因為這可能使螢幕報讀軟體混淆。
+在內容中使用標題元素。[標題元素](https://www.w3.org/WAI/tutorials/page-structure/headings/)會告知螢幕報讀軟體頁面內容的組織方式，並給予使用者內容的概觀。避免跳躍使用標題元素，例如從 `h1` 直接跳到 `h3`，因為這可能使螢幕報讀軟體混淆。
 
 撰寫 HTML 時，其他常見的無障礙錯誤可能包括：
 
-- 不為表單欄位提供 `labels`，或未正確將 `labels` 與表單欄位關聯
-- 沒有使用正確的清單類型 (`list type`)
-- 用 table 來構建頁面布局 - 您應該只使用 `table` 來呈現表格數據
+- 不為[表單欄位](https://www.w3.org/WAI/tutorials/forms/)提供 `label`，或未正確將 `label` 與表單欄位關聯
+- 沒有使用正確的[清單類型](https://www.w3.org/WAI/tutorials/page-structure/content/#lists) (`list type`)
+- 用 [table](https://www.w3.org/WAI/tutorials/tables/) 來構建頁面布局 - 您應該只使用 `table` 來呈現表格數據
 
 ### 撰寫無障礙 CSS
 
@@ -82,7 +82,7 @@
 有些使用者會依據他們的需求自訂網頁外觀。為了支援這些使用者，您應確保：
 
 - 當使用者放大字型時，所有內容仍然易讀
-- 使用者能夠更改頁面上的顏色，而不會讓重要元素消失不見
+- 使用者能夠更改頁面上的顏色，而不會[讓重要元素消失不見](../appendix/supporting-users-who-change-colours-on-gov-uk.md)
 
 如果可以，您應該避免用CSS來重新排列頁面上的內容，因為這樣可能會對使用鍵盤和螢幕報讀軟體的使用者造成困擾。
 
@@ -90,35 +90,35 @@
 
 當內容動態變更時，您必須通知使用者。比如說，螢幕報讀軟體無法識別即時更新的搜尋結果。您可以利用  [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) 在內容動態變更時發出通知。
 
-[WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) 很容易被不正確地使用，導致身心障礙者無法使用你的服務。你必須依循 WAI-ARIA 的正確規範與建議策略。
+[WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) 很容易被不正確地使用，導致身心障礙者無法使用你的服務。你必須依循 [WAI-ARIA 的正確規範與建議策略](https://www.w3.org/TR/wai-aria-practices-1.1/)。
 
 在使用 WAI-ARIA 時，請確保：
 
-- 利用 JavaScript 新增針對互動的 `WAI-ARIA` 屬性，例如 `aria-controls`，避免讓非 JavaScript 使用者感到困擾
-- 隨著頁面上 JavaScript 的變動，更新 `WAI-ARIA` 屬性，例如在使用者展開元素後設定 `aria-expanded` 為 `true`
+- 利用 JavaScript 新增針對互動的 WAI-ARIA 屬性，例如 `aria-controls`，避免讓非 JavaScript 使用者感到困擾
+- 隨著頁面上 JavaScript 的變動，更新 WAI-ARIA 屬性，例如在使用者展開元素後設定 `aria-expanded` 為 `true`
 
 ## 檢測服務的無障礙性
 
 您應該根據 WCAG 2.2 進行手動檢查，並使用[最常用的輔助科技與瀏覽器組合](./testing-with-assistive-technologies.md)進行測試。
 
-您的[手動測試](./testing-with-assistive-technologies.md)應該包括一些常見的無障礙問題，例如檢測：
+您的[手動測試](./testing-for-accessibility.md#手動測試)應該包括一些常見的無障礙問題，例如檢測：
 
 - 服務是否可以用鍵盤操作
 - 使用者是否能調整介面，如在瀏覽器中放大字型或更改顏色
 
-當編寫正式的程式時，您必須定期進行[無障礙測試](https://www.gov.uk/service-manual/technology/testing-for-accessibility)。一旦服務進入公開Beta版，每當您新增一個功能時，都要進行無障礙測試。
+當編寫正式的程式時，您必須定期進行[無障礙測試](./testing-for-accessibility.md)。一旦服務進入公開Beta版，每當您新增一個功能時，都要進行無障礙測試。
 
-雖然可以使用[自動無障礙測試工具](../accessbility/testing-for-accessibility.md#自動化測試)來測試您的服務，但無障礙工具無法捕捉到所有錯誤，因此仍然必須執行手動測試。
+雖然可以使用[自動無障礙測試工具](../accessbility/testing-for-accessibility.md#自動化測試)來測試您的服務，但[無障礙工具無法捕捉到所有錯誤](./tools-cannot-covering-all-situation.md)，因此仍然必須執行手動測試。
 
 ### 使用無障礙標準
 
-無障礙接受標準是您可以應用於服務元件的特定規則，以幫助進行無障礙測試。無障礙標準可以幫助您決定需要測試的內容。
+[無障礙驗收準則](https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/)是您可以應用於服務元件的特定規則，以幫助進行無障礙測試。無障礙標準可以幫助您決定需要測試的內容。
 
-例如，一個連結不需要關聯標籤 (associated label)，但它需要清楚的文字來描述連結去往何處。這樣的接受標準可以在您添加或更新功能時，幫助維護服務的無障礙性。
+例如，一個連結不需要關聯標籤 (associated label)，但它需要清楚的文字來描述連結去往何處。這樣的驗收準則可以在您添加或更新功能時，幫助維護服務的無障礙性。
 
 ## 尋求幫助
 
-聯絡無障礙社群以：
+聯絡[無障礙社群](https://www.gov.uk/service-manual/communities/accessibility-community)以：
 
 - 討論如何建構無障礙服務並符合無障礙要求
 - 跨政府分享想法

@@ -16,9 +16,7 @@
 大部分政府網站的服務應該僅使用 HTML 即可運作，這些包含以下類型服務：
 
 - 交換資料性 (transactional) 服務，例如：使用者填寫資訊並提交給政府的表單
-
-- smart answers服務，例如：GOV.UK 的[海外出生登記服務](https://www.gov.uk/register-a-birth)
-
+- [smart answers](../appendix/making-it-easier-to-understand-smart-answer-logic.md)服務，例如：GOV.UK 的[海外出生登記服務](https://www.gov.uk/register-a-birth)
 - 基於內容的網站，例如：GOV.UK 的[國際旅遊建議](https://www.gov.uk/foreign-travel-advice)
 
 ## 使用互動性元素 (interactive elements)
@@ -52,9 +50,9 @@
 
 如果以上方法都行不通，您需證明已考慮到輔助科技的使用者如何使用您的服務，含透過非數位途徑，例如打電話或臨櫃辦理。
 
-###  使用 JavaScript 框架
+### 使用 JavaScript 框架
 
-有些開發者認為使用 [JavaScript 框架](https://en.wikipedia.org/wiki/JavaScript_framework)開發服務很方便。但某些 JavaScript 框架會要求使用者下載大量的資料，特別是使用者的網路速度較慢或使用較老舊的設備時，可能會導致效能問題。因此，我們應該權衡使用 JavaScript 框架的好處，以及是否值得承擔這些潛在的效能問題。
+有些開發者認為使用 [JavaScript 框架](https://en.wikipedia.org/wiki/JavaScript_framework)開發服務很方便。但某些 JavaScript 框架會要求使用者下載大量的資料，特別是使用者的網路速度較慢或使用較老舊的設備時，可能會導致[效能問題](../appendix/why-we-focus-on-frontend-performance.md)。因此，我們應該權衡使用 JavaScript 框架的好處，以及是否值得承擔這些潛在的效能問題。
 
 使用 JavaScript 框架可能導致其他問題，例如：
 
@@ -67,13 +65,13 @@
 
 伺服器應該能退回以 HTML 進行渲染網頁，並照常將原始碼交付至瀏覽器，於必要時再使用 JavaScript 來增強元件。
 
-###  使用 JavaScript 伺服器端渲染 (server-side rendering, SSR)
+### 使用 JavaScript 伺服器端渲染 (server-side rendering, SSR)
 
 您可以使用伺服器端渲染 (server-side rendering) 或稱 [Isomorphic JavaScript 或 Universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript)。然而，您仍需要在用戶端 (client-side) 停用 JavaScript 測試服務是否正常運作。當 JavaScript 失效時，仍能透過伺服器端渲染 HTML 來維持服務的正常運作。
 
 ## 測試您的服務
 
-您須測試服務中大量依賴 JavaScript 或 JavaScript 框架的元件，來確保其無障礙性，由實際(身心障礙)的使用者進行測試更為理想。您也需要測試前端的效能。
+您須測試服務中大量依賴 JavaScript 或 JavaScript 框架的元件來確保其無障礙性，由實際(身心障礙)的使用者進行測試更為理想。您也需要[測試前端的效能](./how-to-test-frontend-performance.md)。
 
 ## 不要假設使用者關閉 CSS 或 JavaScript
 
