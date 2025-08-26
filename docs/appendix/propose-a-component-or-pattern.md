@@ -1,5 +1,10 @@
 # 提議新的元件（component）或模式（pattern）
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://design-system.service.gov.uk/community/propose-a-component-or-pattern/  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[讓服務無障礙](../accessbility/making-your-frontend-accessible.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+
 任何人都可以為 GOV.UK 設計系統提議新的元件或模式。
 
 提案需要表明所建議的元件或模式是[有用且獨特的](https://design-system.service.gov.uk/community/contribution-criteria/)。
@@ -21,5 +26,3 @@
 在此階段，您只需提出您的想法和使用者需求的證據即可。您可以附上正在使用的元件或模版的截圖或連結，避免花時間進行具體設計或撰寫程式碼。
 
 設計系統社群每年[都會優先考慮要處理的元件和模式](https://design-system.service.gov.uk/community/upcoming-components-patterns/)。如果您的提案沒有被優先考慮，您也可以開始[開發元件或模式](https://design-system.service.gov.uk/community/develop-a-component-or-pattern/)或將其留給其他人進行。
-
-[原始文章連結](https://design-system.service.gov.uk/community/propose-a-component-or-pattern/)

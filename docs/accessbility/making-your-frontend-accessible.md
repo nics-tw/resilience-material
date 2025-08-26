@@ -1,12 +1,16 @@
 # 讓服務無障礙
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/accessibility-for-developers-an-introduction  
+> 翻譯日期：2023-12-27  
+
 您必須確保開發的服務對所有需要的人是方便取用的。作為開發者，要設計並建立介面，避免[為身心障礙者及輔助科技使用者設下障礙](./making-your-service-accessible-an-introduction.md)
 
 以易於取得方法打造的服務有助於確保該服務能夠因應未來的變動，無論是技術的變動或使用者的無障礙性需求改變。
 
 這也讓您的服務能夠：
 
-- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../accessbility/wcag-22-design-principles.md)
+- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../accessbility/wcag-22-design-principles.md#wcag-22-%E8%A8%AD%E8%A8%88%E5%8E%9F%E5%89%87)
 - 符合[公共領域的無障礙規範](../appendix/accessibility-requirements-for-public-sector.md)
 - 不觸犯 [2010 年平等法](../appendix/equality-act-2010-guidance.md)
 
@@ -123,5 +127,3 @@
 - 討論如何建構無障礙服務並符合無障礙要求
 - 跨政府分享想法
 - 尋求從事類似服務或面臨類似挑戰的團隊之支援
-
-[原始資料連結](https://www.gov.uk/service-manual/technology/accessibility-for-developers-an-introduction)

@@ -1,5 +1,9 @@
 # 網頁結構教學
 
+> 本文翻譯自：英國政府數位服務設計手冊之參考資料  
+> 原文連結：https://www.w3.org/WAI/tutorials/page-structure/  
+> 翻譯日期：2023-12-27  
+
 良好結構的內容可以實現更有效率的導覽與處理。使用 HTML 與 WAI-ARIA 改進網頁與應用程式中的導覽與定向。
 
 - [頁面區域](https://www.w3.org/WAI/tutorials/page-structure/regions/)：**使用 HTML5 與 WAI-ARIA 識別與標記網頁上的區域。
@@ -33,5 +37,3 @@
 - [2.4.1 繞過區塊：](https://www.w3.org/WAI/WCAG21/quickref/#qr-navigation-mechanisms-skip)提供一個機制，可以繞過多個網頁上重複的內容區塊。(A 級)
 - [2.4.6 標題與標籤：](https://www.w3.org/WAI/WCAG21/quickref/#qr-navigation-mechanisms-descriptive)標題與標籤描述主題或目的。(AA 級)
 - [2.4.10 段落標題：](https://www.w3.org/WAI/WCAG21/quickref/#qr-navigation-mechanisms-headings)段落標題用於組織內容。(AAA 級)
-
-[原始資料連結](https://www.w3.org/WAI/tutorials/page-structure/)

@@ -1,5 +1,10 @@
 # Alpha 階段如何進行
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/working-with-mobile-technology  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[確定服務在行動設備上運作良好](../accessbility/make-sure-your-service-work-well-on-mobile.md)之相關參考資料  
+
 Alpha 是您[嘗試不同解決方案](https://dwpdigital.blog.gov.uk/2016/02/19/learning-through-prototyping-tools-for-universal-credit-claimants/)來解決從探索（discovery）階段中發現到的問題。
 
 在 alpha 階段，請花費時間建立原型並測試不同的想法。不要害怕挑戰目前的做法：alpha階段是探索新方法的機會。

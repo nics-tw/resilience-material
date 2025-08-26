@@ -1,5 +1,10 @@
 # 漸進式網頁應用程式（PWA）為英國政府帶來了新的行動應用機會
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://technology.blog.gov.uk/2018/03/26/progressive-web-apps-bring-us-new-mobile-opportunities/  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[確定服務在行動設備上運作良好](../accessbility/make-sure-your-service-work-well-on-mobile.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+
 當公共部門設計服務時，通常需要考慮行動應用程式。近年來都要先為網站建立服務，然後在某些有限的情況下，再建立獨立的原生行動應用程式。
 
 漸進式網頁應用程式 (Progressive web app, PWA) 的崛起意味著英國政府不再需要將這些不同的平臺開發工作視為孤島（Silo）。
@@ -29,5 +34,3 @@ service worker 允許的推播通知意味著在網路連線恢復時，所有�
 一些平臺似乎可以幫助設計和建立 PWA，我們知道其中一個是開源的。
 
 我們還希望鼓勵政府中的其他人，如果他們認為仍然有明顯需要使用原生應用程式而不是 PWA，請與我們聯絡。
-
-[原始資料連結](https://technology.blog.gov.uk/2018/03/26/progressive-web-apps-bring-us-new-mobile-opportunities/)

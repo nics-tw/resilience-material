@@ -1,5 +1,10 @@
 # 2010年平等法指南
 
+> 本文翻譯自：英國政府 2010 年平等法案指南  
+> 原文連結：https://www.gov.uk/guidance/equality-act-2010-guidance  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[讓服務無障礙](../accessbility/making-your-frontend-accessible.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+
 本指南為《 2010 年平等法案》的資訊和指南，包括年齡歧視和公部門平等義務。
 
 ## 概述
@@ -188,5 +193,3 @@
 ## 平等法案指南
 
 我們製作了一系列[指南，概述了該法案對法律所做的關鍵修改](http://www.homeoffice.gov.uk/publications/equalities/equality-act-publications/equality-act-guidance/)。
-
-[原始文章連結](https://www.gov.uk/guidance/equality-act-2010-guidance)

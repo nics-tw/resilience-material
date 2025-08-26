@@ -1,5 +1,10 @@
 # 保護您的服務免受詐騙
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[使用 CAPTCHAs](../accessbility/using-captchas.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+
 當您設計和管理您的數位服務時，您必須：
 
 - 考慮您的服務如何成為詐騙份子的目標(從 Alpha 階段開始)，以及這可能會造成的影響
@@ -136,5 +141,3 @@ IFIA 概述詐騙可能影響政策、專案或計劃的主要方式。
 
 - [資訊安全](https://www.gov.uk/service-manual/making-software/information-security.html)
 - [雲端安全](https://www.gov.uk/service-manual/operations/cloud-security.html)
-
-[原始文章連結](https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud)

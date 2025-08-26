@@ -1,5 +1,9 @@
 # 監控您服務的狀態
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service  
+> 翻譯日期：2023-12-27  
+
 當您進入公開 beta 測試階段時，您必須建立監控機制，以識別可能影響您服務的任何問題。
 
 使用適當的工具和流程進行監控可以幫助您：
@@ -89,5 +93,3 @@
 ## 相關指南
 
 您可能也會發現[運作時間和可用性指南](https://www.gov.uk/service-manual/technology/uptime-and-availability-keeping-your-service-online)很有用。
-
-[原始文章連結](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service)

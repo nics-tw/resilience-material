@@ -1,5 +1,9 @@
 # 針對不同的瀏覽器和裝置進行設計
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices  
+> 翻譯日期：2023-12-27  
+
 您的服務必須普遍可用。這意味著建置服務時，要讓服務能在使用者使用的每一種瀏覽器或裝置上運作。
 
 ## 測試相容性
@@ -74,5 +78,3 @@
 新的產品和平台可能不會出現在任何資料中，但如果它們可能大受歡迎，那麼提前測試是合情合理的。
 
 如果某個產品或系統的受歡迎程度正在下降，您也必須決定何時停止支援該產品或系統。
-
-[原始資料連結](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices)

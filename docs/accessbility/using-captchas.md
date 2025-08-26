@@ -1,5 +1,9 @@
 # 使用 CAPTCHAs
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/using-captchas  
+> 翻譯日期：2023-12-27  
+
 [CAPTCHAs](https://en.wikipedia.org/wiki/CAPTCHA) 是用來測試和區分人類和機器人(例如：自動化軟體)的工具，藉由讓使用者執行特定任務來證明自己是人類 - 例如，送出表單前先辨識混淆過的文字並輸入結果。
 
 CAPTCHAs 影響了安全、隱私、可用性和無障礙等議題。除非運用於下列場合，否則切勿使用：
@@ -32,5 +36,3 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括[身心障礙者]
 
 - [保護您的服務免受詐騙的指南](../appendix/protecting-your-service-against-fraud.md)
 - [使用 cookies 和類似技術的工作指南](../accessbility/working-with-cookies-and-similar-technologies.md)
-
-[原始資料連結](https://www.gov.uk/service-manual/technology/using-captchas)

@@ -1,5 +1,9 @@
 # 內容設計：連結
 
+> 本文翻譯自：英國政府數位服務設計手冊之參考資料  
+> 原文連結：https://www.gov.uk/guidance/content-design/links  
+> 翻譯日期：2023-12-27  
+
 ## 連結
 
 在內容中新增連結使其易用，以及新增 GOV.UK 的外部連結政策。
@@ -160,5 +164,3 @@
 - 定期測試安全性
 - 第三方提供者符合一般資料保護法規（General Data Protection Regulation）
 - 向使用者提供關於資料擁有者、使用者權利以及如有問題應該聯絡誰的明確訊息
-
-[原始文章連結](https://www.gov.uk/guidance/content-design/links)
