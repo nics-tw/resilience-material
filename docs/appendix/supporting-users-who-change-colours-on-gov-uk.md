@@ -14,7 +14,7 @@
 
 下面挑選了一些範例來展示已做出的一些改進。
 
-### 返回連結（back link）元件
+## 返回連結（back link）元件
 
 [返回連結元件](https://design-system.service.gov.uk/components/back-link)有一個三角形箭頭圖標，使用 [CSS 三角形方法](https://css-tricks.com/snippets/css/css-triangle/)實作。
 
@@ -32,7 +32,7 @@
 
 為了更容易製作這樣的三角形，英國政府網站設計系統團隊[建立了 SCSS mixin](https://github.com/alphagov/govuk-frontend/blob/b40ca0f119468bddb8f662caae8b31931a581e3e/src/helpers/_shape-arrow.scss#L20-L76)。
 
-### 麵包屑（breadcrumbs）元件
+## 麵包屑（breadcrumbs）元件
 
 [麵包屑元件](https://design-system.service.gov.uk/components/breadcrumbs)用 V 形符號（chevrons）來分隔每個連結。
 
@@ -50,7 +50,7 @@
 
 譯註：麵包屑（Breadcrumb），簡單來說就是網頁上方的導覽條、導覽列，讓使用者更容易瀏覽，也利於搜尋引擎爬蟲解析網站。
 
-### 單選按鈕（radio）元件
+## 單選按鈕（radio）元件
 
 這個[單選按鈕元件](https://design-system.service.gov.uk/components/radios)[早於 GOV.UK 前端](https://designnotes.blog.gov.uk/2016/11/30/weve-updated-the-radios-and-checkboxes-on-gov-uk/)，是確保更改的顏色受到尊重的一個很好的例子。
 
@@ -70,7 +70,7 @@
 
 閱讀 [GOV.UK 前端中單選按鈕範例的程式碼](https://github.com/alphagov/govuk-frontend/blob/b40ca0f119468bddb8f662caae8b31931a581e3e/src/components/radios/_radios.scss#L112-L117)
 
-### 標頭（header）元件
+## 頁首（header）元件
 
 包含 GOV.UK 徽標，但該圖標在覆蓋顏色時會消失，因為它最初是以 PNG
 圖片實現。
@@ -87,7 +87,7 @@
 
 閱讀 [GOV.UK 前端中標題範例的程式碼](https://github.com/alphagov/govuk-frontend/blob/b40ca0f119468bddb8f662caae8b31931a581e3e/src/components/breadcrumbs/_breadcrumbs.scss#L71-L84)
 
-### 面板（panel）元件
+## 面板（panel）元件
 
 [面板（panel）元件](https://design-system.service.gov.uk/components/panel)使用純色背景使其脫穎而出，但當顏色變更時它就會消失。
 
@@ -105,3 +105,5 @@
 這篇部落格文章僅介紹了英國政府網站設計系統團隊為使英國政府網站的元件更具無障礙所做的一小部分工作。查看 [GOV.UK 設計系統](https://design-system.service.gov.uk/components/)以了解更多資訊。
 
 Nick Colley 是負責 GOV.UK 設計系統的前端開發人員。
+
+[原始資料連結](https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk/)
