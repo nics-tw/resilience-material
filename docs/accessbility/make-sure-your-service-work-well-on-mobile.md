@@ -18,10 +18,10 @@
 
 建立響應式網站（或屬於 GOV.UK 的響應式服務）代表：
 
-- 使用響應式設計確保您的網站可以在不同的瀏覽器和設備上運行
-- 使用漸進增強策略，使您的服務變得更可靠
+- 使用[響應式設計](https://alistapart.com/article/responsive-web-design)確保您的網站可以在[不同的瀏覽器和設備](./design-for-different-browsers-and-devices.md)上運行
+- 使用[漸進增強策略](./using-progressive-enhancement.md)，使您的服務變得更可靠
 
-以這種方式建立服務意味著無論使用者如何造訪服務，他們都可以獲得相同的內容和功能。它也將幫助您滿足政府的無障礙要求。
+以這種方式建立服務意味著無論使用者如何造訪服務，他們都可以獲得相同的內容和功能。它也將幫助您滿足[政府的無障礙要求](./making-your-service-accessible-an-introduction.md#滿足政府無障礙要求)。
 
 ## 開發 App
 
@@ -31,13 +31,13 @@
 - 該服務需要與使用者設備上的特定功能進行串接
 - 使用者需要收集和儲存資料，但網路並非總是保持連線狀態
 
-如果您認為 app 是服務的正確選擇，您需要在支出請求或內部流程中提供明確的證據。
+如果您認為 app 是服務的正確選擇，您需要在[支出請求](../appendix/spend-controls-check.md)或內部流程中提供明確的證據。
 
-您將需要證明，透過 API 開放資料並讓市場滿足對 app 的需求，是無法滿足這種需求的。例如，當倫敦交通局開放其 API 時，就催生了 Citymapper ——一款流行的旅行  app。
+您將需要證明，透過 API 開放資料並讓市場滿足對 app 的需求，是無法滿足這種需求的。例如，當倫敦交通局開放其 API 時，就催生了一款流行的旅行應用程式——Citymapper。
 
 ## 漸進式網頁應用程式 (Progressive Web Apps, PWA)
 
-瀏覽器技術的進步使得您可以在行動網路上執行以前只能使用原生應用程式（native apps）執行的操作。利用這些現代化瀏覽器增強功能的服務通常稱為行動 Web 應用程式或漸進式網頁應用程式 (Progressive Web Apps, PWA)。您應該利用 Alpha 階段和原型設計階段來探索它們如何為您提供幫助。
+瀏覽器技術的進步使得您可以在行動網路上執行以前只能使用原生應用程式（native apps）執行的操作。利用這些現代化瀏覽器增強功能的服務通常稱為行動 Web 應用程式或[漸進式網頁應用程式 (Progressive Web Apps, PWA)](../appendix/progressive-web-apps-bring-us-new-mobile-opportunities.md)。您應該利用 [Alpha 階段](../appendix/how-the-alpha-phase-works.md)和原型設計階段來探索它們如何為您提供幫助。
 
 在手機上，PWA 的使用者體驗幾乎與原生應用程式相同。但不同於原生應用程式，PWA 擁有一個在網路上運行的單一程式庫，如同任何普通網站一樣。
 
@@ -58,7 +58,7 @@
 - 相機和錄音
 - 設備動作感測器
 
-網站是查看目前網頁平臺可用功能的好地方。
+[What Web Can Do](https://whatwebcando.today/)網站是查看目前網頁平臺可用功能的好地方。
 
 使用者可以選擇在支援該技術的任何設備上安裝 PWA。如果使用者選擇安裝 PWA，它們通常比同等的原生應用程式佔用更少的空間。
 
