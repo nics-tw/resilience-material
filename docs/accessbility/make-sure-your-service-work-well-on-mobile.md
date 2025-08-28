@@ -1,8 +1,8 @@
 # 確定服務在行動設備上運作良好
 
-> 本文翻譯自：英國政府數位服務設計手冊
-> 原文連結：https://www.gov.uk/service-manual/technology/working-with-mobile-technology
-> 翻譯日期：2023-12-27
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/working-with-mobile-technology  
+> 翻譯日期：2023-12-27  
 
 服務應該在所有行動設備上都正常運行。仔細評估選擇，以找到最適合使用者的方案。
 

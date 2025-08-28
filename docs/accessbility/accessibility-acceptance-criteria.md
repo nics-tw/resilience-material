@@ -1,8 +1,8 @@
 # 透過無障礙性驗收準則提升無障礙性
 
-> 本文翻譯自：英國政府數位服務設計手冊
-> 原文連結：https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/
-> 翻譯日期：2023-12-27
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://insidegovuk.blog.gov.uk/2018/01/24/improving-accessibility-with-accessibility-acceptance-criteria/  
+> 翻譯日期：2023-12-27  
 
 在政府數位服務（Government Digital Service）部門，[我們建立的一切必須具無障礙性](https://gds.blog.gov.uk/2017/10/23/were-making-accessibility-clearer-and-easier/)。這是我們的設計原則之一，「這是[為了每個人](https://www.gov.uk/guidance/government-design-principles#this-is-for-everyone)」：
 
