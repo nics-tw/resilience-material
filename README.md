@@ -20,6 +20,16 @@
 
 ## 數位韌性領航員培訓課程教材
 
+### [2025 年](https://github.com/nics-tw/resilience-material/releases/tag/2025)
+
+- [政府資訊系統數位韌性](https://github.com/nics-tw/resilience-material/releases/download/2025/1_Digital_Resilience.pdf)（SHA256: db48af60c7ce76012ef65c5466cf25cb086a89cb01ac6f37be05bf0cbb0b00ab）
+- [易用性構面](https://github.com/nics-tw/resilience-material/releases/download/2025/2_Usability.pdf)（SHA256: 52230d5eb66843ada28cb67a183d80a78eed7b4280080fc73878fbab4fb0c5b1）
+- [各面向工具](https://github.com/nics-tw/resilience-material/releases/download/2025/3_Digital_Resilience-Related_Tools.pdf)（SHA256: 319aa25a3c9ee91c03b6c8692e9a034f20e2439ebe4d6f379166b7128b89db79）
+- [高可用性構面](https://github.com/nics-tw/resilience-material/releases/download/2025/4_High-Availability.pdf)（SHA256: d1e3601897a9e63ff19ff0dfad8b4f93493aafd88283aa8c34cd5d7c62c88eed）
+- [可維護性構面](https://github.com/nics-tw/resilience-material/releases/download/2025/5_Maintainability.pdf)（SHA256: 21db868fd033ec6ec7a964c754ef9e9a24d741fa5ccba333b37565498df5edb5）
+- [實地輔導可維護性案例分享](https://github.com/nics-tw/resilience-material/releases/download/2025/6_Maintainability_Case_Studies.pdf)（SHA256: 4c116e03eb780fb763c689f28ae5fea87256da8467d4293f099166ef5bb07636）
+- [實地輔導高可用性案例分享](https://github.com/nics-tw/resilience-material/releases/download/2025/7_High-Availability_Case_Studies.pdf)（SHA256: 4d768bc86ac37ba133bc4103ab72a132e928bd8ffdfb547a353d2dac47fa4bcd）
+
 ### [2024 年](https://github.com/nics-tw/resilience-material/releases/tag/2024)
 
 - [政府資訊系統數位韌性](https://github.com/nics-tw/resilience-material/releases/download/2024/1_Digital_Resilience.pdf)（SHA256: 896E8B6794310335421A3BEF2E404836FD2D03AC6C9E295F86483395653B5447）
