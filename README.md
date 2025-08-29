@@ -27,7 +27,7 @@
 - [各面向工具](https://github.com/nics-tw/resilience-material/releases/download/2025/3_Digital_Resilience-Related_Tools.pdf)（SHA256: 319aa25a3c9ee91c03b6c8692e9a034f20e2439ebe4d6f379166b7128b89db79）
 - [高可用性構面](https://github.com/nics-tw/resilience-material/releases/download/2025/4_High-Availability.pdf)（SHA256: d1e3601897a9e63ff19ff0dfad8b4f93493aafd88283aa8c34cd5d7c62c88eed）
 - [可維護性構面](https://github.com/nics-tw/resilience-material/releases/download/2025/5_Maintainability.pdf)（SHA256: 21db868fd033ec6ec7a964c754ef9e9a24d741fa5ccba333b37565498df5edb5）
-- [實地輔導可維護性案例分享](https://github.com/nics-tw/resilience-material/releases/download/2025/6_Maintainability_Best_Practices.pdf)（SHA256: 4c116e03eb780fb763c689f28ae5fea87256da8467d4293f099166ef5bb07636）
+- [實地輔導可維護性案例分享](https://github.com/nics-tw/resilience-material/releases/download/2025/6_Maintainability_Case_Studies.pdf)（SHA256: 4c116e03eb780fb763c689f28ae5fea87256da8467d4293f099166ef5bb07636）
 - [實地輔導高可用性案例分享](https://github.com/nics-tw/resilience-material/releases/download/2025/7_High-Availability_Case_Studies.pdf)（SHA256: 4d768bc86ac37ba133bc4103ab72a132e928bd8ffdfb547a353d2dac47fa4bcd）
 
 ### [2024 年](https://github.com/nics-tw/resilience-material/releases/tag/2024)
