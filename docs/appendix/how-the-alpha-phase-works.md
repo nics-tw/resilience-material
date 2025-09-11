@@ -1,7 +1,7 @@
 # Alpha 階段如何進行
 
 > 本文翻譯自：英國政府數位服務設計手冊  
-> 原文連結：https://www.gov.uk/service-manual/technology/working-with-mobile-technology  
+> 原文連結：https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works  
 > 翻譯日期：2023-12-27  
 > 譯註：本文為[確定服務在行動設備上運作良好](../accessbility/make-sure-your-service-work-well-on-mobile.md)之相關參考資料  
 
@@ -154,5 +154,3 @@ Alpha 階段的一個關鍵部分是[識別並測試風險最高的假設](https
 您還應該繼續完善用於[衡量服務成功程度的](https://www.gov.uk/service-manual/measuring-success)指標。
 
 如果您建立了任何新的設計模式 - 或學到了跟現有設計模式有關的任何有用資訊——請透過 [GOV.UK 設計系統](https://design-system.service.gov.uk/)分享您的心得
-
-[原始資料連結](https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works)
