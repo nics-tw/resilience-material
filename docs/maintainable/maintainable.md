@@ -7,7 +7,7 @@
 
 為讓承辦人員可以收納管理程式碼及自動化部署流程，現行有 GitHub 及 GitLab 平台。因 GitHub 自建（self-hosted）仍須採購 GitHub enterprise 才能使用相應功能；而 GitLab 則提供 Community Edition (CE) 開放原始碼版本，雖有功能上限制，但足夠作為基礎自動化驗證及部署流程，因此以下為使用 GitLab 基礎建置。
 
-為了日後易於維護及升級便利，以下範例步驟使用 Docker 來建立 GitLab 環境作為示範，建議須依照機關環境評估以 [Official Linux package](https://about.gitlab.com/install/) 方式安裝部屬或 Docker 方式部屬。
+為了日後易於維護及升級便利，以下範例步驟使用 Docker 來建立 GitLab 環境作為示範，建議須依照機關環境評估以 [Official Linux package](https://about.gitlab.com/install/) 方式安裝部署或 Docker 方式部署。
 
 ### Prerequisite[^1]
 
