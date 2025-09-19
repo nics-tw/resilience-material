@@ -1,5 +1,10 @@
 # 為什麼我們要關注前端效能
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://technology.blog.gov.uk/2019/04/18/why-we-focus-on-frontend-performance/  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[使用漸進增強策略打造有韌性的前端頁面](../accessbility/using-progressive-enhancement.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+
 英國政府最近更新了[服務手冊指南](../accessbility/how-to-test-frontend-performance.md)，以幫助政府各部門的開發人員在效能成為使用者問題之前，識別與測試性能問題。
 
 確保 GOV.UK 盡可能具有包容性是持續努力的部分。2016 年的 Google 研究發現，如果行動網站載入時間超過 3 秒，[53% 的使用者就會放棄該網站。](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/) 對政府而言，GOV.UK 通常是使用者可以獲得資訊的唯一地方。如果網站表現不佳，將成為單點故障 (single point of failure)。
@@ -59,5 +64,3 @@
 網站效能可能決定某人是否能夠從政府獲得需要的東西，或完全放棄他們的任務。
 
 因此，效能是我們提供的服務不可或缺的一部分，服務團隊的每個成員都應該參與最佳化過程。即使是微小的更動也能為我們的使用者帶來巨大的改變。
-
-[原始資料連結](https://technology.blog.gov.uk/2019/04/18/why-we-focus-on-frontend-performance/)

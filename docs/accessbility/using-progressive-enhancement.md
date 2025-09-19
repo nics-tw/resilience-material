@@ -1,5 +1,9 @@
 # 使用漸進增強策略打造有韌性的前端頁面
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/using-progressive-enhancement  
+> 翻譯日期：2023-12-27  
+
 漸進增強是一種建立網站與應用程式的策略，它的核心概念是：先讓網頁能單純以HTML運作後，再加入其他，如 CSS 與 JavaScript 等技術。
 
 因為 HTML 是最具韌性的前端技術，當 HTML 出錯時，就沒有網頁；但如果 CSS 或 JavaScript 出錯時，HTML 仍會正確地呈現。
@@ -88,5 +92,3 @@
 - 使用不安全的網路連線，網路供應商將自己的網頁程式碼插入到頁面中，導致與原本內容發生衝突
 
 某些使用者刻意關閉瀏覽器的部分功能，您應該尊重他們的決定，並確保這些使用者仍然可以使用您的服務。
-
-[原始文章連結](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)

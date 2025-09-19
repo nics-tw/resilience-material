@@ -1,5 +1,9 @@
 # 了解 WCAG 2.2（網站內容無障礙性指南）
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag  
+> 翻譯日期：2023-12-27  
+
 這是 WCAG 2.2 AA 等級的概述。它不會取代 [WCAG 2.2 指南](https://www.w3.org/TR/WCAG22/) ，後者提供了所有原則和要求的完整解釋。
 
 網站內容無障礙性指南（Web Content Accessibility Guidelines, WCAG）是一套國際公認改善網站無障礙性的建議。

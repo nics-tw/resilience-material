@@ -1,5 +1,10 @@
 # 支出控制：檢查您的服務是否需要才花錢
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service  
+> 翻譯日期：2023-12-27  
+> 譯註：本文為[使用 CAPTCHAs](../accessbility/using-captchas.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+
 如果您想花錢購買數位或技術服務，您可能必須獲得中央數位和資料辦公室（CDDO）的核准。
 
 這個過程被稱為「支出控制」。
@@ -125,5 +130,3 @@ CDDO 通常不會核准您在以下活動上花費資金：
 - 自動續約
 - 提供持續超過 2 年的新託管合約
 - 建立原生或混合式應用程式
-
-[原始資料連結](https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service)

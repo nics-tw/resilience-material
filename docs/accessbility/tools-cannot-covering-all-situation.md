@@ -1,5 +1,9 @@
 # 當我們在全球最不無障礙網頁上測試工具時我們發現了什麼
 
+> 本文翻譯自：英國政府數位服務設計手冊之參考資料  
+> 原文連結：https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/  
+> 翻譯日期：2023-12-27  
+
 最近，我們對自動化無障礙性測試工具進行了審查。我們建立了一個充滿障礙案例的網站，以便測試這些工具。這篇[部落格文章發布](https://alphagov.github.io/accessibility-tool-audit/)了我們的研究結果。
 
 在這篇文章中，我們將討論我們的做法和發現。
@@ -100,5 +104,3 @@
 為實現最有效的無障礙性測試，我們建議團隊將自動化工具測試與手動測試、無障礙性稽核和使用者測試結合使用。
 
 我們希望我們的研究結果頁面將有助於團隊選擇最符合他們需求的工具。同時，也鼓勵工具的建立者，能更好地記錄工具的功能和限制。
-
-[原始文章連結](https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/)

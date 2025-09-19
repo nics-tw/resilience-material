@@ -1,5 +1,9 @@
 # 使用 Cookie 和類似技術
 
+> 本文翻譯自：英國政府數位服務設計手冊  
+> 原文連結：https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies  
+> 翻譯日期：2023-12-27  
+
 Cookie 是網站發送到使用者電腦的小型資料檔，用於儲存有關使用者瀏覽網站的資料。
 
 本指南是介紹如何使用 Cookie，但當採用使用者設備中其他資訊儲存的技術時，您應該遵循相同的指南，例如 HTML5 local storage。
@@ -17,7 +21,7 @@ Cookie 是網站發送到使用者電腦的小型資料檔，用於儲存有關�
 
 在 GOV.UK 設計系統中提供了以下相關資訊：
 
-- [如何建立 cookie 頁面](https://design-system.service.gov.uk/patterns/cookies-page/)，包括哪些Cookie需要徵得同意
+- [如何建立 Cookie 頁面](https://design-system.service.gov.uk/patterns/cookies-page/)，包括哪些Cookie需要徵得同意
 - [如何建立 Cookie 標題](https://design-system.service.gov.uk/components/cookie-banner)
 
 ## 應用 Cookie 的範圍
@@ -31,5 +35,3 @@ Cookie 必須僅適用於您的原始網域。例如，`www.servicename.service.
 ## 相關指南
 
 您可能會發現有關[選擇數位分析工具](https://www.gov.uk/service-manual/measuring-success/choosing-digital-analytics-tools)的指南很有用。
-
-[原始文章連結](https://www.gov.uk/service-manual/technology/working-with-cookies-and-similar-technologies)
