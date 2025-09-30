@@ -61,3 +61,5 @@ SBOM（Software Bill of Materials，軟體物料清單）是一份詳細列出�
 ![](./img/sbom-vulnerability-details.png)
 
 8. 此外，如果需要該 SBOM 的整體報告。可於總覽頁面點選 `Download PDF Report` 按鈕，下載包含所有元件及其漏洞資訊的 PDF 檔案。
+
+![](./img/sbom-report-download.png)
