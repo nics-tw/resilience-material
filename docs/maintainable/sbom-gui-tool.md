@@ -52,6 +52,8 @@ SBOM（Software Bill of Materials，軟體物料清單）是一份詳細列出�
 
 > LEV (Likely Exploited Vulnerabilities) 是一個用於評估資訊安全漏洞近期被利用可能性的指標。它基於過往 30 天內的漏洞利用數據，提供了一個從 0 到 1 的分數範圍。
 
+針對如何運用上述指標判斷漏洞風險與考量修補優先順序，可參考 [NIST 的相關建議文件](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.41.pdf)。其文件中建議以 `max( LEV, EPSS )` 作為評估漏洞風險的主要指標。透過參酌過去此漏洞已經被利用的機率、以及未來可能被利用的機率，動態地針對漏洞風險進行評估。
+
 ![](./img/sbom-vulnerability.png)
 
 7. 如果想知道漏洞的具體細節，可以點選該漏洞，其相關的敘述、參考連結、修補版本等資訊會顯示在下方。
