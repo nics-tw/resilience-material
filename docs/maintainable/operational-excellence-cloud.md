@@ -1,5 +1,10 @@
 # 支援卓越營運的雲端架構設計模式
 
+> 本文翻譯自：
+Microsoft 發布 Cloud design patterns that support operational excellence  
+> 原文連結：https://github.com/MicrosoftDocs/well-architected/blob/main/well-architected/operational-excellence/design-patterns.md  
+> 翻譯日期：2024-12-27  
+
 設計工作負載(workload)架構時，建議使用經業界驗證過的設計模式(design pattern)來因應常見挑戰。設計模式不僅有助於您在工作負載設計中做出權衡取捨，還能針對預期目標進行改善。設計模式有助於緩解工作負載營運可能出現的問題，諸如影響系統可靠性、安全性、效能和成本等特定面向所帶來之風險。設計模式以實務經驗為後盾，專門針對雲端環境的擴展性與營運需求設計，並且不受限於特定雲端服務供應商(vendor agnostic)。將這些廣為人知的設計模式用於標準化工作負載設計，是實現卓越營運(operational excellence)的關鍵要素之一。
 
 許多設計模式同時支援「良好架構框架」 (Well-Architected Framework) 中的多個架構原則(pillar)。支援卓越營運原則的設計模式，其布局結構(topology)為安全部署實踐(safe deployment practice, SDP)提供了堅實的基礎，並促進架構隨著時間、遷移情境(migration scenario)和可監測性(observability)的變動而演進。
