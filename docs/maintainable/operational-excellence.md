@@ -1,5 +1,9 @@
 # 卓越營運設計原則
 
+> 本文翻譯自：Microsoft 發布 Operational excellence design principles  
+> 原文連結：https://github.com/MicrosoftDocs/well-architected/blob/main/well-architected/operational-excellence/principles.md  
+> 翻譯日期：2024-12-27  
+
 「良好架構框架」(Well-Architected Framework) 其中一項原則(pillar)「卓越營運」(operational excellence)，其核心是**透過標準化工作流程與團隊凝聚力**，**確保工作負載(workload)的品質**，稱為DevOps
 實踐。
 

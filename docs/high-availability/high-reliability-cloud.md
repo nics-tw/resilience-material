@@ -1,5 +1,9 @@
 # 支援高可靠性的雲端架構設計模式
 
+> 本文翻譯自：Microsoft 發布 Cloud design patterns that support reliability  
+> 原文連結：https://github.com/MicrosoftDocs/well-architected/blob/main/well-architected/reliability/design-patterns.md  
+> 翻譯日期：2024-12-27  
+
 在設計系統工作負載(workload)的架構時，建議使用經業界驗證過的設計模式(design pattern, 即設計解決方案)來應對常見挑戰。設計模式不僅有助於您在工作負載設計中做出權衡，還能針對預期目標進行改善。設計模式可能有助於緩解諸如影響系統安全性、效能、成本與營運等特定問題所帶來之風險，甚至導致系統可靠性(Reliability)問題。設計模式以實務經驗為後盾，專為雲端的擴展性與營運模式而設計，並且不受特定雲端服務供應商(vendor agnostic)限制。將這些廣為人知的模式用於標準化工作負載設計，是實現卓越營運(operational excellence)的關鍵要素之一。
 
 許多設計模式同時支援「良好架構框架」(Well-Architected Framework) 中一個以上的架構原則(pillar)。其中，專注於處理可靠性原則的設計模式，會優先考慮工作負載的可用性、自我保護能力、復原能力、資料完整性與處理完整性(processing

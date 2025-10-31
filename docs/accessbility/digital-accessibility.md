@@ -1,5 +1,9 @@
 # 組織中的網頁可及性：角色與職責
 
+> 本文翻譯自：荷蘭內政與王國關係部的數位政府服務機關 Logius 出版 Web accessibility in your organisation  
+> 原文連結：https://www.nldigitalgovernment.nl/wp-content/uploads/sites/11/2021/03/70402-BZK-Boek-Digitale-toegankelijkheid_EN_Gecorrigeerd_TG-PDFA-FINAL.pdf  
+> 翻譯日期：2024-12-27  
+
 *公部門中的網頁可及性*
 
 ### 1 引言
