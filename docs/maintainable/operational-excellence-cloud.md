@@ -1,7 +1,6 @@
 # 支援卓越營運的雲端架構設計模式
 
-> 本文翻譯自：
-Microsoft 發布 Cloud design patterns that support operational excellence  
+> 本文翻譯自：Microsoft 發布 Cloud design patterns that support operational excellence  
 > 原文連結：https://github.com/MicrosoftDocs/well-architected/blob/main/well-architected/operational-excellence/design-patterns.md  
 > 翻譯日期：2024-12-27  
 
