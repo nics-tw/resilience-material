@@ -24,7 +24,7 @@ const config: Config = {
 
   customFields: {
     meilisearchHost: process.env.MEILISEARCH_HOST,
-    meilisearchApiKey: process.env.MEILISEARCH_API_KEY,
+    meilisearchApiKey: process.env.MEILISEARCH_SEARCH_KEY,
   },
 
   // Even if you don't use internationalization, you can use this field to set
@@ -80,10 +80,6 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
-        // {
-        //   type: 'search',
-        //   position: 'right',
-        // },
       ],
     },
     footer: {
