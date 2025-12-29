@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function SearchBar(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
-  const { meilisearchHost, meilisearchApiKey } = siteConfig.customFields as {
+  const { meilisearchHost, meilisearchApiKey } = (siteConfig.customFields ?? {}) as {
     meilisearchHost: string;
     meilisearchApiKey: string;
   };
@@ -43,8 +43,8 @@ export default function SearchBar(): JSX.Element {
 
     return () => {
       // Optional cleanup: remove script/link if component unmounts
-      // document.head.removeChild(link);
-      // document.body.removeChild(script);
+      document.head.removeChild(link);
+      document.body.removeChild(script);
     };
   }, [scriptUrl, cssUrl, meilisearchHost, meilisearchApiKey]);
 

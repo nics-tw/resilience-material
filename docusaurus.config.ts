@@ -3,6 +3,14 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import 'dotenv/config';
 
+if (process.env.NODE_ENV === 'production') {
+  if (!process.env.MEILISEARCH_HOST || !process.env.MEILISEARCH_SEARCH_KEY) {
+    throw new Error(
+      'MEILISEARCH_HOST and MEILISEARCH_SEARCH_KEY are required for production builds.'
+    );
+  }
+}
+
 const config: Config = {
   title: '數位韌性教材專區',
   tagline: '系統在變動或極端的環境下，持續提供美好的服務，並能在故障時優雅復原',
