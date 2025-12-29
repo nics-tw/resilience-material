@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import 'dotenv/config';
 
 const config: Config = {
   title: '數位韌性教材專區',
@@ -20,6 +21,11 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  customFields: {
+    meilisearchHost: process.env.MEILISEARCH_HOST,
+    meilisearchApiKey: process.env.MEILISEARCH_API_KEY,
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -74,6 +80,10 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        // {
+        //   type: 'search',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
