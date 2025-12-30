@@ -1,66 +1,48 @@
-
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-interface DocSearchOptions {
-  container: string;
-  host: string;
-  apiKey: string;
-  indexUid: string;
-  debounceDuration?: number;
-}
-
-declare global {
-  interface Window {
-    __docsearch_meilisearch__?: {
-      docsearch: (options: DocSearchOptions) => void;
-    };
-  }
-}
-
 export default function SearchBar(): JSX.Element {
+  const containerRef = useRef<HTMLDivElement>(null);
   const { siteConfig } = useDocusaurusContext();
   const { meilisearchHost, meilisearchApiKey } = (siteConfig.customFields ?? {}) as {
     meilisearchHost?: string;
     meilisearchApiKey?: string;
   };
 
-  const scriptUrl = useBaseUrl('/meilisearch-docsearch.js');
-  const cssUrl = useBaseUrl('/meilisearch-docsearch.css');
-
   useEffect(() => {
-    if (!ExecutionEnvironment.canUseDOM) return;
+    if (!ExecutionEnvironment.canUseDOM || !containerRef.current) return;
+    if (!meilisearchHost || !meilisearchApiKey) return;
 
-    // Load CSS
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = cssUrl;
-    document.head.appendChild(link);
+    let cleanup: (() => void) | undefined;
 
-    // Load JS
-    const script = document.createElement('script');
-    script.src = scriptUrl;
-    script.onload = () => {
-      if (window.__docsearch_meilisearch__ && meilisearchHost && meilisearchApiKey) {
-        window.__docsearch_meilisearch__.docsearch({
-          container: '#docsearch',
-          host: meilisearchHost,
-          apiKey: meilisearchApiKey,  
-          indexUid: 'docs',
-          debounceDuration: 350,
-        });
+    // 動態 import 避免 SSR 問題
+    const initDocsearch = async () => {
+      try {
+        const { docsearch } = await import('meilisearch-docsearch');
+
+        if (containerRef.current) {
+          containerRef.current.innerHTML = ''; // 清除之前的實例
+          
+          cleanup = docsearch({
+            container: containerRef.current,
+            host: meilisearchHost,
+            apiKey: meilisearchApiKey,
+            indexUid: 'docs',
+            debounceDuration: 350,
+          });
+        }
+      } catch (error) {
+        console.error('Failed to initialize docsearch:', error);
       }
     };
-    document.body.appendChild(script);
+
+    initDocsearch();
 
     return () => {
-      // Optional cleanup: remove script/link if component unmounts
-      document.head.removeChild(link);
-      document.body.removeChild(script);
+      cleanup?.();
     };
-  }, [scriptUrl, cssUrl, meilisearchHost, meilisearchApiKey]);
+  }, [meilisearchHost, meilisearchApiKey]);
 
-  return <div id="docsearch" />;
+  return <div ref={containerRef} />;
 }
