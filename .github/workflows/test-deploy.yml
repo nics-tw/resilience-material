@@ -23,4 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Test build website
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY }}
         run: npm run build
