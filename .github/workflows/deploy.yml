@@ -23,7 +23,94 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build website
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY }}
         run: npm run build
+
+      - name: Setup Meilisearch API Keys
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_MASTER_KEY: ${{ secrets.MEILISEARCH_MASTER_KEY }}
+        run: |
+          for i in {1..30}; do
+            if curl -s "$MEILISEARCH_HOST/health" | grep -q "available"; then
+              break
+            fi
+            sleep 2
+          done
+
+          curl -s -X POST "$MEILISEARCH_HOST/keys" \
+            -H "Authorization: Bearer $MEILISEARCH_MASTER_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "uid": "00000000-0000-0000-0000-000000000001",
+              "description": "Fixed Search Key",
+              "actions": ["search"],
+              "indexes": ["*"],
+              "expiresAt": null
+            }' || true
+
+          curl -s -X POST "$MEILISEARCH_HOST/keys" \
+            -H "Authorization: Bearer $MEILISEARCH_MASTER_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "uid": "00000000-0000-0000-0000-000000000002",
+              "description": "Fixed Admin Key",
+              "actions": ["*"],
+              "indexes": ["*"],
+              "expiresAt": null
+            }' || true
+
+      - name: Run scraper
+        env:
+          MEILISEARCH_HOST_URL: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_API_KEY: ${{ secrets.MEILISEARCH_ADMIN_KEY }}
+        run: |
+          npx -y serve build -l 3000 &
+          SERVE_PID=$!
+
+          for i in {1..30}; do
+            if curl -s http://localhost:3000 > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+
+          cp build/sitemap.xml build/sitemap-local.xml
+          sed -i 's|https://material.nics.nat.gov.tw|http://localhost:3000|g' build/sitemap-local.xml
+
+          cp scraper.json scraper-local.json
+          sed -i 's|https://material.nics.nat.gov.tw/sitemap.xml|http://localhost:3000/sitemap-local.xml|g' scraper-local.json
+          sed -i 's|"start_urls": \["https://material.nics.nat.gov.tw/"\]|"start_urls": ["http://localhost:3000/"]|g' scraper-local.json
+          sed -i '/"url_mirror"/d' scraper-local.json
+
+          docker run -t --rm \
+            --network="host" \
+            -e MEILISEARCH_HOST_URL=$MEILISEARCH_HOST_URL \
+            -e MEILISEARCH_API_KEY=$MEILISEARCH_API_KEY \
+            -v $PWD/scraper-local.json:/config.json \
+            getmeili/docs-scraper:latest pipenv run ./docs_scraper /config.json
+
+          kill $SERVE_PID
+
+      - name: Fix URLs in Meilisearch
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_API_KEY: ${{ secrets.MEILISEARCH_ADMIN_KEY }}
+        run: |
+          curl -s "$MEILISEARCH_HOST/indexes/docs/documents?limit=10000" \
+            -H "Authorization: Bearer $MEILISEARCH_API_KEY" > docs.json
+
+          sed -i 's|http://localhost:3000|https://material.nics.nat.gov.tw|g' docs.json
+          cat docs.json | jq '.results' > docs_fixed.json
+
+          curl -s -X PUT "$MEILISEARCH_HOST/indexes/docs/documents" \
+            -H "Authorization: Bearer $MEILISEARCH_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d @docs_fixed.json
+
+          sleep 10
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
