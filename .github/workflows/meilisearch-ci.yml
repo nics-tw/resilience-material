@@ -1,0 +1,111 @@
+name: Meilisearch Indexing CI
+
+on:
+  push:
+    branches:
+      - feat/add-search
+
+jobs:
+  test-indexing:
+    name: Test Meilisearch Indexing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY }}
+        run: npm run build
+
+      - name: Setup Meilisearch API Keys
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_MASTER_KEY: ${{ secrets.MEILISEARCH_MASTER_KEY }}
+        run: |
+          echo "=== 等待 Meilisearch 啟動 ==="
+          for i in {1..30}; do
+            if curl -s "$MEILISEARCH_HOST/health" | grep -q "available"; then
+              echo "Meilisearch is ready!"
+              break
+            fi
+            echo "Waiting... ($i/30)"
+            sleep 2
+          done
+
+          echo "=== 建立固定 Search Key ==="
+          curl -X POST "$MEILISEARCH_HOST/keys" \
+            -H "Authorization: Bearer $MEILISEARCH_MASTER_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "uid": "00000000-0000-0000-0000-000000000001",
+              "description": "Fixed Search Key",
+              "actions": ["search"],
+              "indexes": ["*"],
+              "expiresAt": null
+            }' || true
+
+          echo "=== 建立固定 Admin Key ==="
+          curl -X POST "$MEILISEARCH_HOST/keys" \
+            -H "Authorization: Bearer $MEILISEARCH_MASTER_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "uid": "00000000-0000-0000-0000-000000000002",
+              "description": "Fixed Admin Key",
+              "actions": ["*"],
+              "indexes": ["*"],
+              "expiresAt": null
+            }' || true
+
+          echo "=== API Keys 設定完成 ==="
+
+      - name: Run scraper
+        env:
+          MEILISEARCH_HOST_URL: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_API_KEY: ${{ secrets.MEILISEARCH_ADMIN_KEY }}
+        run: |
+          # 1. 在背景啟動伺服器
+          npx -y serve build -l 3000 &
+          SERVE_PID=$!
+
+          # 2. 等待伺服器啟動
+          echo "Waiting for local server to be ready..."
+          for i in {1..30}; do
+            if curl -s http://localhost:3000 > /dev/null; then
+              echo "Server is up!"
+              break
+            fi
+            sleep 1
+          done
+
+          # 3. 不替換 sitemap 內容！保持正式 URL
+          # （刪除原本的 sed 替換 sitemap 內容那段）
+
+          # 4. 準備 scraper 設定：只改 sitemap 路徑，指向本地伺服器
+          cp scraper.json scraper-local.json
+          sed -i 's|https://material.nics.nat.gov.tw/sitemap.xml|http://localhost:3000/sitemap.xml|g' scraper-local.json
+
+          # 5. Debug: 確認 sitemap 內容是正式 URL
+          echo "=== sitemap.xml (前 5 行) ==="
+          head -20 build/sitemap.xml
+
+          # 6. 執行 Scraper
+          docker run -t --rm \
+            --network="host" \
+            -e MEILISEARCH_HOST_URL=$MEILISEARCH_HOST_URL \
+            -e MEILISEARCH_API_KEY=$MEILISEARCH_API_KEY \
+            -v $PWD/scraper-local.json:/config.json \
+            getmeili/docs-scraper:latest pipenv run ./docs_scraper /config.json
+
+          # 7. 關閉伺服器
+          kill $SERVE_PID
