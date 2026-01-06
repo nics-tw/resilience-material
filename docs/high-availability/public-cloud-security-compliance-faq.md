@@ -330,9 +330,9 @@ import { FAQGroup, FAQItem } from '@site/src/components/FAQ';
   </FAQItem>
   <FAQItem question="4.A1.Q2：這次建置主要會使用 AWS, Azure, GCP 這三大公有雲。請問在這三個平臺中，哪些區域是我們絕對要避開的「限制地區」？">
     A：
-    1. AWS：請排除 ap-east-1 (亞太地區-香港) 。 
-    2. Azure：請排除 East Asia (亞太地區-香港特別行政區) 。
-    3. GCP： 請排除 asia-east2 (香港) 。（三個平臺中國大陸區域皆採獨立建置或未設置，故風險較低，但香港區域是主要管控重點。）
+    1. AWS：請排除 ap-east-1 (亞太地區-香港)。
+    2. Azure：請排除 East Asia (亞太地區-香港特別行政區)。
+    3. GCP：請排除 asia-east2 (香港)。（三個平臺中國大陸區域皆採獨立建置或未設置，故風險較低，但香港區域是主要管控重點。）
     
     ---
     **適用解決方案：** ■ hicloud 解決方案；■ 開源解決方案
