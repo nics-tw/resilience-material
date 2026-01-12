@@ -30,6 +30,7 @@ export default function SearchBar(): JSX.Element {
             apiKey: meilisearchApiKey,
             indexUid: 'docs',
             debounceDuration: 350,
+            checkCompositionEvent: true,
           });
         }
       } catch (error) {
