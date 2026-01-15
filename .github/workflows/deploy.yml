@@ -22,7 +22,14 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Create static/deploy.txt
+        run: echo "${{ github.sha }}" > static/deploy.txt
+
       - name: Build website
+        env:
+          MEILISEARCH_HOST: ${{ secrets.MEILISEARCH_HOST }}
+          MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY }}
         run: npm run build
 
       - name: Upload Build Artifact
@@ -46,6 +53,40 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v5 # Need checkout to access scripts
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify Deployment
+        run: |
+          chmod +x scripts/verify-deploy.sh
+          ./scripts/verify-deploy.sh "${{ steps.deployment.outputs.page_url }}" "${{ github.sha }}"
+
+      # 使用 GitHub App 產生 Token 以觸發另一個 repository 的 workflow
+      - name: Generate GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ vars.REINDEX_REPO_NAME }}
+
+      - name: Trigger Reindex
+        if: success()
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ steps.app-token.outputs.token }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ vars.REINDEX_REPO }}/dispatches \
+            -d '{
+              "event_type": "reindex",
+              "client_payload": {
+                "source": "${{ github.repository }}",
+                "commit": "${{ github.sha }}",
+                "triggered_by": "${{ github.actor }}"
+              }
+            }'
+          echo "✅ Triggered reindex on ${{ vars.REINDEX_REPO }}"
