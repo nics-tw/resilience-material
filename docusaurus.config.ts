@@ -115,7 +115,7 @@ const config: Config = {
           items: [
             {
               label: '聯絡信箱',
-              href: 'mailto:RA-5@nics.nat.gov.tw', // 點擊會開啟 email
+              href: 'mailto:ra-res@nics.nat.gov.tw', // 點擊會開啟 email
             },
           ],
         },
