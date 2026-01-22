@@ -25,10 +25,11 @@ import { FAQGroup, FAQItem } from '@site/src/components/FAQ';
 
 ## 2. 跨境公有雲資安合規性說明
 
-本問答集所涉及之資通安全合規性要求，主要依循政府機關相關資通安全法規及指導文件辦理。鑒於資安院目前尚未訂立雲端政府組態基準（Government Configuration Baseline，簡稱 GCB）或我國專屬之雲端資安稽核規範標準，故本問答集以「政府機關雲端服務應用資安參考指引」作為主要參考依據。該指引內容涵蓋 Top Threats to Cloud Computing、ISO 27001/27002、ISO 17788、ISO 27017、ISO 27018、ISO 27036-4、ISO 19086-4 及 ISO 27701 等國際標準。
+本問答集所涉及之資通安全合規性要求，主要依循政府機關相關資通安全法規及指導文件辦理[^1]。鑒於資安院目前尚未訂立雲端政府組態基準（Government Configuration Baseline，簡稱 GCB）或我國專屬之雲端資安稽核規範標準，故本問答集以「政府機關雲端服務應用資安參考指引」作為主要參考依據。該指引內容涵蓋 Top Threats to Cloud Computing、ISO 27001/27002、ISO 17788、ISO 27017、ISO 27018、ISO 27036-4、ISO 19086-4 及 ISO 27701 等國際標準。
 
 然 ISO 27001 系列標準對於雲端服務存取權限、日誌稽核等安全性定義未臻嚴謹，為求進階之安全性組態設定檢視標準，爰參考 Center for Internet Security (CIS) 的 Foundation Benchmark 及 National Institute of Standards and Technology (NIST) 的 SP 800-53 等規範，以涵蓋安全性管理、存取控制、身分驗證等面向。
 
+[^1]: 相關安全法規與指導文件，詳如下列：資通安全管理法、資通安全管理法施行細則、資通安全責任等級分級辦法、行政院 112 年 6 月 20 日院授數資安字第 1121000202 號函、行政院秘書長 109 年 12 月 18 日院臺護長字第 1090201804A 號函、政府機關雲端服務應用資安參考指引。
 ---
 
 ## 3. 雲端加密分持解決方案問答集
