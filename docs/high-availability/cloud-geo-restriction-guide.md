@@ -9,7 +9,7 @@
 
 緣此，建立完整的公有雲服務供應商之地理位置管控指引實屬必要，能夠協助政府機關依據業務需求與資安要求，選擇適當的雲端服務方案、正確設定地理位置限制機制，確保政府數位服務運作之安全性與可信度，有效防範潛在的資安風險。
 
-為協助政府機關正確選擇與設定雲端服務，第二章「依據與指引說明」將先闡述相關限制的影響，並界定本文的分析範圍與服務選定標準，作為後續操作的基礎。第三章「主要雲端服務設定重點」將針對 Amazon 的 Amazon Web Services  (以下稱AWS)、Microsoft 的 Azure、Google 的 Google Cloud Platform (以下稱GCP) 及 Cloudflare 等主要公有雲服務，提供與地理位置設定概論與物件儲存、虛擬機器及內容傳遞網路服務相關的管控要點，協助機關人員了解相關設定重點。若機關僅需了解各公有雲服務在地理位置管控上的關鍵要點，可直接參閱第三章各小節開頭的「服務設定指引」段落。
+為協助政府機關正確選擇與設定雲端服務，第二章「依據與指引說明」將先闡述相關限制的影響，並界定本文的分析範圍與服務選定標準，作為後續操作的基礎。第三章「主要雲端服務設定重點」將針對 Amazon 的 Amazon Web Services (以下稱AWS)、Microsoft 的 Azure、Google 的 Google Cloud Platform (以下稱GCP) 及 Cloudflare 等主要公有雲服務，提供與地理位置設定概論與物件儲存、虛擬機器及內容傳遞網路服務相關的管控要點，協助機關人員了解相關設定重點。若機關僅需了解各公有雲服務在地理位置管控上的關鍵要點，可直接參閱第三章各小節開頭的「服務設定指引」段落。
 
 ---
 
@@ -20,7 +20,7 @@
 根據行政院的院授數資安字第 1121000202 號示規定，政府機關使用雲端時，其資料的存放與傳輸必須遵循四大核心要求：資料存取管控、資料備份機制、災難備援規劃及資料傳輸路徑，皆不得設置或途經限制地區 (大陸、香港及澳門)。為將上述原則轉化為可執行的技術指引，本文必須識別出在雲端環境中，最容易因設定不當而違反這些要求的服務類型與平台。這些資安要求的本質，涵蓋了資料靜態儲存 (at-rest) 與動態傳輸 (in-transit) 的全生命週期。基於此，我們識別出三類與資料地理位置最為相關的關鍵服務，作為本文的研究核心：
 
 - **物件儲存服務 (Object Storage)**：直接對應資料靜態存放與備份的地理位置要求。
-- **虛擬機器服務 (Virtual Machine)**：其運算資源與掛載磁碟的所在區域，直接影響資料處理與儲存的部屬地點。
+- **虛擬機器服務 (Virtual Machine)**：其運算資源與掛載磁碟的所在區域，直接影響資料處理與儲存的部署地點。
 - **內容傳遞網路 (Content Delivery Network)**：其遍布全球的快取節點，直接關係到資料傳輸路徑與暫存的資安要求。
 
 然而，僅滿足地理位置要求尚不足以構成完整的安全策略，為進一步強化資料保護與自主性，建議同時針對資料加密採用適當的安全設定，確保機關對其敏感資料保有完整的存取權限與生命週期掌控，從而大幅提升整體安全性。
@@ -70,7 +70,7 @@ AWS 的服務涵蓋物件儲存服務、虛擬機器服務、內容傳遞網路�
     - **地理限制 (Geographic Restriction)**：建立規則，明確封鎖來自大陸地區、香港及澳門的存取請求。
 4. **強化資料安全 (建議)**：為進一步強化資料保護與自主性，建議採用「客戶受管金鑰」機制進行靜態資料加密，並透過 AWS Key Management Service (KMS) 進行金鑰管理，以提升整體安全性。
 
-:::tip 
+:::tip
 各公有雲平台對客戶金鑰管理服務之命名分別為：
 - Amazon Web Services 的「客戶受管金鑰」(Customer Managed Key, CMK)，資料來源：https://docs.aws.amazon.com/zh_tw/bedrock/latest/userguide/import-model-using-cmk.html
 - Microsoft Azure 的「客戶自控金鑰」 (Customer-managed keys, CMK)，資料來源：https://learn.microsoft.com/zh-tw/azure/security/fundamentals/key-management
@@ -142,7 +142,7 @@ EC2 的備份設定，其地理位置管控的重點在於快照備份的存放�
 
 #### CloudFront
 
-CloudFront 為 AWS 提供的全球性內容傳遞服務 (Content Delivery Network, CDN)，透過全球分散的邊緣節點 (Edge Locations) 就近為使用者提供內容，達成高效能且低延遲的內容存取。該服務整合 AWS Shield 與 AWS WAF 提供 DDoS 攻擊防護及應用層安全控制，並透過地理限制  (Geographic Restriction) 功能，讓機關能夠控制特定地區的內容存取權限，確保敏感內容的資料安全。
+CloudFront 為 AWS 提供的全球性內容傳遞服務 (Content Delivery Network, CDN)，透過全球分散的邊緣節點 (Edge Locations) 就近為使用者提供內容，達成高效能且低延遲的內容存取。該服務整合 AWS Shield 與 AWS WAF 提供 DDoS 攻擊防護及應用層安全控制，並透過地理限制 (Geographic Restriction) 功能，讓機關能夠控制特定地區的內容存取權限，確保敏感內容的資料安全。
 
 **基礎設定重點**
 
@@ -176,7 +176,7 @@ Azure 的服務涵蓋物件儲存服務、虛擬機器服務、內容傳遞網�
 
 1. **中國大陸區域的獨立性**：Azure 在中國大陸採用隔離營運模式，由 21Vianet 獨立營運，需透過專屬的「中國區帳號」存取服務，此帳號體系與全球 Azure 帳號完全分離。
 2. **香港區域的識別與排除**：香港區域在系統中的代碼為 `eastasia`，顯示名稱為 East Asia，進行任何資源部署時，應絕對避免選用此區域。各區域的詳細地理位置資訊，請參閱本文件[附表2](#附表2-azure-區域代碼對照表)。
-3. **異地備援風險識別**：當啟用異地備援功能 (如 GRS 和 GZRS ) 時，Southeast Asia (新加坡) 與 East Asia (香港) 為配對區域，因此會有資料自動複製至香港區域的風險，需要特別注意。
+3. **異地備援風險識別**：當啟用異地備援功能 (如 GRS 和 GZRS) 時，Southeast Asia (新加坡) 與 East Asia (香港) 為配對區域，因此會有資料自動複製至香港區域的風險，需要特別注意。
 4. **內容傳遞網路 (CDN) 服務限制**：Azure Front Door 目前尚未提供避免在特定地區建立快取節點的功能，雖可拒絕特定地區的存取請求，但仍存在於大陸地區 (含香港及澳門) 產生快取資料的風險。機關如有使用 CDN 服務的需求，應優先考量 AWS CloudFront 或 Cloudflare 等具備完整地理位置控制能力的服務。
 5. **強化資料安全 (建議)**：為進一步強化資料保護與自主性，建議採用客戶自控金鑰機制進行靜態資料加密，並透過金鑰保存庫 (Azure Key Vault) 進行金鑰管理，以提升整體安全性。
 
@@ -210,7 +210,7 @@ Blob Storage 物件儲存服務的備份與備援設定，其地理位置管控�
     ![Azure Blob Storage 備援設定 (二)](./img/cloud-geo-17.png)
     > 圖 17: Azure Blob Storage 備援設定 (二)
 
-:::tip 
+:::tip
 Azure 備援機制分為本地備援儲存體 (LRS)、區域備援儲存體 (ZRS)、異地備援儲存體 (GRS) 及異地區域備援儲存體 (GZRS) 等選項，資料來源: https://learn.microsoft.com/zh-tw/azure/storage/common/storage-redundancy#locally-redundant-storage。
 :::
 
@@ -240,8 +240,8 @@ Virtual Machines 虛擬機器服務的地理位置管控與 Blob Storage 相同�
 
 - **地理區域設定─部署區域**：建立虛擬機器時，機關應依據前述的設定重點來選擇合適的地區。該設定可在建立虛擬機器的「基本」頁籤中，於「區域」選項進行設定，設定介面詳見圖22。
 
-    ![Azure Virtual Machines部屬區域](./img/cloud-geo-22.png)
-    > 圖 22: Azure Virtual Machines部屬區域
+    ![Azure Virtual Machines部署區域](./img/cloud-geo-22.png)
+    > 圖 22: Azure Virtual Machines部署區域
 
 - **安全性設定─磁碟加密**：磁碟加密可使用由 Azure 管理的金鑰 (平台代控金鑰)，或由使用者自行建立並管理的金鑰 (客戶自控金鑰)。建議預設採用「客戶自控金鑰」，以確保金鑰的存取權限與生命週期均由機關自行掌控。該設定可在建立儲存體帳戶的「磁碟」頁籤中，於「金鑰管理」選項進行設定，設定介面詳見圖23及圖24。
 
@@ -424,7 +424,7 @@ Cloud CDN 為全球內容傳遞網路服務，透過 Google 全球邊緣節點�
     > 圖 48: Google Cloud Armor 設定 (二)
     
     ![Google Cloud Armor 設定 (三)](./img/cloud-geo-49.png)
-    > 圖 49: Google Cloud Armor 設定 (二)
+    > 圖 49: Google Cloud Armor 設定 (三)
 
 ---
 
@@ -487,7 +487,7 @@ Cloudflare 提供全球分布的內容傳遞網路 (CDN) 與安全防護服務�
 1. **區域命名規則**：各平台對香港區域的標示方式不同 (如 AWS 的 `ap-east-1`、Azure 的 `East Asia`)，機關應熟悉各平台的命名規則，避免混淆。
 2. **異地備援風險**：應特別警覺可能導致資料自動跨區複製的備援功能，使用前務必審慎評估其潛在的風險。
 3. **善用組織層級政策**：如 GCP 的「組織政策」或 AWS 的「服務控制政策 (SCP)」，這類全域管控機制能提供更全面的防護，應優先導入以降低人為疏失。
-4. **內容傳傳網路服務(CDN) 功能差異**：各平台的內容傳遞網路服務(CDN) 地理限制功能存在差異，機關應依據自身對資料落地風險的承受度，選擇具備完整管控能力的服務。
+4. **內容傳遞網路服務(CDN) 功能差異**：各平台的內容傳遞網路服務(CDN) 地理限制功能存在差異，機關應依據自身對資料落地風險的承受度，選擇具備完整管控能力的服務。
 
 #### 共通性原則
 
@@ -512,8 +512,8 @@ Cloudflare 提供全球分布的內容傳遞網路 (CDN) 與安全防護服務�
 | | ap-northeast-2 | 亞太地區 (首爾) |
 | | ap-northeast-3 | 亞太地區 (大阪) |
 | | ap-south-1 | 亞太地區 (孟買) |
-| **東南亞地區** | ap-south-2 | 亞太地區 (海得拉巴) |
-| | ap-southeast-1 | 亞太地區 (新加坡) |
+| | ap-south-2 | 亞太地區 (海得拉巴) |
+| **東南亞地區** | ap-southeast-1 | 亞太地區 (新加坡) |
 | | ap-southeast-3 | 亞太地區 (雅加達) |
 | | ap-southeast-5 | 亞太地區 (馬來西亞) |
 | | ap-southeast-7 | 亞太地區 (泰國) |
@@ -575,7 +575,7 @@ Cloudflare 提供全球分布的內容傳遞網路 (CDN) 與安全防護服務�
 | | West US 3 | 美國 (鳳凰城) |
 | **中南美地區** | Brazil South | 巴西 (聖保羅州) |
 | | Mexico Central | 墨西哥 (克雷塔羅州) |
-|  **歐洲地區** | France Central | 法國 (巴黎) |
+| **歐洲地區** | France Central | 法國 (巴黎) |
 | | Germany West Central | 德國 (法蘭克福) |
 | | Italy North | 義大利 (米蘭) |
 | | North Europe | 歐洲 (愛爾蘭) |
