@@ -14,25 +14,61 @@ type UserInfo = {
   displayName?: string;
 };
 
+const userAliasList: {
+  githubId: string;
+  displayName: string;
+  aliases: string[];
+}[] = [
+  {
+    githubId: 'nonumpa',
+    displayName: 'Benson Su',
+    aliases: ['Benson', 'Benson Su', 'Nonumpa'],
+  },
+  {
+    githubId: 'tony140407',
+    displayName: 'Blue',
+    aliases: ['Blue', 'tony140407'],
+  },
+  {
+    githubId: 'CharlesChiuGit',
+    displayName: 'Charles Chiu',
+    aliases: ['Charles Chiu', 'CharlesChiuGit'],
+  },
+  {
+    githubId: 'drhuang0922',
+    displayName: 'Dory Huang',
+    aliases: ['Dory Huang', 'drhuang0922'],
+  },
+  {
+    githubId: 'IK-Ngoo',
+    displayName: 'IK-Ngoo',
+    aliases: ['IK-Ngoo'],
+  },
+  {
+    githubId: 'keroro-nics',
+    displayName: 'keroro-nics',
+    aliases: ['keroro-nics'],
+  },
+  {
+    githubId: 'focaaby',
+    displayName: 'Mao-Lin Wang',
+    aliases: ['Mao-Lin Wang'],
+  },
+  {
+    githubId: 'luxame',
+    displayName: 'William Cheng',
+    aliases: ['Luxame', 'William Cheng'],
+  },
+];
+
 /**
  * Git 使用者名稱（Key）到 GitHub 資訊（Value）的對照表
  */
-const USER_MAP: Record<string, UserInfo> = {
-  Benson: {githubId: 'nonumpa', displayName: 'Benson Su'},
-  'Benson Su': {githubId: 'nonumpa', displayName: 'Benson Su'},
-  Nonumpa: {githubId: 'nonumpa', displayName: 'Benson Su'},
-  Blue: {githubId: 'tony140407', displayName: 'Blue'},
-  tony140407: {githubId: 'tony140407', displayName: 'Blue'},
-  'Charles Chiu': {githubId: 'CharlesChiuGit', displayName: 'Charles Chiu'},
-  CharlesChiuGit: {githubId: 'CharlesChiuGit', displayName: 'Charles Chiu'},
-  'Dory Huang': {githubId: 'drhuang0922', displayName: 'Dory Huang'},
-  drhuang0922: {githubId: 'drhuang0922', displayName: 'Dory Huang'},
-  'IK-Ngoo': {githubId: 'IK-Ngoo', displayName: 'IK-Ngoo'},
-  'keroro-nics': {githubId: 'keroro-nics', displayName: 'keroro-nics'},
-  'Mao-Lin Wang': {githubId: 'focaaby', displayName: 'Mao-Lin Wang'},
-  Luxame: {githubId: 'luxame', displayName: 'William Cheng'},
-  'William Cheng': {githubId: 'luxame', displayName: 'William Cheng'},
-};
+const USER_MAP: Record<string, UserInfo> = Object.fromEntries(
+  userAliasList.flatMap(({aliases, ...userInfo}) =>
+    aliases.map((alias) => [alias, userInfo]),
+  ),
+);
 
 function LastUpdatedAtDate({
   lastUpdatedAt,
@@ -76,7 +112,7 @@ function LastUpdatedByUser({
   const userInfo = USER_MAP[lastUpdatedBy];
 
   const userDisplayName = userInfo?.displayName ?? lastUpdatedBy;
-  const content = userInfo?.githubId ? (
+  const content = userInfo ? (
     <a
       href={`https://github.com/${userInfo.githubId}`}
       target="_blank"

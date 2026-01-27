@@ -31,13 +31,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-[class*="lastUpdated"] {
-  position: absolute;
-  right: 0;
-  top: 3rem;
-  padding: 0;
-}
-
 /* 針對 footer 內的超連結進行樣式調整 */
 .footer a {
   color: #ffffff !important;  /* 設定白色文字 */
