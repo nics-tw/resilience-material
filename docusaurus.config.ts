@@ -52,6 +52,8 @@ const config: Config = {
           routeBasePath: 'material',
           editUrl:
             'https://github.com/nics-tw/resilience-material/tree/main/',
+          showLastUpdateAuthor: true, 
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: './src/css/custom.css',

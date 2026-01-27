@@ -32,7 +32,10 @@
 }
 
 [class*="lastUpdated"] {
-  display: none;
+  position: absolute;
+  right: 0;
+  top: 3rem;
+  padding: 0;
 }
 
 /* 針對 footer 內的超連結進行樣式調整 */
