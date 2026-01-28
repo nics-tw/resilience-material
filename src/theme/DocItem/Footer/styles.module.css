@@ -14,7 +14,7 @@
 .originalFooter :global([class*="lastUpdated"]) {
   position: absolute;
   right: 0;
-  top: var(--doc-footer-top-spacing);
+  top: calc(var(--doc-footer-top-spacing) * 0.75);
   padding: 0;
 }
 
