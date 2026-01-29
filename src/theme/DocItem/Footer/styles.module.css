@@ -1,0 +1,28 @@
+.footerContainer {
+  --doc-footer-top-spacing: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.originalFooter {
+  flex: 1;
+  margin-top: var(--doc-footer-top-spacing);
+}
+
+.originalFooter :global([class*="lastUpdated"]) {
+  position: absolute;
+  right: 0;
+  top: calc(var(--doc-footer-top-spacing) * 0.75);
+  padding: 0;
+}
+
+.feedbackLink {
+  text-decoration: none;
+  font-size: var(--ifm-font-size-base);
+  line-height: 1.5;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

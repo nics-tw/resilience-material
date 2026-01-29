@@ -31,10 +31,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-[class*="lastUpdated"] {
-  display: none;
-}
-
 /* 針對 footer 內的超連結進行樣式調整 */
 .footer a {
   color: #ffffff !important;  /* 設定白色文字 */
