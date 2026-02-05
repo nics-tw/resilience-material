@@ -3,7 +3,7 @@
 > 本文翻譯自：英國政府數位服務設計手冊  
 > 原文連結：https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service  
 > 翻譯日期：2023-12-27  
-> 譯註：本文為[使用 CAPTCHAs](../accessbility/using-captchas.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+> 譯註：本文為[使用 CAPTCHAs](../usability/using-captchas.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
 
 如果您想花錢購買數位或技術服務，您可能必須獲得中央數位和資料辦公室（CDDO）的核准。
 

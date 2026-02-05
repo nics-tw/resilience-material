@@ -3,7 +3,7 @@
 > 本文翻譯自：英國政府數位服務設計手冊  
 > 原文連結：https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud  
 > 翻譯日期：2023-12-27  
-> 譯註：本文為[使用 CAPTCHAs](../accessbility/using-captchas.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+> 譯註：本文為[使用 CAPTCHAs](../usability/using-captchas.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
 
 當您設計和管理您的數位服務時，您必須：
 

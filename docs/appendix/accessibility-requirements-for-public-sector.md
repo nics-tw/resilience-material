@@ -3,7 +3,7 @@
 > 本文翻譯自：英國政府公部門的無障礙要求指引
 > 原文連結：https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps  
 > 翻譯日期：2023-12-27  
-> 譯註：本文為[讓服務無障礙](../accessbility/making-your-frontend-accessible.md)之相關參考資料  
+> 譯註：本文為[讓服務無障礙](../usability/making-your-frontend-accessible.md)之相關參考資料  
 
 幫助您的團隊了解為什麼他們需要符合網站和行動應用程式的無障礙性法規。
 

@@ -3,9 +3,9 @@
 > 本文翻譯自：英國政府數位服務設計手冊  
 > 原文連結：https://technology.blog.gov.uk/2019/04/18/why-we-focus-on-frontend-performance/  
 > 翻譯日期：2023-12-27  
-> 譯註：本文為[使用漸進增強策略打造有韌性的前端頁面](../accessbility/using-progressive-enhancement.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+> 譯註：本文為[使用漸進增強策略打造有韌性的前端頁面](../usability/using-progressive-enhancement.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
 
-英國政府最近更新了[服務手冊指南](../accessbility/how-to-test-frontend-performance.md)，以幫助政府各部門的開發人員在效能成為使用者問題之前，識別與測試性能問題。
+英國政府最近更新了[服務手冊指南](../usability/how-to-test-frontend-performance.md)，以幫助政府各部門的開發人員在效能成為使用者問題之前，識別與測試性能問題。
 
 確保 GOV.UK 盡可能具有包容性是持續努力的部分。2016 年的 Google 研究發現，如果行動網站載入時間超過 3 秒，[53% 的使用者就會放棄該網站。](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/) 對政府而言，GOV.UK 通常是使用者可以獲得資訊的唯一地方。如果網站表現不佳，將成為單點故障 (single point of failure)。
 
@@ -57,7 +57,7 @@
 
 - 應用現代壓縮方法(例如 [Brotli](https://github.com/google/brotli)) 來減少頁面的大小
 
-隨著調查的進展，我們計畫在部落格中發布我們的調查結果，並將隨著了解更多資訊而更新我們的[前端效能指南。](../accessbility/how-to-test-frontend-performance.md)在這個過程中，我們希望政府各地的開發人員能從已開始的工作中學習，並幫助我們確定下一步要研究的內容。
+隨著調查的進展，我們計畫在部落格中發布我們的調查結果，並將隨著了解更多資訊而更新我們的[前端效能指南。](../usability/how-to-test-frontend-performance.md)在這個過程中，我們希望政府各地的開發人員能從已開始的工作中學習，並幫助我們確定下一步要研究的內容。
 
 ## 效能是每個人的責任
 
