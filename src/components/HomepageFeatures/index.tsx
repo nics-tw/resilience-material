@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_experience_design.svg').default,
     description: (
       <>
-        讓系統更貼近使用者，提供友善的使用者介面，讓使用者能夠上手提高無障礙界面。
+        確保數位服務以使用者需求為核心，協助使用者透過清楚且有效的流程達成目標。
       </>
     ),
     link: '/material/category/易用性',
