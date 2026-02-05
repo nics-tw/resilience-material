@@ -26,7 +26,7 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括[身心障礙者]
 
 - [控制造訪速率和連線數](https://en.wikipedia.org/wiki/Rate_limiting)
 - [運用蜜罐誘捕系統 (honey pots)](https://en.wikipedia.org/wiki/Honeypot_(computing))
-- [監控資料交換動態](../accessbility/monitor-service-status.md)
+- [監控資料交換動態](../usability/monitor-service-status.md)
 
 您也可以和 [前端社群](https://www.gov.uk/service-manual/communities/technology-community-frontend-development) 一起討論關於 CAPTCHAs 的其他可能方案。
 
@@ -35,4 +35,4 @@ CAPTCHAs 會讓部分的人較難使用我們的服務，包括[身心障礙者]
 您可能會發現以下指南也很有用：
 
 - [保護您的服務免受詐騙的指南](../appendix/protecting-your-service-against-fraud.md)
-- [使用 cookies 和類似技術的工作指南](../accessbility/working-with-cookies-and-similar-technologies.md)
+- [使用 cookies 和類似技術的工作指南](../usability/working-with-cookies-and-similar-technologies.md)
