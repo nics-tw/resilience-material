@@ -98,7 +98,7 @@
 - [為什麼與真實使用者進行無障礙性測試如此重要](https://accessibility.blog.gov.uk/2018/03/20/why-accessibility-testing-with-real-users-is-so-important/)
 - [使用角色設定檔進行無障礙性測試](https://accessibility.blog.gov.uk/2019/02/11/using-persona-profiles-to-test-accessibility/)
 - [遠端無障礙性角色測試](https://accessibility.blog.gov.uk/2021/03/30/remote-accessibility-persona-testing/)
-- [在世界上最具障礙的網頁上測試工具時，我們發現了什麼](../accessbility/tools-cannot-covering-all-situation.md)
+- [在世界上最具障礙的網頁上測試工具時，我們發現了什麼](../usability/tools-cannot-covering-all-situation.md)
 
 ## 相關指南
 

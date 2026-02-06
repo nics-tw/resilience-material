@@ -149,7 +149,7 @@
 
 檢查第三方服務提供者是否符合 GDS 的最佳實務：
 
-- [cookie 政策](../accessbility/working-with-cookies-and-similar-technologies.md)
+- [cookie 政策](../usability/working-with-cookies-and-similar-technologies.md)
 - [隱私權政策](https://www.gov.uk/service-manual/design/collecting-personal-information-from-users)
 
 不允許第三方服務提供者存取或使用該資料。

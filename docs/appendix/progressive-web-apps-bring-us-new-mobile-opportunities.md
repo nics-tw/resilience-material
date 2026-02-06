@@ -3,7 +3,7 @@
 > 本文翻譯自：英國政府數位服務設計手冊  
 > 原文連結：https://technology.blog.gov.uk/2018/03/26/progressive-web-apps-bring-us-new-mobile-opportunities/  
 > 翻譯日期：2023-12-27  
-> 譯註：本文為[確定服務在行動設備上運作良好](../accessbility/make-sure-your-service-work-well-on-mobile.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+> 譯註：本文為[確定服務在行動設備上運作良好](../usability/make-sure-your-service-work-well-on-mobile.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
 
 當公共部門設計服務時，通常需要考慮行動應用程式。近年來都要先為網站建立服務，然後在某些有限的情況下，再建立獨立的原生行動應用程式。
 

@@ -3,7 +3,7 @@
 > 本文翻譯自：英國政府數位服務設計手冊  
 > 原文連結：https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk/  
 > 翻譯日期：2023-12-27  
-> 譯註：本文為[讓服務無障礙](../accessbility/making-your-frontend-accessible.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
+> 譯註：本文為[讓服務無障礙](../usability/making-your-frontend-accessible.md)之相關參考資料，為提供參考與理解脈絡使用，各國制度與實務作法存在差異，實際應用仍需結合本國情況並諮詢專業意見  
 
 ![](./img/element-01.jpg)
 

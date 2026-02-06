@@ -10,7 +10,7 @@
 
 這也讓您的服務能夠：
 
-- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../accessbility/wcag-22-design-principles.md#wcag-22-%E8%A8%AD%E8%A8%88%E5%8E%9F%E5%89%87)
+- 符合[網頁內容無障礙指南（WCAG）2.2 的設計原則和成功標準](../usability/wcag-22-design-principles.md#wcag-22-%E8%A8%AD%E8%A8%88%E5%8E%9F%E5%89%87)
 - 符合[公共領域的無障礙規範](../appendix/accessibility-requirements-for-public-sector.md)
 - 不觸犯 [2010 年平等法](../appendix/equality-act-2010-guidance.md)
 
@@ -112,7 +112,7 @@
 
 當編寫正式的程式時，您必須定期進行[無障礙測試](./testing-for-accessibility.md)。一旦服務進入公開Beta版，每當您新增一個功能時，都要進行無障礙測試。
 
-雖然可以使用[自動無障礙測試工具](../accessbility/testing-for-accessibility.md#自動化測試)來測試您的服務，但[無障礙工具無法捕捉到所有錯誤](./tools-cannot-covering-all-situation.md)，因此仍然必須執行手動測試。
+雖然可以使用[自動無障礙測試工具](../usability/testing-for-accessibility.md#自動化測試)來測試您的服務，但[無障礙工具無法捕捉到所有錯誤](./tools-cannot-covering-all-situation.md)，因此仍然必須執行手動測試。
 
 ### 使用無障礙標準
 
