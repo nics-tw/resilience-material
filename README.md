@@ -5,18 +5,18 @@
 - 機關機房除搭配各電信廠商外，仍需要瞭解電力、冷卻方式等機房管理方式，若發生異常事件時，方能即時反應。
 - 網路邏輯設定須更明確，例如網域安全設定(DNS)是否合適、是否需要分散式網站內容(CDN)服務、本地網路韌性是否足夠等。
 
-**[高可用性指引教材](./high-availability.md)**
+**[高可用性教材](https://material.nics.nat.gov.tw/material/category/高可用性/)**
 
 ### 可維護性
 - 廠商交付的原始碼與弱點掃描報告，機關需有獨立的驗證與佈署流程。
 - 建議機關建立自動化驗證與佈署流程，並使用工具來管理與掃描系統元件組成與可能弱點。
 
-**[可維護性指引教材](./maintainable.md)**
+**[可維護性教材](https://material.nics.nat.gov.tw/material/category/可維護性/)**
 
 ### 易用性
 - 為確保數位服務以使用者需求為核心，協助使用者透過清楚且有效的流程達成目標，應重視數位服務設計與使用體驗，持續提升易用性（Usability），並定期進行相關評估。
 
-**[易用性指引教材](./docs/usability/making-your-frontend-accessible.md)**
+**[易用性教材](https://material.nics.nat.gov.tw/material/category/易用性/)**
 
 ## 數位韌性領航員培訓課程教材
 
