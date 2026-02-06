@@ -5,8 +5,8 @@ import 'dotenv/config';
 
 if (process.env.NODE_ENV === 'production') {
   if (!process.env.MEILISEARCH_HOST || !process.env.MEILISEARCH_SEARCH_KEY) {
-    throw new Error(
-      'MEILISEARCH_HOST and MEILISEARCH_SEARCH_KEY are required for production builds.'
+    console.warn(
+      '⚠️  MEILISEARCH_HOST and MEILISEARCH_SEARCH_KEY are not set. Search functionality will be disabled.'
     );
   }
 }
