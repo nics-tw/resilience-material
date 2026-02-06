@@ -5,7 +5,7 @@ import 'dotenv/config';
 
 // Check for required environment variables in production
 // Allow builds without MEILISEARCH in CI environments (e.g., dependabot PRs)
-const isCIBuild = process.env.CI === 'true';
+const isCIBuild = !!process.env.CI;
 const hasMeilisearchConfig = process.env.MEILISEARCH_HOST && process.env.MEILISEARCH_SEARCH_KEY;
 
 if (process.env.NODE_ENV === 'production' && !hasMeilisearchConfig) {
