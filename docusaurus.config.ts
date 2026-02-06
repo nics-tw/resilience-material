@@ -3,10 +3,26 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import 'dotenv/config';
 
-if (process.env.NODE_ENV === 'production') {
-  if (!process.env.MEILISEARCH_HOST || !process.env.MEILISEARCH_SEARCH_KEY) {
+// Check for required environment variables in production
+// Allow builds without MEILISEARCH in CI environments (e.g., dependabot PRs)
+const isCIBuild = !!process.env.CI;
+const hasMeilisearchHost = !!process.env.MEILISEARCH_HOST;
+const hasMeilisearchKey = !!process.env.MEILISEARCH_SEARCH_KEY;
+const hasMeilisearchConfig = hasMeilisearchHost && hasMeilisearchKey;
+
+if (process.env.NODE_ENV === 'production' && !hasMeilisearchConfig) {
+  const missingVars = [
+    !hasMeilisearchHost && 'MEILISEARCH_HOST',
+    !hasMeilisearchKey && 'MEILISEARCH_SEARCH_KEY',
+  ].filter(Boolean).join(' and ');
+  
+  if (isCIBuild) {
+    console.warn(
+      `⚠️  ${missingVars} not set. Search functionality will be disabled in this CI build.`
+    );
+  } else {
     throw new Error(
-      'MEILISEARCH_HOST and MEILISEARCH_SEARCH_KEY are required for production builds.'
+      `${missingVars} required for production builds.`
     );
   }
 }
