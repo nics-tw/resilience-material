@@ -17,6 +17,7 @@
   --ifm-color-primary-lightest: #00c7c7;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --sidebar-section-spacing: 1rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -30,6 +31,244 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* =============================================
+   建議 7: 側邊欄加寬，減少長標題折行
+   ============================================= */
+.theme-doc-sidebar-container {
+  --doc-sidebar-width: 320px !important;
+}
+
+/* 底部緩衝，避免附錄貼齊螢幕底部 */
+.menu > .menu__list {
+  padding-bottom: 3rem;
+}
+
+/* 預留捲軸空間，避免展開時寬度跳動；頂部間距與大分類分割線一致 */
+.menu.thin-scrollbar {
+  scrollbar-gutter: stable;
+  padding-top: var(--sidebar-section-spacing);
+}
+
+/* =============================================
+   Sidebar 大分類 — 整行可收合
+   ============================================= */
+
+/* 大分類間距 + 分割線 */
+.menu > .menu__list > .menu__list-item {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  padding-top: var(--sidebar-section-spacing);
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.menu > .menu__list > .menu__list-item:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* 大分類標題：加粗、放大，並配合放大字體調整內距 */
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .menu__link {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.4rem var(--ifm-menu-link-padding-horizontal);
+}
+
+/* 文章標題：淺灰色，退到背景（含副群組內文章與主分類直接子文章如附錄） */
+.sidebar-subgroup > .menu__list > .menu__list-item > .menu__link:not(.menu__link--active),
+.menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link:not(.menu__link--active) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+:root .sidebar-subgroup > .menu__list > .menu__list-item > .menu__link:not(.menu__link--active),
+:root .menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link:not(.menu__link--active) {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme='dark'] .sidebar-subgroup > .menu__list > .menu__list-item > .menu__link:not(.menu__link--active),
+[data-theme='dark'] .menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link:not(.menu__link--active) {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---- Link-Disclosure Widget pattern (Adrian Roselli) ----
+   大分類的「前往頁面」連結與「展開/收合」按鈕分離互動區域，
+   讓鍵盤與螢幕閱讀器使用者能區分兩個不同操作。 */
+
+/* collapsible 容器：flex 排列，link 佔主空間，caret 獨立在右側 */
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible {
+  padding: 0.25rem 0;
+}
+
+/* 大分類連結：可互動，佔據剩餘空間 */
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .menu__link {
+  flex: 1;
+  min-width: 0;
+  border-radius: 4px;
+}
+
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .menu__link:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .menu__link:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* caret 按鈕：獨立的折疊控制，固定在右側 */
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .clean-btn.menu__caret {
+  flex-shrink: 0;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .clean-btn.menu__caret:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .clean-btn.menu__caret:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+}
+
+/* 箭頭提高可見度，配合獨立按鈕的角色 */
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .clean-btn.menu__caret svg {
+  opacity: 0.55;
+}
+
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible > .clean-btn.menu__caret:hover svg {
+  opacity: 0.8;
+}
+
+/* =============================================
+   Sidebar 子群組樣式
+   =============================================
+   使用 _category_.json 的 className: "sidebar-subgroup"
+*/
+
+/* --- 子群組標題（無障礙設計、前端與效能...） ---
+   建議 1: 退到背景，用暗灰色小字作為標籤而非主角 */
+.sidebar-subgroup {
+  padding-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-subgroup:first-child {
+  margin-top: 0;
+  padding-top: 0.25rem;
+}
+
+.sidebar-subgroup > .menu__list-item-collapsible > .menu__link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 0.4rem 0.75rem 0.2rem 1.2rem;
+  border-left: none;
+  background: none !important;
+  cursor: default;
+}
+
+/* 子群組標題完全不可互動 */
+.sidebar-subgroup > .menu__list-item-collapsible > .menu__link:hover,
+.sidebar-subgroup > .menu__list-item-collapsible > .menu__link:active,
+.sidebar-subgroup > .menu__list-item-collapsible > .menu__link:focus {
+  background: none !important;
+  color: rgba(0, 0, 0, 0.65) !important;
+  pointer-events: none;
+}
+
+.sidebar-subgroup > .menu__list-item-collapsible {
+  pointer-events: none;
+}
+
+.sidebar-subgroup > .menu__list {
+  pointer-events: auto;
+}
+
+/* --- 子群組底下的文件連結（含主分類直接子文章如附錄） --- */
+.sidebar-subgroup > .menu__list > .menu__list-item > .menu__link,
+.menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link {
+  padding: 0.5rem 0.75rem 0.5rem calc(1.6rem - 3px);
+  margin-left: 0;
+  line-height: 1.6;
+  font-weight: 400;
+  border-left: 3px solid transparent;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* hover 淡背景色回饋 */
+.sidebar-subgroup > .menu__list > .menu__list-item > .menu__link:hover,
+.menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link:hover {
+  color: var(--ifm-color-primary-dark);
+  background: rgba(0, 153, 153, 0.05);
+}
+
+/* active 用左側指示線 + 淺底色 */
+.sidebar-subgroup > .menu__list > .menu__list-item > .menu__link--active,
+.menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link--active {
+  color: var(--ifm-color-primary) !important;
+  background: rgba(0, 153, 153, 0.06) !important;
+  font-weight: 500;
+  border-left-color: var(--ifm-color-primary);
+  border-radius: 0 6px 6px 0;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+
+/* --- 深色模式 --- */
+[data-theme='dark'] .sidebar-subgroup > .menu__list-item-collapsible > .menu__link {
+  color: #999;
+}
+
+[data-theme='dark'] .sidebar-subgroup > .menu__list-item-collapsible > .menu__link:hover {
+  color: #999 !important;
+}
+
+[data-theme='dark'] .sidebar-subgroup > .menu__list > .menu__list-item > .menu__link:hover,
+[data-theme='dark'] .menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link:hover {
+  background: rgba(78, 205, 196, 0.08);
+}
+
+[data-theme='dark'] .sidebar-subgroup > .menu__list > .menu__list-item > .menu__link--active,
+[data-theme='dark'] .menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link--active {
+  background: rgba(78, 205, 196, 0.1) !important;
+}
+
+/* =============================================
+   建議: 觸控目標最小 44px（WCAG 2.2 Target Size）
+   ============================================= */
+
+/* 所有側邊欄連結的最小觸控高度 */
+.menu__link {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+/* 大分類 collapsible 整行也要至少 44px */
+.menu > .menu__list > .menu__list-item > .menu__list-item-collapsible {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+/* 子群組標題不需要 44px，它不可互動 */
+.sidebar-subgroup > .menu__list-item-collapsible > .menu__link {
+  min-height: auto;
+}
+
+/* =============================================
+   Footer
+   ============================================= */
 
 /* 針對 footer 內的超連結進行樣式調整 */
 .footer a {
