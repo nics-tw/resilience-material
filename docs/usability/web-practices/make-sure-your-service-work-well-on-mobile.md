@@ -28,7 +28,7 @@ last_update:
 
 建立響應式網站（或屬於 GOV.UK 的響應式服務）代表：
 
-- 使用[響應式設計](https://alistapart.com/article/responsive-web-design)確保您的網站可以在[不同的瀏覽器和設備](../accessibility/design-for-different-browsers-and-devices.md)上運行
+- 使用[響應式設計](https://alistapart.com/article/responsive-web-design)確保您的網站可以在[不同的瀏覽器和設備](./design-for-different-browsers-and-devices.md)上運行
 - 使用[漸進增強策略](../web-practices/using-progressive-enhancement.md)，使您的服務變得更可靠
 
 以這種方式建立服務意味著無論使用者如何造訪服務，他們都可以獲得相同的內容和功能。它也將幫助您滿足[政府的無障礙要求](../accessibility/making-your-service-accessible-an-introduction.md#滿足政府無障礙要求)。

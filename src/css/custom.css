@@ -17,7 +17,12 @@
   --ifm-color-primary-lightest: #00c7c7;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --sidebar-section-spacing: 1rem;
+  --sidebar-gap-section: 1rem;
+  --sidebar-inset-section: 1rem;
+  --sidebar-gap-subgroup: 1.5rem;
+  --sidebar-py-item: 0.5rem;
+  --sidebar-active-border: 3px;
+  --sidebar-separator: 1px solid rgba(128, 128, 128, 0.15);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -47,25 +52,18 @@
 /* 預留捲軸空間，避免展開時寬度跳動；頂部間距與大分類分割線一致 */
 .menu.thin-scrollbar {
   scrollbar-gutter: stable;
-  padding-top: var(--sidebar-section-spacing);
+  padding-top: var(--sidebar-inset-section);
 }
 
 /* =============================================
    Sidebar 大分類 — 整行可收合
    ============================================= */
 
-/* 大分類間距 + 分割線 */
-.menu > .menu__list > .menu__list-item {
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  padding-top: var(--sidebar-section-spacing);
-  border-top: 1px solid rgba(128, 128, 128, 0.15);
-}
-
-.menu > .menu__list > .menu__list-item:first-child {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none;
+/* 大分類間距 + 分割線（僅相鄰項目之間） */
+.menu > .menu__list > .menu__list-item + .menu__list-item {
+  margin-top: var(--sidebar-gap-section);
+  padding-top: var(--sidebar-inset-section);
+  border-top: var(--sidebar-separator);
 }
 
 /* 大分類標題：加粗、放大，並配合放大字體調整內距 */
@@ -156,14 +154,13 @@
 
 /* --- 子群組標題（無障礙設計、前端與效能...） ---
    建議 1: 退到背景，用暗灰色小字作為標籤而非主角 */
-.sidebar-subgroup {
-  padding-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .sidebar-subgroup:first-child {
   margin-top: 0;
   padding-top: 0.25rem;
+}
+
+.sidebar-subgroup + .sidebar-subgroup {
+  margin-top: var(--sidebar-gap-subgroup);
 }
 
 .sidebar-subgroup > .menu__list-item-collapsible > .menu__link {
@@ -197,11 +194,11 @@
 /* --- 子群組底下的文件連結（含主分類直接子文章如附錄） --- */
 .sidebar-subgroup > .menu__list > .menu__list-item > .menu__link,
 .menu > .menu__list > .menu__list-item > .menu__list > .menu__list-item > .menu__link {
-  padding: 0.5rem 0.75rem 0.5rem calc(1.6rem - 3px);
+  padding: var(--sidebar-py-item) 0.75rem var(--sidebar-py-item) calc(1.6rem - var(--sidebar-active-border));
   margin-left: 0;
   line-height: 1.6;
   font-weight: 400;
-  border-left: 3px solid transparent;
+  border-left: var(--sidebar-active-border) solid transparent;
   transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -220,8 +217,6 @@
   font-weight: 500;
   border-left-color: var(--ifm-color-primary);
   border-radius: 0 6px 6px 0;
-  padding-top: 0.55rem;
-  padding-bottom: 0.55rem;
 }
 
 /* --- 深色模式 --- */
