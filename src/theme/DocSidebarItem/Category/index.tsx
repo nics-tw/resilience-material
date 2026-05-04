@@ -115,7 +115,7 @@ function CollapseButton({
             )
       }
       aria-expanded={!collapsed}
-      aria-controls={controlsId}
+      aria-controls={collapsed ? undefined : controlsId}
       type="button"
       className="clean-btn menu__caret"
       onClick={onClick}
@@ -245,7 +245,7 @@ function DocSidebarItemCategoryCollapsible({
     );
     if (!collapsibleEl) return;
 
-    let prevCollapsed = true;
+    let prevCollapsed = !collapsibleEl.querySelector('[aria-expanded="true"]');
 
     const observer = new MutationObserver(() => {
       const expanded = collapsibleEl.querySelector('[aria-expanded="true"]');
@@ -307,32 +307,49 @@ function DocSidebarItemCategoryCollapsible({
         className={clsx('menu__list-item-collapsible', {
           'menu__list-item-collapsible--active': isCurrentPage,
         })}>
-        <Link
-          className={clsx(styles.categoryLink, 'menu__link', {
-            'menu__link--sublist': collapsible,
-            'menu__link--sublist-caret': (!href || isTopLevelCategory) && collapsible,
-            'menu__link--active': isActive,
-          })}
-          onClick={handleItemClick}
-          aria-current={isCurrentPage ? 'page' : undefined}
-          role={collapsible && (!href || isTopLevelCategory) ? 'button' : undefined}
-          aria-expanded={collapsible && (!href || isTopLevelCategory) ? !collapsed : undefined}
-          aria-controls={collapsible && (!href || isTopLevelCategory) ? collapsibleId : undefined}
-          href={isTopLevelCategory ? undefined : (collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback)}
-          {...props}
-          tabIndex={isSidebarSubgroup ? -1 : props.tabIndex}>
-          <CategoryLinkLabel label={label} />
-        </Link>
-        {href && collapsible && !isTopLevelCategory && (
-          <CollapseButton
-            collapsed={collapsed}
-            categoryLabel={label}
-            controlsId={collapsibleId}
-            onClick={(e) => {
-              e.preventDefault();
-              updateCollapsed();
-            }}
-          />
+        {isTopLevelCategory ? (
+          <button
+            type="button"
+            className={clsx(
+              styles.categoryLink,
+              'clean-btn menu__link menu__link--sublist menu__link--sublist-caret',
+              {'menu__link--active': isActive},
+            )}
+            aria-expanded={!collapsed}
+            aria-controls={collapsed ? undefined : collapsibleId}
+            onClick={handleItemClick}>
+            <CategoryLinkLabel label={label} />
+          </button>
+        ) : (
+          <>
+            <Link
+              className={clsx(styles.categoryLink, 'menu__link', {
+                'menu__link--sublist': collapsible,
+                'menu__link--sublist-caret': !href && collapsible,
+                'menu__link--active': isActive,
+              })}
+              onClick={handleItemClick}
+              aria-current={isCurrentPage ? 'page' : undefined}
+              role={collapsible && !href ? 'button' : undefined}
+              aria-expanded={collapsible && !href ? !collapsed : undefined}
+              aria-controls={collapsible && !href && !collapsed ? collapsibleId : undefined}
+              href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
+              {...props}
+              tabIndex={isSidebarSubgroup ? -1 : props.tabIndex}>
+              <CategoryLinkLabel label={label} />
+            </Link>
+            {href && collapsible && (
+              <CollapseButton
+                collapsed={collapsed}
+                categoryLabel={label}
+                controlsId={collapsibleId}
+                onClick={(e) => {
+                  e.preventDefault();
+                  updateCollapsed();
+                }}
+              />
+            )}
+          </>
         )}
       </div>
 

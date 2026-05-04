@@ -9,6 +9,12 @@
   overflow: hidden;
 }
 
+button.categoryLink {
+  span {
+    text-align: left;
+  }
+}
+
 /*
 TODO merge this logic back in Infima?
  */
