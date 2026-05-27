@@ -237,34 +237,17 @@ function DocSidebarItemCategoryCollapsible({
     return () => clearTimeout(timer);
   }, [collapsibleId, collapsed]);
 
+  const wasCollapsed = usePrevious(collapsed);
   useEffect(() => {
     if (level !== 1 || !liRef.current) return;
-
-    const collapsibleEl = liRef.current.querySelector(
-      '.menu__list-item-collapsible',
-    );
-    if (!collapsibleEl) return;
-
-    let prevCollapsed = !collapsibleEl.querySelector('[aria-expanded="true"]');
-
-    const observer = new MutationObserver(() => {
-      const expanded = collapsibleEl.querySelector('[aria-expanded="true"]');
-      if (expanded && prevCollapsed) {
-        setTimeout(() => {
-          liRef.current?.scrollIntoView({behavior: 'smooth', block: 'nearest'});
-        }, 300);
-      }
-      prevCollapsed = !expanded;
-    });
-
-    observer.observe(collapsibleEl, {
-      attributes: true,
-      subtree: true,
-      attributeFilter: ['aria-expanded'],
-    });
-
-    return () => observer.disconnect();
-  }, [level]);
+    if (wasCollapsed === true && !collapsed) {
+      const timer = setTimeout(() => {
+        liRef.current?.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+    return undefined;
+  }, [level, collapsed, wasCollapsed]);
   // -- End custom --
 
   const isTopLevelCategory = !isSidebarSubgroup && collapsible && href;
