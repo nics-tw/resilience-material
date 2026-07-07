@@ -18,9 +18,9 @@
 * 擁有 Mend 帳號
 * 已安裝 Java 11
 * 已安裝對應專案套件管理工具（Maven、Gradle 或 npm）
-* 已下載 [wss-unified-agentxx.jar](https://docs.mend.io/legacy-sca/latest/getting-started-with-the-unified-agent#GettingStartedwiththeUnifiedAgent-DownloadingtheUnifiedAgent)
+* 已下載 [wss-unified-agent.jar](https://docs.mend.io/legacy-sca/latest/getting-started-with-the-unified-agent#GettingStartedwiththeUnifiedAgent-DownloadingtheUnifiedAgent)
 
-# 設定環境變數
+## 設定環境變數
 
 建議透過環境變數或 config file 將所需的金鑰與專案資訊（如 API Key、Project Name）提供給 JAR 執行檔。
 
@@ -45,7 +45,7 @@ set WS_WSS_URL=<your-mend-agent-url>
 ```
 * Windows/Linux/macOS 的 set/export 只在當前 CMD/shell session 有效；若需永久生效，請寫入 config file，參考官網提供的 [config file](https://docs.mend.io/legacy-sca/latest/getting-started-with-the-unified-agent#GettingStartedwiththeUnifiedAgent-SettingUptheUnifiedAgent)
 
-# 執行 Unified Agent 掃描
+## 執行 Unified Agent 掃描
 
 設定好環境變數後，直接執行 Unified Agent：
 
@@ -71,7 +71,7 @@ Agent 執行時會依序：
 
 若 exit code 不為零，表示某個步驟失敗，請查看摘要表格上方的 log 訊息以確認錯誤原因。
 
-# 在 Mend 控制台查看結果
+## 在 Mend 控制台查看結果
 
 在 Mend 控制台瀏覽至 `Products` → `產品名稱` → `專案名稱`，Libraries 頁籤會列出本次掃描找到的所有相依套件。
 
@@ -80,10 +80,10 @@ Agent 執行時會依序：
 在此頁面可以：
 
 * 在 Security 查看弱點警告
-* 在 Licenses 籤瀏覽授權資訊
+* 在 Licenses 頁籤瀏覽授權資訊
 * 在 Dependencies 檢視相依關係圖
 
-# Mend 如何匯出 SBOM
+## Mend 如何匯出 SBOM
 
 本教程說明如何使用 Mend 產出 SBOM 檔案。在 Mend 中，需先於專案中執行 SBOM 匯出作業，完成後方可下載對應檔案。
 
@@ -92,7 +92,7 @@ Agent 執行時會依序：
 1. 如何匯出 SBOM
 2. 下載 SBOM file
 
-# 如何匯出 SBOM
+### 如何匯出 SBOM
 
 ![](./img/mend-gen-sbom-4.png)
 
@@ -113,7 +113,7 @@ Agent 執行時會依序：
 
 ![](./img/mend-gen-sbom-6.png)
 
-# 下載 SBOM file
+### 下載 SBOM file
 
 點選 Generate Export 後不會馬上獲得報告；需要到 Reports → My Reports 下載 SBOM 檔案。
 
@@ -123,7 +123,7 @@ Agent 執行時會依序：
 
 點擊對應列的 Download 即可從 Mend 下載 SBOM file
 
-# 快速判讀 SBOM 文件內容
+## 快速判讀 SBOM 文件內容
 
 以下為 Mend 產生的 CycloneDX 格式報告為例，大致說明各欄位的意義。
 
@@ -144,22 +144,22 @@ metadata — 報告元資料
 
 ```text
 "metadata": {
-"timestamp" : "2026-03-31T02:48:12Z", // 報告產生時間（UTC）
-"tools": {
-"components": [{
-"name" : "CycloneDX report generator",
-"version" : "1.1.0",
-"author" : "Mend.io" // 產生此報告的工具
-}]
-},
-"authors": [
-{ "name": "Organization: XXXX" }, // 產出組織
-{ "name": "Person: XXX..." } // 負責人員
-],
-"component": {
-"type" : "application",
-"name" : "java-sbom" // 被掃描的主專案名稱
-}
+    "timestamp" : "2026-03-31T02:48:12Z",   // 報告產生時間（UTC）
+    "tools": {
+        "components": [{
+            "name"    : "CycloneDX report generator",
+            "version" : "1.1.0",
+            "author"  : "Mend.io"            // 產生此報告的工具
+        }]
+    },
+    "authors": [
+        { "name": "Organization: XXXX" },    // 產出組織
+        { "name": "Person: XXX..." }         // 負責人員
+    ],
+    "component": {
+        "type" : "application",
+        "name" : "java-sbom"                 // 被掃描的主專案名稱
+    }
 }
 ```
 
