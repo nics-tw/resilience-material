@@ -106,9 +106,9 @@ Agent 執行時會依序：
   + Select products 選擇要 export 哪個 product
 * 選擇 SBOM 格式：
   + CycloneDX
-    - 輸出檔案格式: .json/ .xml
+    - 輸出檔案格式: .json/.xml
   + SPDX
-    - 輸出檔案格式: .json/.xml /.yaml/.excel/.tv
+    - 輸出檔案格式: .json/.xml/.tv
 * 點擊 Generate Export。
 
 ![](./img/mend-gen-sbom-6.png)
