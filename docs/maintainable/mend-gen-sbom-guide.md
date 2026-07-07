@@ -74,7 +74,7 @@ Agent 執行時會依序：
 
 # 在 Mend 控制台查看結果
 
-在 Mend 控制台瀏覽至 Products → <產品名稱> → <專案名稱>，Libraries 頁籤會列出本次掃描找到的所有相依套件。
+在 Mend 控制台瀏覽至 `Products` → `產品名稱` → `專案名稱`，Libraries 頁籤會列出本次掃描找到的所有相依套件。
 
 ![](./img/mend-gen-sbom-3.png)
 
