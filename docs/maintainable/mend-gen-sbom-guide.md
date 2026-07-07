@@ -17,7 +17,7 @@
 
 * 擁有 Mend 帳號
 * 已安裝 Java 11
-* 已安裝對應專案套件管理工具（Maven、Gradle 或 npm）
+* 已安裝對應專案套件管理工具（Maven 或 Gradle）
 * 已下載 [wss-unified-agent.jar](https://docs.mend.io/legacy-sca/latest/getting-started-with-the-unified-agent#GettingStartedwiththeUnifiedAgent-DownloadingtheUnifiedAgent)
 
 ## 設定環境變數
@@ -61,7 +61,7 @@ ex:
 
 Agent 執行時會依序：
 
-1. 偵測建置工具（Gradle、Maven、npm 等）
+1. 偵測建置工具（Gradle、Maven 等）
 2. 解析所有相依套件
 3. 將結果上傳至 Mend 伺服器
 
