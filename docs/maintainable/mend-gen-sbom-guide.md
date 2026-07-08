@@ -1,6 +1,6 @@
 # 如何使用 Mend 產生 SBOM
 
-本教程說明如何使用 Mend Unified Agent 為 Java 專案產生軟體物料清單（SBOM）。
+本教材說明如何使用 Mend Unified Agent 為 Java 專案產生軟體物料清單（SBOM）。
 
 透過 Mend 產出 SBOM，大致可分為兩個階段：
 
@@ -85,7 +85,7 @@ Agent 執行時會依序：
 
 ## Mend 如何匯出 SBOM
 
-本教程說明如何使用 Mend 產出 SBOM 檔案。在 Mend 中，需先於專案中執行 SBOM 匯出作業，完成後方可下載對應檔案。
+本教材說明如何使用 Mend 產出 SBOM 檔案。在 Mend 中，需先於專案中執行 SBOM 匯出作業，完成後方可下載對應檔案。
 
 整體流程可分為兩個階段：
 
