@@ -101,9 +101,9 @@ Agent 執行時會依序：
 
 ![Generate SBOM Report 設定介面](./img/mend-gen-sbom-5.png)
 
-* 在 Generate SBOM Report
-  + Select Projects 選擇要匯出的專案 (Project)
-  + Select products 選擇要匯出的產品 (Product)
+* 在 Generate SBOM Report 介面中：
+  + Select Projects： 選擇要匯出的專案 (Project)
+  + Select Products： 選擇要匯出的產品 (Product)
 * 選擇 SBOM 格式：
   + CycloneDX
     - 輸出檔案格式: .json/.xml
