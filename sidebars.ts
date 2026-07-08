@@ -101,6 +101,7 @@ const sidebars: SidebarsConfig = {
             'maintainable/Guide_to_SBOM_and_OSV_Tools',
             'maintainable/parlay-jqp-usage',
             'maintainable/sbom-gui-tool',
+            'maintainable/mend-gen-sbom-guide',
             'maintainable/trivy-license-scanning',
             'maintainable/github-action-sbom-vuln',
             'maintainable/gitlab-ci-sbom-vuln',
