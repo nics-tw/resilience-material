@@ -55,7 +55,7 @@ Windows / Linux / macOS：
 java -jar wss-unified-agent.jar -d <source code dir>
 ```
 
-ex:
+例如：
 
 ![](./img/mend-gen-sbom-1.png)
 
@@ -102,8 +102,8 @@ Agent 執行時會依序：
 ![](./img/mend-gen-sbom-5.png)
 
 * 在 Generate SBOM Report
-  + Select Projects 選擇要 export 哪個 project
-  + Select products 選擇要 export 哪個 product
+  + Select Projects 選擇要匯出的專案 (Project)
+  + Select products 選擇要匯出的產品 (Product)
 * 選擇 SBOM 格式：
   + CycloneDX
     - 輸出檔案格式: .json/.xml
