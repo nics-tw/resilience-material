@@ -11,7 +11,7 @@
 2. 從 Mend 平台匯出 SBOM
    1. [登入 Mend 控制台查看掃描結果](#在-mend-控制台查看結果)
    2. [選擇對應的 Product / Project](#mend-如何匯出-sbom)
-   3. [產出並下載 SBOM（支援 CycloneDX、SPDX 等格式）](#下載-sbom-file)
+   3. [產出並下載 SBOM（支援 CycloneDX、SPDX 等格式）](#下載-sbom-檔案)
 
 ## 事前準備
 
@@ -43,7 +43,7 @@ set WS_PROJECTNAME=<your-project-name>
 REM 請依您的 Mend 伺服器填入，例如 https://saas.whitesourcesoftware.com/agent
 set WS_WSS_URL=<your-mend-agent-url>
 ```
-* Windows/Linux/macOS 的 set/export 只在當前 CMD/shell session 有效；若需永久生效，請寫入 config file，參考官網提供的 [config file](https://docs.mend.io/legacy-sca/latest/getting-started-with-the-unified-agent#GettingStartedwiththeUnifiedAgent-SettingUptheUnifiedAgent)
+* Windows/Linux/macOS 的 set/export 只在目前 CMD/shell session 有效；若需永久生效，請寫入 config file，參考官網提供的 [config file](https://docs.mend.io/legacy-sca/latest/getting-started-with-the-unified-agent#GettingStartedwiththeUnifiedAgent-SettingUptheUnifiedAgent)
 
 ## 執行 Unified Agent 掃描
 
@@ -90,7 +90,7 @@ Agent 執行時會依序：
 整體流程可分為兩個階段：
 
 1. 如何匯出 SBOM
-2. 下載 SBOM file
+2. 下載 SBOM 檔案
 
 ### 如何匯出 SBOM
 
@@ -113,7 +113,7 @@ Agent 執行時會依序：
 
 ![點擊 Generate Export 按鈕示意圖](./img/mend-gen-sbom-6.png)
 
-### 下載 SBOM file
+### 下載 SBOM 檔案
 
 點選 Generate Export 後不會馬上獲得報告；需要到 Reports → My Reports 下載 SBOM 檔案。
 
@@ -121,13 +121,13 @@ Agent 執行時會依序：
 
 ![在 My Reports 列表中點擊 Download 下載 SBOM 檔案](./img/mend-gen-sbom-8.png)
 
-點擊對應列的 Download 即可從 Mend 下載 SBOM file
+點擊對應列的 Download 即可從 Mend 下載 SBOM 檔案
 
-## 快速判讀 SBOM 文件內容
+## 快速判讀 SBOM 檔案內容
 
 以下為 Mend 產生的 CycloneDX 格式報告為例，大致說明各欄位的意義。
 
-文件頂層結構
+檔案頂層結構
 
 ```text
 {
@@ -168,7 +168,7 @@ components — 套件清單, 每個元素代表一個相依套件，以下是一
 ```text
 {
   "type" : "library",
-  "bom-ref" : "spring-aop-5.3.17.jar", // 文件內唯一參照 ID
+  "bom-ref" : "spring-aop-5.3.17.jar", // 檔案內唯一參照 ID
   "group" : "org.springframework", // Maven Group ID
   "name" : "spring-aop-5.3.17.jar", // 套件名稱
   "version" : "5.3.17", // 版本號
