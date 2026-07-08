@@ -57,7 +57,7 @@ java -jar wss-unified-agent.jar -d <source code dir>
 
 例如：
 
-![](./img/mend-gen-sbom-1.png)
+![Mend Unified Agent 執行掃描範例](./img/mend-gen-sbom-1.png)
 
 Agent 執行時會依序：
 
@@ -67,7 +67,7 @@ Agent 執行時會依序：
 
 掃描完成後，terminal/cmd 會顯示 WhiteSource Scan Summary 表格，每個步驟均標示為 COMPLETED：
 
-![](./img/mend-gen-sbom-2.png)
+![Mend Unified Agent 掃描完成摘要表格](./img/mend-gen-sbom-2.png)
 
 若 exit code 不為零，表示某個步驟失敗，請查看摘要表格上方的 log 訊息以確認錯誤原因。
 
@@ -75,7 +75,7 @@ Agent 執行時會依序：
 
 在 Mend 控制台瀏覽至 `Products` → `產品名稱` → `專案名稱`，Libraries 頁籤會列出本次掃描找到的所有相依套件。
 
-![](./img/mend-gen-sbom-3.png)
+![Mend 控制台中的 Libraries 頁籤與相依套件清單](./img/mend-gen-sbom-3.png)
 
 在此頁面可以：
 
@@ -94,12 +94,12 @@ Agent 執行時會依序：
 
 ### 如何匯出 SBOM
 
-![](./img/mend-gen-sbom-4.png)
+![Mend 控制台頂部導覽列的 Reports 選單](./img/mend-gen-sbom-4.png)
 
 * 點擊頂部導覽列的 Reports。
 * 選擇 SBOM Report。
 
-![](./img/mend-gen-sbom-5.png)
+![Generate SBOM Report 設定介面](./img/mend-gen-sbom-5.png)
 
 * 在 Generate SBOM Report
   + Select Projects 選擇要匯出的專案 (Project)
@@ -111,15 +111,15 @@ Agent 執行時會依序：
     - 輸出檔案格式: .json/.xml/.tv
 * 點擊 Generate Export。
 
-![](./img/mend-gen-sbom-6.png)
+![點擊 Generate Export 按鈕示意圖](./img/mend-gen-sbom-6.png)
 
 ### 下載 SBOM file
 
 點選 Generate Export 後不會馬上獲得報告；需要到 Reports → My Reports 下載 SBOM 檔案。
 
-![](./img/mend-gen-sbom-7.png)
+![導覽至 Reports 中的 My Reports 頁面](./img/mend-gen-sbom-7.png)
 
-![](./img/mend-gen-sbom-8.png)
+![在 My Reports 列表中點擊 Download 下載 SBOM 檔案](./img/mend-gen-sbom-8.png)
 
 點擊對應列的 Download 即可從 Mend 下載 SBOM file
 
