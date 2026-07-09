@@ -129,7 +129,7 @@ Agent 執行時會依序：
 
 檔案頂層結構
 
-```text
+```json
 {
   "bomFormat" : "CycloneDX", // SBOM 格式，固定為 CycloneDX
   "specVersion" : "1.6", // CycloneDX 規格版本
@@ -142,7 +142,7 @@ Agent 執行時會依序：
 
 metadata — 報告元資料
 
-```text
+```json
 "metadata": {
     "timestamp" : "2026-03-31T02:48:12Z",   // 報告產生時間（UTC）
     "tools": {
@@ -165,7 +165,7 @@ metadata — 報告元資料
 
 components — 套件清單, 每個元素代表一個相依套件，以下是一個完整範例：
 
-```text
+```json
 {
   "type" : "library",
   "bom-ref" : "spring-aop-5.3.17.jar", // 檔案內唯一參照 ID
