@@ -47,3 +47,38 @@
 - [數位韌性高可用性與可維護性-原則與實務](https://github.com/nics-tw/resilience-material/releases/download/2023/ha-and-maintainability_principles-and-practices.pdf)（SHA256: 08c43247121351dc3c02a1ade6ef1fbc7d621d2c699b372fc93e6564117f684e）
 - [數位韌性高可用性](https://github.com/nics-tw/resilience-material/releases/download/2023/high-availability.pdf)（SHA256: 90164268c0ad982ad37e8c1101b4331cbf71d7c5ed408818fc87656fe1f19e64）
 - [數位韌性可維護性](https://github.com/nics-tw/resilience-material/releases/download/2023/maintainability.pdf)（SHA256: eb9af939835a87159a712154b8ee846d9a5a06efb9f68e7b3b797831f2cfb413）
+
+## 本地開發與新增教材
+
+本專案使用 [Docusaurus](https://docusaurus.io/) 建置。
+
+### 本地執行預覽
+
+```bash
+npm install      # 首次執行前安裝相依套件
+npm start        # 啟動開發伺服器，預設網址為 http://localhost:3000/
+```
+
+開發伺服器支援熱重載，編輯 `docs/` 底下的 `.md` 檔後網頁會自動更新。
+
+其他常用指令：
+
+```bash
+npm run build    # 產生正式靜態檔
+npm run serve    # 預覽 build 結果
+```
+
+### 新增一篇教材
+
+1. 在 `docs/` 對應構面資料夾（`usability/`、`maintainable/`、`high-availability/`）新增 `.md` 檔。
+2. **將該文件加入側邊欄設定 `sidebars.ts`**，否則頁面不會顯示在網站側邊欄。
+   於對應的分類 `items` 陣列中，加入不含副檔名的文件路徑（相對於 `docs/`），例如：
+
+   ```ts
+   items: [
+     'maintainable/Guide_to_SBOM_and_OSV_Tools',
+     'maintainable/mend-gen-sbom-guide', // 新增的教材
+   ],
+   ```
+
+3. 執行 `npm start` 確認頁面正確顯示於側邊欄與網頁上。
