@@ -82,6 +82,29 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        // 改版前易用性教材位於 /material/accessbility/，保留舊網址轉址以免外部連結失效
+        redirects: [
+          {
+            from: '/material/accessbility',
+            to: '/material/category/易用性',
+          },
+        ],
+        createRedirects(existingPath: string) {
+          if (existingPath.startsWith('/material/usability/')) {
+            return [
+              existingPath.replace('/material/usability/', '/material/accessbility/'),
+            ];
+          }
+          return undefined;
+        },
+      },
+    ],
+  ],
+
   themeConfig: {
     docs: {
       sidebar: {
