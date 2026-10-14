@@ -16,7 +16,7 @@
 ### 易用性
 - 為確保數位服務以使用者需求為核心，協助使用者透過清楚且有效的流程達成目標，應重視數位服務設計與使用體驗，持續提升易用性（Usability），並定期進行相關評估。
 
-**[易用性教材](https://material.nics.nat.gov.tw/material/category/易用性/)**
+**[易用性教材](https://material.nics.nat.gov.tw/material/usability/)**
 
 ## 數位韌性領航員培訓課程教材
 

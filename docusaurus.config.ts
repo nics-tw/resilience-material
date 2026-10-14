@@ -89,12 +89,23 @@ const config: Config = {
         // 改版前易用性教材位於 /material/accessbility/，保留舊網址轉址以免外部連結失效
         redirects: [
           {
+            // 舊首頁 /material/accessbility/ 曾大量對外散佈，原本顯示隱私與廣告文章。
+            // Docusaurus 將同名的 accessbility/accessbility.md 視為目錄首頁；
+            // 重構改名後仍應導回該文章，而非易用性分類頁。
             from: '/material/accessbility',
-            to: '/material/category/易用性',
+            to: '/material/usability/privacy-and-advertising-best-practices',
+          },
+          {
+            from: '/material/category/易用性',
+            to: '/material/usability/',
           },
         ],
         createRedirects(existingPath: string) {
-          if (existingPath.startsWith('/material/usability/')) {
+          // 分類首頁不套用文章的轉址規則，避免與舊首頁的明確轉址衝突。
+          if (
+            existingPath !== '/material/usability/' &&
+            existingPath.startsWith('/material/usability/')
+          ) {
             return [
               existingPath.replace('/material/usability/', '/material/accessbility/'),
             ];
