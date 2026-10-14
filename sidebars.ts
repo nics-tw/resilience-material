@@ -7,7 +7,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '易用性',
       collapsed: true,
-      link: { type: 'generated-index' },
+      link: { type: 'generated-index', slug: '/usability/' },
       items: [
         {
           type: 'category',
