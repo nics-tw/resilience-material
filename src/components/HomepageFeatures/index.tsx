@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
         確保數位服務以使用者需求為核心，協助使用者透過清楚且有效的流程達成目標。
       </>
     ),
-    link: '/material/category/易用性',
+    link: '/material/usability/',
   },
   {
     title: '可維護性',
